@@ -20,6 +20,12 @@ public class Grafico {
         this.vertices = vertices;
         this.arestas = arestas;
 
-        
+        // inicialize o array de aresta
+        aresta = new Aresta[arestas];
+        for(int index = 0; index < arestas; index++) {
+            // cada elemento do array de arestas
+            // é um objeto do tipo Edge
+            aresta[index] = new Aresta();
+        }
     }
 }
