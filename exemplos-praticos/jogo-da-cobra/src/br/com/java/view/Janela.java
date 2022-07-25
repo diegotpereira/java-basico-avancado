@@ -13,7 +13,7 @@ public class Janela extends JFrame{
 
     private static final long serialVersionUID = -2542001418764869760L;
 
-    public static ArrayList<ArrayList<DadosDoQuadrado>> Grade;
+    public static ArrayList<ArrayList<DadosDoQuadrado>> Grid;
 
     public static int width = 20;
     public static int height = 20;
@@ -21,7 +21,7 @@ public class Janela extends JFrame{
     public Janela() {
 
         // Cria o arraylist que conterá os threads
-        Grade = new ArrayList<ArrayList<DadosDoQuadrado>>();
+        Grid = new ArrayList<ArrayList<DadosDoQuadrado>>();
         ArrayList<DadosDoQuadrado> dado;
 
         // Cria Threads e seus dados e os adiciona ao arrayList
@@ -31,15 +31,15 @@ public class Janela extends JFrame{
                 DadosDoQuadrado dadosDoQuadrado = new DadosDoQuadrado(2);
                 dado.add(dadosDoQuadrado);
             }
-            Grade.add(dado);
+            Grid.add(dado);
         }
 
         // Configurando o layout do painel
         getContentPane().setLayout(new GridLayout(20, 20, 0, 0));
 
-        for(int i = 0; i < height; i++) {
-            for(int j = 0; j < width; j++) {
-                getContentPane().add(Grade.get(i).get(j).quadrado);
+        for(int i = 0; i < width; i++) {
+            for(int j = 0; j < height; j++) {
+                getContentPane().add(Grid.get(i).get(j).quadrado);
             }
         }
         Tupla posicao = new Tupla(10, 10);

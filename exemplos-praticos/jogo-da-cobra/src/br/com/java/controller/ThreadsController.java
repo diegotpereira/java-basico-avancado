@@ -1,5 +1,6 @@
 package br.com.java.controller;
 
+import java.awt.Window;
 import java.util.ArrayList;
 
 import br.com.java.data.Tupla;
@@ -14,14 +15,14 @@ public class ThreadsController extends Thread{
     long velocidade = 50;
     public static int direcaoCobra;
 
-    Tupla foodPosition;
+    Tupla comidaPosicao;
 
     ArrayList<Tupla> posicoes = new ArrayList<Tupla>();
 
     
     public ThreadsController(Tupla posicaoPartir) {
 
-        quadrados = Janela.Grade;
+        quadrados = Janela.Grid;
 
         cabecaCobraPos = new Tupla(posicaoPartir.x, posicaoPartir.y);
 
@@ -29,6 +30,9 @@ public class ThreadsController extends Thread{
 
         Tupla cabecaPos = new Tupla(cabecaCobraPos.getX(), cabecaCobraPos.getY());
         posicoes.add(cabecaPos);
+
+        comidaPosicao = new Tupla(Janela.height - 1, Janela.width - 1);
+        spawnFood(comidaPosicao);
 
 
     }
@@ -40,6 +44,16 @@ public class ThreadsController extends Thread{
             moverExterno();
             verificarColisao();
             excluirCalda();
+            pauser();
+        }
+    }
+
+    private void pauser() {
+        try {
+            sleep(velocidade);
+        } catch (Exception e) {
+            //TODO: handle exception
+            e.printStackTrace();
         }
     }
 
@@ -50,22 +64,30 @@ public class ThreadsController extends Thread{
             boolean biteCome = posCritico.getX() == posicoes.get(i).getX() && posCritico.getY() == posicoes.get(i).getY();
 
             if (biteCome) {
-                
+                stopTheGame();
             }
         }
-        boolean eatingFood = posCritico.getX()==foodPosition.y && posCritico.getY()==foodPosition.x;
+        boolean eatingFood = posCritico.getX()==comidaPosicao.y && posCritico.getY()==comidaPosicao.x;
         if(eatingFood){
             System.out.println("Yummy!");
             tamanhoCobra=tamanhoCobra+1;
-                foodPosition = getValAleaNotInSnake();
+                comidaPosicao = getValAleaNotInSnake();
 
-            spawnFood(foodPosition);	
+            spawnFood(comidaPosicao);	
+        }
+    }
+
+     //Stops The Game
+	 private void stopTheGame(){
+        System.out.println("COLISION! \n");
+        while(true){
+            pauser();
         }
     }
 
     private void spawnFood(Tupla foodPositionIn){
         quadrados.get(foodPositionIn.x).get(foodPositionIn.y).clarearLuz(1);
-}
+    }
 
     private Tupla getValAleaNotInSnake(){
         Tupla p ;
