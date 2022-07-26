@@ -25,4 +25,7 @@ public class DadosDoQuadrado {
     public void clarearLuz(int c) {
         quadrado.alterarCor(cores.get(c));
     }
+    public void lightMeUp(int c){
+		quadrado.alterarCor(cores.get(c));
+	}
 }

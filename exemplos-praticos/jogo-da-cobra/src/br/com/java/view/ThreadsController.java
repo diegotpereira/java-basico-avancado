@@ -1,11 +1,6 @@
-package br.com.java.controller;
+package br.com.java.view;
 
-import java.awt.Window;
 import java.util.ArrayList;
-
-import br.com.java.data.Tupla;
-import br.com.java.view.DadosDoQuadrado;
-import br.com.java.view.Janela;
 
 public class ThreadsController extends Thread{
 
@@ -20,7 +15,7 @@ public class ThreadsController extends Thread{
     ArrayList<Tupla> posicoes = new ArrayList<Tupla>();
 
     
-    public ThreadsController(Tupla posicaoPartir) {
+    ThreadsController(Tupla posicaoPartir) {
 
         quadrados = Janela.Grid;
 
@@ -38,11 +33,11 @@ public class ThreadsController extends Thread{
     }
     
     // rodar 
-    public void rodar() {
+    public void run() {
         while (true) {
             moverInterno(direcaoCobra);
-            moverExterno();
             verificarColisao();
+            moverExterno();
             excluirCalda();
             pauser();
         }
@@ -148,7 +143,7 @@ public class ThreadsController extends Thread{
     private void excluirCalda() {
         int cmpt = tamanhoCobra;
 
-        for(int i = posicoes.size() - 1; i >= 0; i--) {
+        for(int i = posicoes.size()-1; i>= 0; i--) {
 
             if (cmpt == 0) {
                 Tupla tupla = posicoes.get(i);
@@ -159,7 +154,7 @@ public class ThreadsController extends Thread{
         }
         cmpt = tamanhoCobra;
 
-        for(int i = posicoes.size() - 1; i >= 0; i--) {
+        for(int i = posicoes.size()-1; i >= 0; i--) {
 
             if (cmpt == 0) {
                 posicoes.remove(i);

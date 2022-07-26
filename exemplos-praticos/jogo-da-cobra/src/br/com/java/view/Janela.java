@@ -5,10 +5,6 @@ import javax.swing.JFrame;
 import java.awt.GridLayout;
 import java.awt.event.KeyListener;
 
-import br.com.java.controller.KeyboardListener;
-import br.com.java.controller.ThreadsController;
-import br.com.java.data.Tupla;
-
 public class Janela extends JFrame{
 
     private static final long serialVersionUID = -2542001418764869760L;

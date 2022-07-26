@@ -1,4 +1,4 @@
-package br.com.java.controller;
+package br.com.java.view;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;

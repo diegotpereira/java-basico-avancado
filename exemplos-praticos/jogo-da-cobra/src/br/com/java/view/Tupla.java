@@ -1,4 +1,4 @@
-package br.com.java.data;
+package br.com.java.view;
 
 public class Tupla {
     
