@@ -16,16 +16,11 @@ public class DadosDoQuadrado {
         cores.add(Color.darkGray);
         cores.add(Color.BLUE);
         cores.add(Color.white);
-
         cor = coluna;
-
         quadrado = new PainelQuadrado(cores.get(cor));
     }
 
     public void clarearLuz(int c) {
         quadrado.alterarCor(cores.get(c));
     }
-    public void lightMeUp(int c){
-		quadrado.alterarCor(cores.get(c));
-	}
 }

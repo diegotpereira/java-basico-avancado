@@ -26,10 +26,8 @@ public class ThreadsController extends Thread{
         Tupla cabecaPos = new Tupla(cabecaCobraPos.getX(), cabecaCobraPos.getY());
         posicoes.add(cabecaPos);
 
-        comidaPosicao = new Tupla(Janela.height - 1, Janela.width - 1);
+        comidaPosicao = new Tupla(Janela.height-1, Janela.width-1);
         spawnFood(comidaPosicao);
-
-
     }
     
     // rodar 
@@ -102,17 +100,17 @@ public class ThreadsController extends Thread{
     private void moverInterno(int direcao) {
         switch (direcao) {
             case 4:
-                cabecaCobraPos.alterarDado(cabecaCobraPos.x, (cabecaCobraPos.y + 1)%20);
+                cabecaCobraPos.alterarDado(cabecaCobraPos.x, (cabecaCobraPos.y+1)%20);
                 posicoes.add(new Tupla(cabecaCobraPos.x, cabecaCobraPos.y));
                 break;
 
             case 3:
-                if (cabecaCobraPos.y - 1 < 0) {
+                if (cabecaCobraPos.y- 1< 0) {
                     cabecaCobraPos.alterarDado(cabecaCobraPos.x, 19);
                 } else {
                     // abs =  O valor absoluto se refere ao valor positivo correspondente ao número 
                     // passado como nos argumentos
-                    cabecaCobraPos.alterarDado(cabecaCobraPos.x, Math.abs(cabecaCobraPos.y - 1)%20);
+                    cabecaCobraPos.alterarDado(cabecaCobraPos.x, Math.abs(cabecaCobraPos.y-1)%20);
                 }
                 posicoes.add(new Tupla(cabecaCobraPos.x, cabecaCobraPos.y));
                 break;
@@ -121,13 +119,13 @@ public class ThreadsController extends Thread{
                 if (cabecaCobraPos.x - 1 < 0) {
                     cabecaCobraPos.alterarDado(19, cabecaCobraPos.y);
                 } else {
-                    cabecaCobraPos.alterarDado(Math.abs(cabecaCobraPos.x - 1) %20, cabecaCobraPos.y);
+                    cabecaCobraPos.alterarDado(Math.abs(cabecaCobraPos.x-1) %20, cabecaCobraPos.y);
                 }
                 posicoes.add(new Tupla(cabecaCobraPos.x, cabecaCobraPos.y));
                 break;
 
             case 1:
-                cabecaCobraPos.alterarDado(Math.abs(cabecaCobraPos.x + 1)%20, cabecaCobraPos.y);
+                cabecaCobraPos.alterarDado(Math.abs(cabecaCobraPos.x+1)%20, cabecaCobraPos.y);
                 posicoes.add(new Tupla(cabecaCobraPos.x, cabecaCobraPos.y));
                 break;
         }
