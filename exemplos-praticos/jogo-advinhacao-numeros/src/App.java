@@ -47,6 +47,7 @@ public class App {
                     System.out.println("O número é"
                     + " menor que " + tentativa);
                  }
+                 teclado.close();
              }
              if (i == tentativas) {
                  System.out.println("Você esgotou"
