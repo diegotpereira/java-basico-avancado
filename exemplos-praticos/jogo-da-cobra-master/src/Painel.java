@@ -25,10 +25,10 @@ public class Painel extends JPanel implements ActionListener{
     private int maca_x;
     private int maca_y;
 
-    private boolean direcaoEsquerda = false;
-    private boolean direcaoDireita = false;
-    private boolean direcaoCima = false;
-    private boolean direcaoBaixo = false;
+    public boolean direcaoEsquerda = false;
+    public boolean direcaoDireita = false;
+    public boolean direcaoCima = false;
+    public boolean direcaoBaixo = false;
 
     public Painel() {
 
@@ -37,6 +37,8 @@ public class Painel extends JPanel implements ActionListener{
 
     private void iniciaPainel() {
 
+        // addKeyListener(new TAdapter());
+        addKeyListener((KeyListener) new TAdapter());
         setBackground(Color.BLACK);
         setFocusable(true);
 
@@ -96,9 +98,22 @@ public class Painel extends JPanel implements ActionListener{
         } else {
 
             // fim de jogo
+            fimJogo(g);
         }
     }   
 
+    private void fimJogo(Graphics g) {
+
+        String msg = "Fim de Jogo";
+
+        Font small = new Font("Helvetica", Font.BOLD, 14);
+        FontMetrics metrics = getFontMetrics(small);
+
+        g.setColor(Color.white);
+        g.setFont(small);
+        g.drawString(msg, (painel_largura - metrics.stringWidth(msg)) / 2, painel_altura / 2);
+
+    }
     private void mover() {
 
         for(int z = pontos; z > 0; z--) {
@@ -121,6 +136,15 @@ public class Painel extends JPanel implements ActionListener{
 
         if (direcaoBaixo) {
             y[0] += ponto_tamanho;
+        }
+    }
+
+    private void verificarMaca() {
+        if ((x[0] == maca_x) && y[0] == maca_y) {
+            
+
+            pontos++;
+            localizarMaca();
         }
     }
 
@@ -165,15 +189,54 @@ public class Painel extends JPanel implements ActionListener{
             cronometro.stop();
         }
     }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
         if (emJogo) {
 
-            localizarMaca();
+            verificarMaca();
             verificarColisao();
             mover();
         }
         repaint();
+    }
+    public class TAdapter extends KeyAdapter{
+        
+        @Override
+        public void keyPressed(KeyEvent e) {
+            // TODO Auto-generated method stub
+            super.keyPressed(e);
+    
+            int chave = e.getKeyCode();
+    
+            if ((chave == KeyEvent.VK_LEFT) && (!direcaoDireita)) {
+                
+                direcaoEsquerda = true;
+                direcaoCima = false;
+                direcaoBaixo = false;
+            }
+    
+            if ((chave == KeyEvent.VK_RIGHT) && (!direcaoEsquerda)) {
+                
+                direcaoDireita = true;
+                direcaoCima = false;
+                direcaoBaixo = false;
+            }
+    
+            if ((chave == KeyEvent.VK_UP) && (!direcaoBaixo)) {
+                
+                direcaoCima = true;
+                direcaoDireita = false;
+                direcaoEsquerda = false;
+            }
+    
+            if ((chave == KeyEvent.VK_DOWN) && (!direcaoCima)) {
+                
+                direcaoBaixo = true;
+                direcaoDireita = false;
+                direcaoEsquerda = false;
+            }
+        }
     }
 }
