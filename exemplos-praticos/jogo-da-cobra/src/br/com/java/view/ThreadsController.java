@@ -10,10 +10,8 @@ public class ThreadsController extends Thread{
     long velocidade = 50;
     public static int direcaoCobra;
 
-    Tupla comidaPosicao;
-
     ArrayList<Tupla> posicoes = new ArrayList<Tupla>();
-
+    Tupla comidaPosicao;
     
     ThreadsController(Tupla posicaoPartir) {
 
@@ -44,7 +42,7 @@ public class ThreadsController extends Thread{
     private void pauser() {
         try {
             sleep(velocidade);
-        } catch (Exception e) {
+        } catch (InterruptedException e) {
             //TODO: handle exception
             e.printStackTrace();
         }
