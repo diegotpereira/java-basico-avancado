@@ -108,7 +108,7 @@ public class CalcularConta extends JFrame implements ActionListener{
         int p2 = p1 * 7;
         int p3 = p2 + 50 + 12 + 102 + 20 + 50;
 
-        String SQL = "INSERT INTO conta VALUES('" + a + "', '" + c + "', '" + b + "', '" + p3 + "')";
+        String SQL = "INSERT INTO conta VALUES('" + a + "', '" + b + "', '" + c + "', '" + p3 + "')";
         
         try {
             Conexao con = new Conexao();
