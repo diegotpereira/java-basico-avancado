@@ -100,7 +100,7 @@ public class NovoCliente extends JFrame implements ActionListener{
         String medidor = medidorTextField.getText();
         String endereco = enderecoTextField.getText();
         String telefone = telefoneTextField.getText();
-        String estado = enderecoTextField.getText();
+        String estado = estadoTextField.getText();
         String cidade = cidadeTextField.getText();
         String email = emailTextField.getText();
 
@@ -118,7 +118,16 @@ public class NovoCliente extends JFrame implements ActionListener{
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        
+        if (e.getSource() == cancelarBtn) {
+            nomeTextField.setText("");
+            medidorTextField.setText("");
+            enderecoTextField.setText("");
+            telefoneTextField.setText("");
+            estadoTextField.setText("");
+            cidadeTextField.setText("");
+            emailTextField.setText("");
+
+        }
     }
     public static void main(String[] args) {
         new NovoCliente().setVisible(true);
