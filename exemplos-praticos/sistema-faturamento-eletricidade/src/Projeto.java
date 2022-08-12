@@ -208,7 +208,7 @@ public class Projeto extends JFrame implements ActionListener{
         String msg = ae.getActionCommand();
 
         if (msg.equals("Cliente Detalhes")) {
-            new ClienteDetalhe().setVisible(true);
+            new DetalheCliente().setVisible(true);
 
         } else if (msg.equals("Novo Cliente")) {
             new NovoCliente().setVisible(true);
