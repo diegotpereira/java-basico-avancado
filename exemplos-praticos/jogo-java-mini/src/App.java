@@ -80,17 +80,15 @@ class PainelJogo extends JComponent implements ActionListener{
 
         
         String s =  "";
-
-        URL urlImage = App.class.getResource("../imagens/puyo__2.png");
         
-
+    
         if (len >= 42) 
         s = "_";
         for(int i = 0; i < img.length; i++) 
         
-        img[i]=tk.getImage(urlImage);
-        ftubo = tk.getImage("imagens\\pipe"+s+"1.png");
-        btudo = tk.getImage("/imagens/pipe"+s+".png");
+        img[i]= Toolkit.getDefaultToolkit().getImage("C:\\imagens\\puyo__"+s+(i+1)+".png");
+        ftubo = Toolkit.getDefaultToolkit().getImage("C:\\imagens\\pipe"+s+"1.png");
+        btudo = Toolkit.getDefaultToolkit().getImage("C:\\imagens\\pipe"+s+".png");
 
             
         
