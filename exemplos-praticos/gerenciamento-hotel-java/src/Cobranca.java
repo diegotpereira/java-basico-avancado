@@ -227,11 +227,21 @@ public class Cobranca implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        String reservaNome;
-        double diasDeHospedagem;
-        double g1 = 0, g8;
-        double g9,g10,g11=0.0,g12,g13;
-		double g4,g5;
+        String reservaNome; //g
+        double diasDeHospedagem; // g0
+        double taxaQuartoTipo = 0; //g1 = 0;
+        double g4;
+        double g5;
+        double g6 = 0.0;
+        double g7 = 0.0;
+        double g8;
+        double encargos; // g9;
+        double taxvatGst; // g10;
+        double g11 = 0.0;
+        double g12;
+        double g13;
+		 
+        
 
         if (e.getActionCommand().equals("Buscar")) {
             
@@ -267,24 +277,24 @@ public class Cobranca implements ActionListener{
 
             if (premiumRadioButton.isSelected()) {
                 
-                g1 = 2500;
+                taxaQuartoTipo = 2500;
             } else if (executivoRadioButton.isSelected()) {
                 
-                g1 = 4100;
+                taxaQuartoTipo = 4100;
             }
 
-            g1 = g1 * diasDeHospedagem;
-            g8 = (18.0 / 100) * g1;
+            taxaQuartoTipo = taxaQuartoTipo * diasDeHospedagem;
+            g8 = (18.0 / 100) * taxaQuartoTipo;
 
-            encargosLabel.setText(String.valueOf(g1));
+            encargosLabel.setText(String.valueOf(taxaQuartoTipo));
             vatGstLabel.setText(String.valueOf(g8));
             
         } else if (e.getActionCommand().equals("Calcular Cobranca")) {
-            g9 = Double.parseDouble(encargosLabel.getText());
+            encargos = Double.parseDouble(encargosLabel.getText());
 
-            g10 = Double.parseDouble(vatGstLabel.getText());
+            taxvatGst = Double.parseDouble(vatGstLabel.getText());
 
-            g11 = g10 + 9;
+            g11 = taxvatGst + 9;
             g12 =  Double.parseDouble(entradatextField.getText());
             g11 = g11 - g12;
 
@@ -292,9 +302,51 @@ public class Cobranca implements ActionListener{
 
         } else if (e.getActionCommand().equals("Calcular Conta")) {
             
-            g9 = Double.parseDouble(encargosLabel.getText());
+            encargos = Double.parseDouble(encargosLabel.getText());
+            taxvatGst = Double.parseDouble(vatGstLabel.getText());
+
+            g11 = taxvatGst * encargos; 
+            g12 = Double.parseDouble(entradatextField.getText());
+
+            g11 = g11 - g12;
+
+            lblNewLabel_18.setText(String.valueOf(g11));
+
+        } else if (e.getActionCommand().equals("Conta Bruta")) {
+
+            encargos = Double.parseDouble(encargosLabel.getText());
+            taxvatGst = Double.parseDouble(vatGstLabel.getText());
+
+            g11 = taxvatGst * encargos; 
+            g12 = Double.parseDouble(entradatextField.getText());
+
+            g11 = g11 - g12;
+
+            g4 = Double.parseDouble(refeicoesVegtextField.getText());
+            g5 = Double.parseDouble(refeicoesNaoVegTextField.getText());
+
+            g6 = g4 * 199;
+            g7 = g5 * 249;
+
+            g13 = g11 + g6 + g7;
+
+            JOptionPane.showMessageDialog(janelaCobranca, " Sua fatura bruta é: " + g13);
+
+        } else if (e.getActionCommand().equals("Conta de cozinha")) {
+            
+            g4 = Double.parseDouble(refeicoesVegtextField.getText());
+            g5 = Double.parseDouble(refeicoesNaoVegTextField.getText());
+
+            g6 = g4 * 199;
+            g7 = g5 * 249;
+
+            double g14 = g6 + g7;
+
+            JOptionPane.showMessageDialog(janelaCobranca, "Sua conta de Cozinha é: " + g14);
+
+        } else if (e.getActionCommand().equals("Sair")) {
+            
+            janelaCobranca.setVisible(false);
         }
-        
-    }
-    
+    } 
 }
