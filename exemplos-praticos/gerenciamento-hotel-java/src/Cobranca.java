@@ -77,7 +77,7 @@ public class Cobranca implements ActionListener{
         quartoNoLabel.setBounds(10, 168, 93, 32);
         janelaCobranca.getContentPane().add(quartoNoLabel);
 
-        JLabel quartoNo = new JLabel("");
+        quartoNo = new JLabel("");
 		quartoNo.setHorizontalAlignment(SwingConstants.CENTER);
 		quartoNo.setBounds(165, 168, 78, 33);
 		janelaCobranca.getContentPane().add(quartoNo);
@@ -247,12 +247,13 @@ public class Cobranca implements ActionListener{
             
             try {
 
-                String SQL = "SELECT * FROM cliente WHERE rid = ?";
+                
                 int k = Integer.parseInt(reservaIdTextField.getText());
                 
 
-                Class.forName("com.mysql.cj.jdbc.Driver117");
+                Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hotel_banco_dados", "root", "root");
+                String SQL = "SELECT * FROM tb_cliente WHERE idReserva = ?";
 
                 PreparedStatement ps = con.prepareStatement(SQL);
                 ps.setInt(1, k);
@@ -260,9 +261,10 @@ public class Cobranca implements ActionListener{
                 ResultSet rs = ps.executeQuery();
 
                 if (rs.next()) {
-                    quartoNo.setText(rs.getString("qno"));
-                    dataEntradaTextField.setText(rs.getString("data"));
-                    reservaNometextField.setText(rs.getString("qnome"));
+                    quartoNo.setText(rs.getString("quartoReservado"));
+                    dataEntradaTextField.setText(rs.getString("dataReserva"));
+                    reservaNometextField.setText(rs.getString("nomeReserva"));
+                	//System.out.println(rs);
 
                 }
 
@@ -304,8 +306,8 @@ public class Cobranca implements ActionListener{
             
             encargos = Double.parseDouble(encargosLabel.getText());
             taxvatGst = Double.parseDouble(vatGstLabel.getText());
-
-            g11 = taxvatGst * encargos; 
+            
+            g11 = taxvatGst + encargos;
             g12 = Double.parseDouble(entradatextField.getText());
 
             g11 = g11 - g12;
