@@ -24,7 +24,16 @@ public class Cobranca implements ActionListener{
     private JLabel quartoNo;
     private JLabel encargosLabel;
     private JLabel vatGstLabel;
+    private JLabel jLabel8;
+    private JLabel jLabel9;
     private JLabel lblNewLabel_18;
+    private JLabel encargosDeHabitacaoLabel;
+    private JLabel reservaNomeLabel;
+    private JLabel quantidadeLabel;
+    private JLabel lblNewLabel_14;
+    private JLabel entradaLabel;
+    private JLabel valorLquidoLabel;
+    
 
     private JRadioButton executivoRadioButton,
                          premiumRadioButton;
@@ -119,11 +128,11 @@ public class Cobranca implements ActionListener{
 		janelaCobranca.getContentPane().add(dataSaidaTextField);
 		dataSaidaTextField.setColumns(10);
 
-        JLabel jLabel8 = new JLabel("Refeições Pedidas (Veg.)");
+        jLabel8 = new JLabel("Refeições Pedidas (Veg.)");
         jLabel8.setBounds(545, 329, 137, 32);
         janelaCobranca.getContentPane().add(jLabel8);
 
-        JLabel jLabel9 = new JLabel("Refeições Pedidas (Não-Veg.)");
+        jLabel9 = new JLabel("Refeições Pedidas (Não-Veg.)");
         jLabel9.setBounds(545, 382, 137, 32);
         janelaCobranca.getContentPane().add(jLabel9);
 
@@ -137,15 +146,15 @@ public class Cobranca implements ActionListener{
         janelaCobranca.getRootPane().add(refeicoesNaoVegTextField);
         refeicoesNaoVegTextField.setColumns(10);
 
-        JLabel encargosDeHabitacaoLabel = new JLabel("Encargos de Habitação");
+        encargosDeHabitacaoLabel = new JLabel("Encargos de Habitação");
         encargosDeHabitacaoLabel.setBounds(10, 484, 103, 26);
         janelaCobranca.getContentPane().add(encargosDeHabitacaoLabel);
 
-        JLabel encargosLabel = new JLabel("");
+        encargosLabel = new JLabel("");
 		encargosLabel.setBounds(165, 485, 93, 26);
 		janelaCobranca.getContentPane().add(encargosLabel);
 
-        JLabel reservaNomeLabel = new JLabel("Reserva Nome: ");
+        reservaNomeLabel = new JLabel("Reserva Nome: ");
         reservaNomeLabel.setBounds(545, 179, 137, 32);
         janelaCobranca.getContentPane().add(reservaNomeLabel);
 
@@ -154,7 +163,7 @@ public class Cobranca implements ActionListener{
 		janelaCobranca.getContentPane().add(reservaNometextField);
 		reservaNometextField.setColumns(10);
 
-        JLabel quantidadeLabel = new JLabel("Quantidade: ");
+        quantidadeLabel = new JLabel("Quantidade: ");
         quantidadeLabel.setHorizontalAlignment(SwingConstants.CENTER);
         quantidadeLabel.setBounds(721, 277, 115, 32);
         janelaCobranca.getContentPane().add(quantidadeLabel);
@@ -164,11 +173,11 @@ public class Cobranca implements ActionListener{
 		confirmaButton.addActionListener(this);
 		janelaCobranca.getContentPane().add(confirmaButton);
 
-        JLabel lblNewLabel_14 = new JLabel("VAT/GST :");
+        lblNewLabel_14 = new JLabel("VAT/GST :");
 		lblNewLabel_14.setBounds(10, 531, 93, 32);
 		janelaCobranca.getContentPane().add(lblNewLabel_14);
 
-        JLabel entradaLabel = new JLabel("Entrada: ");
+        entradaLabel = new JLabel("Entrada: ");
 		entradaLabel.setBounds(10, 573, 115, 32);
 		janelaCobranca.getContentPane().add(entradaLabel);
 
@@ -177,11 +186,11 @@ public class Cobranca implements ActionListener{
 		janelaCobranca.getContentPane().add(entradatextField);
 		entradatextField.setColumns(10);
 
-        JLabel vatGstLabel = new JLabel("");
+        vatGstLabel = new JLabel("");
 		vatGstLabel.setBounds(165, 528, 93, 26);
 		janelaCobranca.getContentPane().add(vatGstLabel);
 
-        JLabel valorLquidoLabel = new JLabel("Valor Liquido :");
+        valorLquidoLabel = new JLabel("Valor Liquido :");
 		valorLquidoLabel.setBounds(10, 626, 103, 32);
 		janelaCobranca.getContentPane().add(valorLquidoLabel);
 
@@ -218,7 +227,7 @@ public class Cobranca implements ActionListener{
         buttonGroup.add(executivoRadioButton);
         buttonGroup.add(premiumRadioButton);
 
-        JLabel lblNewLabel_18 = new JLabel();
+        lblNewLabel_18 = new JLabel();
 		lblNewLabel_18.setBounds(165, 631, 93, 27);
 		janelaCobranca.getContentPane().add(lblNewLabel_18);
         janelaCobranca.setVisible(true);
