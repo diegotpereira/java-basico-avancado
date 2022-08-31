@@ -29,7 +29,7 @@ public class App extends JFrame{
     private JRadioButtonMenuItem jRadioButtonMenuItem1;
     private JSlider jSlider1;
     private JSlider jSlider2;
-    private JButton parar_Alarme;
+    private JButton pararAlarme;
     private JMenuItem cor_texto;
     private JComboBox<String> fuso_horario;
 
@@ -71,6 +71,34 @@ public class App extends JFrame{
         campo_data.setFont(new Font("DS-Digital", 1, 24));
         campo_data.setForeground(new Color(255, 245, 245));
 
+        jButton2 = new JButton();
+        jButton2.setFont(new Font("Sitka Text", Font.BOLD, 15));
+        jButton2.setForeground(new Color(31, 7, 7));
+        jButton2.setText("Definir Alarme");
+
+        fuso_horario = new JComboBox<>();
+        fuso_horario.setFont(new Font("Noto Sans CJK KR Medium", 3, 5));
+        fuso_horario.setModel(new DefaultComboBoxModel<>(new String[] {"teste", "teste 2"}));
+
+        jLabel1 = new JLabel();
+        jLabel1.setFont(new Font("Noto Sans CJK TC Medium", 1, 18));
+        jLabel1.setForeground(new Color(254, 242, 242));
+        jLabel1.setText("Escolha a zona");
+
+        pararAlarme = new JButton();
+        pararAlarme.setFont(new Font("Sitka Text", Font.BOLD, 15));
+        pararAlarme.setText("Parar Alarme");
+
+        JButton btnPararCronometro = new JButton("Parar Cronometro");
+        // btnPararCronometro.addActionListener(new ActionListener() {
+            
+        // });
+        btnPararCronometro.setFont(new Font("Sitka Text", Font.BOLD, 15));
+
+        JButton btnTemporizador = new JButton("Temporizador");
+
+        btnTemporizador.setFont(new Font("Sitka Text", Font.BOLD, 14));
+
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(Alignment.LEADING)
@@ -80,22 +108,49 @@ public class App extends JFrame{
             .addGroup(jPanel1Layout.createSequentialGroup()
             .addComponent(campo_data, GroupLayout.PREFERRED_SIZE, 304, GroupLayout.PREFERRED_SIZE)
             .addGap(359))
+
             .addGroup(jPanel1Layout.createSequentialGroup()
             .addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
             .addGroup(jPanel1Layout.createSequentialGroup()
             .addGap(45)
+            .addComponent(btnPararCronometro)
+            .addPreferredGap(ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
+            .addComponent(jButton2, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)
+            .addGap(191)
+            .addComponent(btnTemporizador, GroupLayout.PREFERRED_SIZE, 127, GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addComponent(jLabel1)
+            .addGap(113)
+            .addComponent(fuso_horario, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+            .addGap(159))
             .addGroup(jPanel1Layout.createSequentialGroup()
             .addGap(93)
-            .addComponent(relogio, GroupLayout.PREFERRED_SIZE, 822, GroupLayout.PREFERRED_SIZE)))))))
+            .addComponent(relogio, GroupLayout.PREFERRED_SIZE, 822, GroupLayout.PREFERRED_SIZE)))
+            .addContainerGap(133, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addComponent(pararAlarme)
+            .addGap(440))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
             .addGap(29)
+            .addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+            .addComponent(jLabel1, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
+            .addComponent(fuso_horario, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+            .addGap(65)
             .addComponent(relogio, GroupLayout.PREFERRED_SIZE, 134, GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(ComponentPlacement.UNRELATED)
             .addComponent(campo_data, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE)
-            .addGap(18))
+            .addGap(18)
+            .addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+            .addComponent(btnPararCronometro, GroupLayout.PREFERRED_SIZE, 29, GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+            .addComponent(jButton2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnTemporizador, GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)))
+            .addGap(26)
+            .addComponent(pararAlarme)
+            .addGap(96))
         );
 
         jPanel1.setLayout(jPanel1Layout);
