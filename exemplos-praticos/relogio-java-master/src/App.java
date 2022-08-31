@@ -7,7 +7,7 @@ import java.awt.EventQueue;
 
 public class App extends JFrame{
 
-    private JMenuItem bg_colour;
+    private JMenuItem cor_de_fundo;
     private ButtonGroup buttonGroup1;
     private ButtonGroup buttonGroup2;
     private JLabel relogio;
@@ -40,10 +40,6 @@ public class App extends JFrame{
 
     @SuppressWarnings("unchecked")
     private void iniciarComponente() {
-        // jSlider1 = new JSlider();
-        // jSlider2 = new JSlider();
-        // jMenuItem1 = new JMenuItem();
-        // jMenuItem2 = new JMenuItem();
 
         jRadioButtonMenuItem1 = new JRadioButtonMenuItem();
         jRadioButtonMenuItem1.setSelected(true);
@@ -180,6 +176,39 @@ public class App extends JFrame{
 
         jMenu1.add(frame_cor);
 
+        cor_de_fundo = new JMenuItem();
+        cor_de_fundo.setText("Cor de Fundo");
+
+        jMenu1.add(cor_de_fundo);
+
+        estilo_fonte = new JMenuItem();
+        estilo_fonte.setText("Estilo da Fonte");
+
+        jMenu1.add(estilo_fonte);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu3 = new JMenu();
+        jMenu3.setText("Formato de hora");
+        jMenu3.setFont(new Font("Noto Sans CJK TC Medium", 1, 15));
+
+        buttonGroup1 = new ButtonGroup();
+        jRadioButton12 = new JRadioButtonMenuItem();
+        jRadioButton24 = new JRadioButtonMenuItem();
+        jMenu3 = new JMenu();
+
+        buttonGroup1.add(jRadioButton24);
+        jRadioButton12.setText("12 horas");
+        jMenu3.add(jRadioButton12);
+
+        buttonGroup1.add(jRadioButton24);
+        jRadioButton24.setSelected(true);
+        jRadioButton24.setText("24 horas");
+        jMenu3.add(jRadioButton24);
+
+        jMenuBar1.add(jMenu3);
+
+        setJMenuBar(jMenuBar1);
 
         GroupLayout layout = new GroupLayout(getContentPane());
         layout.setHorizontalGroup(
