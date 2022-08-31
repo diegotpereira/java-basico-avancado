@@ -90,7 +90,7 @@ public class App extends JFrame{
         pararAlarme.setFont(new Font("Sitka Text", Font.BOLD, 15));
         pararAlarme.setText("Parar Alarme");
 
-        JButton btnPararCronometro = new JButton("Parar Cronometro");
+        JButton btnPararCronometro = new JButton("Parar Cronômetro");
         // btnPararCronometro.addActionListener(new ActionListener() {
             
         // });
