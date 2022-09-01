@@ -211,10 +211,10 @@ public class App extends JFrame{
         jPanel2.setBackground(new Color(153, 153, 153));
         jPanel2.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, Color.darkGray));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel2.setText("Jogador X :");
+        jLabel2.setText("Jogador X:");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel3.setText("Jogador O :");
+        jLabel3.setText("Jogador O:");
 
         jogadorx.setFont(new Font("Segoe UI", 1, 24));
         jogadorx.setForeground(new Color(0, 102, 255));
