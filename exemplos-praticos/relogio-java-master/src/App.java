@@ -4,6 +4,9 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 
 import java.awt.*;
 import java.awt.EventQueue;
+import java.util.*;
+import java.awt.event.*;
+
 
 public class App extends JFrame{
 
@@ -33,12 +36,60 @@ public class App extends JFrame{
     private JMenuItem cor_texto;
     private JComboBox<String> fuso_horario;
 
+    private FusoHorario fusoHorario;
+    private Tempo tempo;
+    private Date data;
+    private Configurar configurar;
+
+    private Despertador despertador;
+    boolean enviarSinalAlarme = false;
+
     public App() {
 
         iniciarComponente();
 
+        // Definir música do dia
+        FusoHorario tempFusoHorario = new FusoHorario(fuso_horario);
+        Calendar tempCalendar = new GregorianCalendar(tempFusoHorario.getTimeZone());
+        String tocarArquivo = tempCalendar.get(Calendar.DAY_OF_WEEK) + ".mp3";
+
+        System.out.println(tocarArquivo);
+
+        
+
         new Thread(){
 
+            public void run() {
+
+                pararAlarme.setVisible(false);
+
+                while (true) {
+                    
+                    fusoHorario = new FusoHorario(fuso_horario);
+                    Calendar calendar = new GregorianCalendar(fusoHorario.getTimeZone());
+                    tempo = new Tempo(calendar);
+
+                    relogio.setText(tempo.definirTempo(jRadioButton24, jRadioButton12));
+                    data = new Date();
+                    campo_data.setText(" " + data);
+                    configurar = new Configurar();
+
+                    // definir alarme
+                    if (enviarSinalAlarme) {
+                        
+                        if (despertador.getStatus()) {
+                            
+                            if (calendar.get(Calendar.HOUR) == despertador.getHora() &&
+                                calendar.get(Calendar.MINUTE) == despertador.getMinuto() &&
+                                calendar.get(Calendar.SECOND) == despertador.getSegundo() &&
+                                calendar.get(Calendar.AM_PM) == despertador.getAmPm()) {
+                                
+                                    pararAlarme.setVisible(true);
+                            }
+                        }
+                    }
+                }
+            };
         }
         .start();
     }
@@ -76,10 +127,18 @@ public class App extends JFrame{
         jButton2.setFont(new Font("Sitka Text", Font.BOLD, 15));
         jButton2.setForeground(new Color(31, 7, 7));
         jButton2.setText("Definir Alarme");
+        jButton2.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+
+                definirAlarme(evt);
+            }
+        });
 
         fuso_horario = new JComboBox<>();
         fuso_horario.setFont(new Font("Noto Sans CJK KR Medium", 3, 5));
-        fuso_horario.setModel(new DefaultComboBoxModel<>(new String[] {"teste", "teste 2"}));
+        fuso_horario.setModel(new DefaultComboBoxModel<>(new String[] { "America/Los_Angeles", "Asia/Colombo", "Canada/Central", "Egypt", "Europe/Berlin", "Greenwich", "IST", "Japan" }));
 
         jLabel1 = new JLabel();
         jLabel1.setFont(new Font("Noto Sans CJK TC Medium", 1, 18));
@@ -89,6 +148,13 @@ public class App extends JFrame{
         pararAlarme = new JButton();
         pararAlarme.setFont(new Font("Sitka Text", Font.BOLD, 15));
         pararAlarme.setText("Parar Alarme");
+        pararAlarme.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent evt) {
+
+                interronperAlarme(evt);
+            }
+        });
 
         JButton btnPararCronometro = new JButton("Parar Cronômetro");
         // btnPararCronometro.addActionListener(new ActionListener() {
@@ -96,9 +162,18 @@ public class App extends JFrame{
         // });
         btnPararCronometro.setFont(new Font("Sitka Text", Font.BOLD, 15));
 
-        JButton btnTemporizador = new JButton("Temporizador");
+        JButton btnTemporizador = new JButton("CRONÔMETRO");
+        btnTemporizador.addActionListener(new ActionListener() {
 
-        btnTemporizador.setFont(new Font("Sitka Text", Font.BOLD, 14));
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+                Cronometro cronometro = new Cronometro();
+                cronometro.setVisible(true);
+            }
+        });
+
+        btnTemporizador.setFont(new Font("Sitka Text", Font.BOLD, 15));
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1Layout.setHorizontalGroup(
@@ -118,7 +193,7 @@ public class App extends JFrame{
             .addPreferredGap(ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
             .addComponent(jButton2, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)
             .addGap(191)
-            .addComponent(btnTemporizador, GroupLayout.PREFERRED_SIZE, 127, GroupLayout.PREFERRED_SIZE))
+            .addComponent(btnTemporizador, GroupLayout.PREFERRED_SIZE, 145, GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createSequentialGroup()
             .addComponent(jLabel1)
             .addGap(113)
@@ -233,6 +308,19 @@ public class App extends JFrame{
 
         pack();
     }
+    private void definirAlarme(ActionEvent evt) {
+
+        despertador = new Despertador();
+        despertador.setVisible(true);
+        enviarSinalAlarme = true;
+    }
+
+    private void interronperAlarme(ActionEvent evt) {
+
+        despertador = new Despertador();
+        pararAlarme.setVisible(false);
+    }
+
     public static void main(String[] args) throws Exception {
         
         EventQueue.invokeLater(new Runnable() {
