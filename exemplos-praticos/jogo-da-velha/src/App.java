@@ -378,6 +378,13 @@ public class App extends JFrame{
 
     private void escolhaJogador() {
 
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            iniciarJogo = "O";
+
+        } else {
+            iniciarJogo = "X";
+        }
         
     }
 
@@ -393,13 +400,7 @@ public class App extends JFrame{
         String b8 = txtbtn8.getText();
         String b9 = txtbtn9.getText();
 
-        if (iniciarJogo.equalsIgnoreCase("X")) {
-            
-            iniciarJogo = "O";
-
-        } else {
-            iniciarJogo = "X";
-        }
+        
 
         // CODIFICAÇÃO JOGADOR X
         if (b1 == ("X") &&
