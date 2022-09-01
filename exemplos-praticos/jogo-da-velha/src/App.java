@@ -2,8 +2,9 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
-
+import javax.swing.border.*;
 import java.awt.EventQueue;
+import java.awt.event.*;
 
 public class App extends JFrame{
 
@@ -15,8 +16,8 @@ public class App extends JFrame{
     private JLabel jLabel4;
     private JPanel jPanel1;
     private JPanel jPanel2;
-    private JLabel playero;
-    private JLabel playerx;
+    private JLabel jogadoro;
+    private JLabel jogadorx;
     private JButton txtbtn1;
     private JButton txtbtn2;
     private JButton txtbtn3;
@@ -26,6 +27,10 @@ public class App extends JFrame{
     private JButton txtbtn7;
     private JButton txtbtn8;
     private JButton txtbtn9;
+
+    private String iniciarJogo = "X";
+    private int xContar = 0;
+    private int oContar = 0;
 
     public App() {
         inicializarComponentes();
@@ -49,8 +54,8 @@ public class App extends JFrame{
         jPanel2 = new JPanel();
         jLabel2 = new JLabel();
         jLabel3 = new JLabel();
-        playerx = new JLabel();
-        playero = new JLabel();
+        jogadorx = new JLabel();
+        jogadoro = new JLabel();
         jButton10 = new JButton();
         jButton11 = new JButton();
 
@@ -63,6 +68,9 @@ public class App extends JFrame{
         jLabel1.setFont(new Font("Segoe UI", 1, 48));
         jLabel1.setForeground(new Color(255, 255, 255));
         jLabel1.setText("Jogo da Velha em Java");
+
+        jLabel4.setForeground(new Color(255, 255, 255));
+        jLabel4.setText("DTP Software");
 
 
         GroupLayout jPainel1Layout = new GroupLayout(jPanel1);
@@ -89,6 +97,133 @@ public class App extends JFrame{
             .addComponent(jLabel4))
         );
 
+        txtbtn1.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn1.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn1.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                
+            }
+            
+        });
+
+        txtbtn2.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn2.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn2.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        txtbtn3.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn3.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn3.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        txtbtn4.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn4.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn4.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        txtbtn5.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn5.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn5.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        txtbtn6.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn6.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn6.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        txtbtn7.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn7.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn7.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        txtbtn8.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn8.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn8.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        jLabel2.setBackground(new Color(153, 153, 153));
+        jLabel2.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, Color.darkGray));
+
+        txtbtn9.setFont(new Font("Segoe UI", 1, 48));
+        txtbtn9.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        txtbtn9.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        jPanel2.setBackground(new Color(153, 153, 153));
+        jPanel2.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, Color.darkGray));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setText("Jogador X :");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel3.setText("Jogador O :");
+
+        jogadorx.setFont(new Font("Segoe UI", 1, 24));
+        jogadorx.setForeground(new Color(0, 102, 255));
+        jogadorx.setText("xxxxxxx");
+
+        jogadoro.setFont(new Font("Segoe UI", 1, 24));
+        jogadoro.setForeground(new Color(0, 102, 255));
+        jogadoro.setText("xxxxxxx");
+
         GroupLayout jPainel2Layout = new GroupLayout(jPanel2);
         jPanel2.setLayout(jPainel2Layout);
 
@@ -101,8 +236,8 @@ public class App extends JFrame{
             .addComponent(jLabel3))
             .addGap(77, 77, 77)
             .addGroup(jPainel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-            .addComponent(playero)
-            .addComponent(playerx))
+            .addComponent(jogadoro)
+            .addComponent(jogadorx))
             .addContainerGap(67, Short.MAX_VALUE))
         );
 
@@ -112,13 +247,43 @@ public class App extends JFrame{
             .addContainerGap(63, Short.MAX_VALUE)
             .addGroup(jPainel2Layout.createParallelGroup(Alignment.BASELINE)
             .addComponent(jLabel2)
-            .addComponent(playerx))
+            .addComponent(jogadorx))
             .addGap(54, 54, 54)
             .addGroup(jPainel2Layout.createParallelGroup(Alignment.BASELINE)
             .addComponent(jLabel3)
-            .addComponent(playero))
+            .addComponent(jogadoro))
             .addContainerGap(74, Short.MAX_VALUE))
         );
+
+        jButton10.setBackground(new Color(153, 153, 255));
+        jButton10.setFont(new Font("Tahoma", 1, 24));
+        jButton10.setText("REDEFINIR");
+        jButton10.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        jButton10.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+
+        });
+
+        jButton11.setBackground(new Color(255, 153, 255));
+        jButton11.setFont(new Font("Tahoma", 1, 24));
+        jButton11.setText("SAIR");
+        jButton11.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        jButton11.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                botaoSair(e);
+                
+            }
+
+        });
+
 
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -197,8 +362,271 @@ public class App extends JFrame{
         setLocationRelativeTo(null);
     }
 
+    protected void botaoSair(ActionEvent e) {
 
+        JFrame frame = new JFrame("SAIR");
 
+        if (JOptionPane.showConfirmDialog(frame, "Tem certeza que deseja sair?", "Jogo Da Velha", JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION) {
+            System.exit(0);
+        }
+    }
+
+    private void pontuacaoJogo() {
+        jogadorx.setText(String.valueOf(xContar));
+        jogadoro.setText(String.valueOf(oContar));
+    }
+
+    private void escolhaJogador() {
+
+        
+    }
+
+    private void vencedorJogo() {
+
+        String b1 = txtbtn1.getText();
+        String b2 = txtbtn2.getText();
+        String b3 = txtbtn3.getText();
+        String b4 = txtbtn4.getText();
+        String b5 = txtbtn5.getText();
+        String b6 = txtbtn6.getText();
+        String b7 = txtbtn7.getText();
+        String b8 = txtbtn8.getText();
+        String b9 = txtbtn9.getText();
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            iniciarJogo = "O";
+
+        } else {
+            iniciarJogo = "X";
+        }
+
+        // CODIFICAÇÃO JOGADOR X
+        if (b1 == ("X") &&
+            b2 == ("X") &&
+            b3 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn1.setBackground(Color.BLUE);
+                txtbtn2.setBackground(Color.BLUE);
+                txtbtn3.setBackground(Color.BLUE);
+            
+        }
+
+        if (b4 == ("X") &&
+            b5 == ("X") &&
+            b6 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn4.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn6.setBackground(Color.BLUE);
+            
+        }
+
+        if (b7 == ("X") &&
+            b8 == ("X") &&
+            b9 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn7.setBackground(Color.BLUE);
+                txtbtn8.setBackground(Color.BLUE);
+                txtbtn9.setBackground(Color.BLUE);
+            
+        }
+
+        if (b1 == ("X") &&
+            b4 == ("X") &&
+            b7 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn1.setBackground(Color.BLUE);
+                txtbtn4.setBackground(Color.BLUE);
+                txtbtn7.setBackground(Color.BLUE);
+            
+        }
+
+        if (b2 == ("X") &&
+            b5 == ("X") &&
+            b8 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn2.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn8.setBackground(Color.BLUE);
+            
+        }
+
+        if (b3 == ("X") &&
+            b6 == ("X") &&
+            b9 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn3.setBackground(Color.BLUE);
+                txtbtn6.setBackground(Color.BLUE);
+                txtbtn9.setBackground(Color.BLUE);
+            
+        }
+
+        if (b1 == ("X") &&
+            b5 == ("X") &&
+            b9 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn1.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn9.setBackground(Color.BLUE);
+            
+        }
+
+        if (b3 == ("X") &&
+            b5 == ("X") &&
+            b7 == ("X")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador X venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                xContar++;
+                pontuacaoJogo();
+
+                txtbtn3.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn7.setBackground(Color.BLUE);
+            
+        }
+
+        // CODIFICAÇÃO JOGADOR O
+        if (b1 == ("O") &&
+            b2 == ("O") &&
+            b3 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn1.setBackground(Color.BLUE);
+                txtbtn2.setBackground(Color.BLUE);
+                txtbtn3.setBackground(Color.BLUE);
+            
+        }
+
+        if (b4 == ("O") &&
+            b5 == ("O") &&
+            b6 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn4.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn6.setBackground(Color.BLUE);
+            
+        }
+
+        if (b7 == ("O") &&
+            b8 == ("O") &&
+            b9 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn7.setBackground(Color.BLUE);
+                txtbtn8.setBackground(Color.BLUE);
+                txtbtn9.setBackground(Color.BLUE);
+            
+        }
+
+        if (b1 == ("O") &&
+            b4 == ("O") &&
+            b7 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn1.setBackground(Color.BLUE);
+                txtbtn4.setBackground(Color.BLUE);
+                txtbtn7.setBackground(Color.BLUE);
+            
+        }
+
+        if (b2 == ("O") &&
+            b5 == ("O") &&
+            b8 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn2.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn8.setBackground(Color.BLUE);
+            
+        }
+
+        if (b3 == ("O") &&
+            b6 == ("O") &&
+            b9 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn3.setBackground(Color.BLUE);
+                txtbtn6.setBackground(Color.BLUE);
+                txtbtn9.setBackground(Color.BLUE);
+            
+        }
+
+        if (b1 == ("O") &&
+            b5 == ("O") &&
+            b9 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn1.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn9.setBackground(Color.BLUE);
+            
+        }
+
+        if (b3 == ("O") &&
+            b5 == ("O") &&
+            b7 == ("O")) {
+
+                JOptionPane.showMessageDialog(this, "Jogador O venceu", "Jogo da Velha", JOptionPane.INFORMATION_MESSAGE);
+                oContar++;
+                pontuacaoJogo();
+
+                txtbtn3.setBackground(Color.BLUE);
+                txtbtn5.setBackground(Color.BLUE);
+                txtbtn7.setBackground(Color.BLUE);
+            
+        }
+    }
 
     public static void main(String[] args) throws Exception {
 
