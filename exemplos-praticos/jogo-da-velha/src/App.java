@@ -103,7 +103,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                txtbtn1ActionPerformed(e);
                 
             }
             
@@ -115,7 +115,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn2ActionPerformed(e);
                 
             }
 
@@ -127,7 +127,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn3ActionPerformed(e);
                 
             }
 
@@ -139,7 +139,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn4ActionPerformed(e);
                 
             }
 
@@ -151,7 +151,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn5ActionPerformed(e);
                 
             }
 
@@ -163,7 +163,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn6ActionPerformed(e);
                 
             }
 
@@ -175,7 +175,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn7ActionPerformed(e);
                 
             }
 
@@ -187,7 +187,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn8ActionPerformed(e);
                 
             }
 
@@ -202,7 +202,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                txtbtn9ActionPerformed(e);
                 
             }
 
@@ -263,7 +263,7 @@ public class App extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+                botaoRedefinirActionPerformed(e);
                 
             }
 
@@ -278,7 +278,7 @@ public class App extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
-                botaoSair(e);   
+                botaoSairActionPerformed(e);   
             }
         });
 
@@ -360,7 +360,185 @@ public class App extends JFrame{
         setLocationRelativeTo(null);
     }
 
-    protected void botaoSair(ActionEvent e) {
+    private void txtbtn1ActionPerformed(ActionEvent e) {
+
+        txtbtn1.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn1.setIcon(null);
+            txtbtn1.setBackground(Color.RED);
+
+        } else {
+            txtbtn1.setIcon(null);
+            txtbtn1.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void txtbtn2ActionPerformed(ActionEvent e) {
+
+        txtbtn2.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn2.setIcon(null);
+            txtbtn2.setBackground(Color.RED);
+
+        } else {
+            txtbtn2.setIcon(null);
+            txtbtn2.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void txtbtn3ActionPerformed(ActionEvent e) {
+
+        txtbtn3.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn3.setIcon(null);
+            txtbtn3.setBackground(Color.RED);
+
+        } else {
+            txtbtn3.setIcon(null);
+            txtbtn3.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+    private void txtbtn4ActionPerformed(ActionEvent e) {
+
+        txtbtn4.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn4.setIcon(null);
+            txtbtn4.setBackground(Color.RED);
+
+        } else {
+            txtbtn4.setIcon(null);
+            txtbtn4.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void txtbtn5ActionPerformed(ActionEvent e) {
+
+        txtbtn5.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn5.setIcon(null);
+            txtbtn5.setBackground(Color.RED);
+
+        } else {
+            txtbtn5.setIcon(null);
+            txtbtn5.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void txtbtn6ActionPerformed(ActionEvent e) {
+
+        txtbtn6.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn6.setIcon(null);
+            txtbtn6.setBackground(Color.RED);
+
+        } else {
+            txtbtn6.setIcon(null);
+            txtbtn6.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void txtbtn7ActionPerformed(ActionEvent e) {
+
+        txtbtn7.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn7.setIcon(null);
+            txtbtn7.setBackground(Color.RED);
+
+        } else {
+            txtbtn7.setIcon(null);
+            txtbtn7.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void txtbtn8ActionPerformed(ActionEvent e) {
+
+        txtbtn8.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn8.setIcon(null);
+            txtbtn8.setBackground(Color.RED);
+
+        } else {
+            txtbtn8.setIcon(null);
+            txtbtn8.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void txtbtn9ActionPerformed(ActionEvent e) {
+
+        txtbtn9.setText(iniciarJogo);
+
+        if (iniciarJogo.equalsIgnoreCase("X")) {
+            
+            txtbtn9.setIcon(null);
+            txtbtn9.setBackground(Color.RED);
+
+        } else {
+            txtbtn9.setIcon(null);
+            txtbtn9.setForeground(Color.MAGENTA);
+        }
+        escolhaJogador();
+        vencedorJogo();
+    }
+
+    private void botaoRedefinirActionPerformed(ActionEvent e) {
+
+        txtbtn1.setText(null);
+        txtbtn2.setText(null);
+        txtbtn3.setText(null);
+
+        txtbtn4.setText(null);
+        txtbtn5.setText(null);
+        txtbtn6.setText(null);
+
+        txtbtn7.setText(null);
+        txtbtn8.setText(null);
+        txtbtn9.setText(null);
+
+        txtbtn2.setBackground(Color.LIGHT_GRAY);
+        txtbtn3.setBackground(Color.LIGHT_GRAY);
+        
+        txtbtn4.setBackground(Color.LIGHT_GRAY);
+        txtbtn5.setBackground(Color.LIGHT_GRAY);
+        txtbtn6.setBackground(Color.LIGHT_GRAY);
+
+        txtbtn7.setBackground(Color.LIGHT_GRAY);
+        txtbtn8.setBackground(Color.LIGHT_GRAY);
+        txtbtn9.setBackground(Color.LIGHT_GRAY);
+    }
+
+    private void botaoSairActionPerformed(ActionEvent e) {
 
         JFrame frame = new JFrame("SAIR");
 
@@ -391,9 +569,11 @@ public class App extends JFrame{
         String b1 = txtbtn1.getText();
         String b2 = txtbtn2.getText();
         String b3 = txtbtn3.getText();
+
         String b4 = txtbtn4.getText();
         String b5 = txtbtn5.getText();
         String b6 = txtbtn6.getText();
+        
         String b7 = txtbtn7.getText();
         String b8 = txtbtn8.getText();
         String b9 = txtbtn9.getText();
