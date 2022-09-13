@@ -947,6 +947,43 @@ public class App {
         // D. MemoryFullException
 
         // Resposta B. OutOfMemoryError - O sinalizador Xms não tem valor padrão e Xmx normalmente tem um valor padrão de 256 MB. Um uso comum para esses sinalizadores é quando você encontra um java.lang.OutOfMemoryError.
+
+
+        // // Qual será a saída do seguinte código Java?
+        // char chars [] = { 'a', 'b', 'c'};
+
+        // String s =  new String(chars);
+
+        // System.out.println(s); // A. abc
+
+        // // A. abc
+        // // B. a
+        // // C. b
+        // // D. c
+
+
+        // Quais destas são instruções de seleção em Java?
+
+        // A. break
+        // B. continue
+        // C. for()
+        // D. if()
+
+        // Resposta D. if()
+
+
+        // // Qual será a saída do seguinte código Java?
+        // String c = "Ola eu amo java";
+        // boolean var ;
+
+        // var = c.startsWith("ola");
+
+        // System.out.println(var); // D. false
+
+        // // A. 0
+        // // B. true
+        // // C. 1
+        // // D. false
     }
     // protected int x, y;
 }
