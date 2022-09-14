@@ -1,3 +1,6 @@
+import java.net.*;
+import java.util.*;
+
 public class App {
     public static void main(String[] args) throws Exception {
         
@@ -463,7 +466,7 @@ public class App {
         // C. Nenhuma das acima
         // D. Ambos acima
 
-        // Reposta D. Ambos Acima
+        // Resposta: A. C D. Ambos Acima
 
 
         // No Iterator, o método nextElement() de Enumeration foi alterado para:
@@ -888,7 +891,7 @@ public class App {
         // // C. 256 0
         // // D. 64 0
 
-        // // Reposta C. 256 0 
+        // // Resposta: A. C C. 256 0 
 
         
         // O que é Truncamento em Java?
@@ -984,6 +987,410 @@ public class App {
         // // B. true
         // // C. 1
         // // D. false
+
+        // Qual dessas palavras-chave é usada para definir interfaces em Java?
+
+        // A. intf
+        // B. Intf
+        // C. interface
+        // D. Interface
+
+        // Resposta C. interface
+
+
+        // // Qual será a saída do seguinte programa Java?
+        
+        // StringBuffer s1 = new StringBuffer("Quiz");
+        // StringBuffer s2 = s1.reverse();
+
+        // System.out.println(s2); // 4. ziuQ
+
+
+        // // 1. QuizziuQ
+        // // 2. ziuQQuiz
+        // // 3. Quiz
+        // // 4. ziuQ
+
+
+        // // Qual será a saída do seguinte programa Java?
+        // Integer i = new Integer(257);
+        // byte x = i.byteValue();
+
+        // System.out.println(x); // C. 1 - O método i.byteValue() retorna o valor do wrapper i como um valor de byte. 
+        // // i é 257, o intervalo de bytes é 256, portanto, o valor de i excede o intervalo de bytes em 1, 
+        // // portanto, 1 é retornado e armazenado em x.
+
+        // // A. 257
+        // // B. 256
+        // // C. 1
+        // // D. 0
+
+
+        // // Qual será a saída do seguinte programa Java?
+        // double x = 2.0;
+        // double y = 3.0;
+        // double z = Math.pow(x, y);
+
+        // System.out.println(z); // B. 8.0 - y = 2.0 ^ 3.0 = 8.0
+
+        // // A. 9.0
+        // // B. 8.0
+        // // C. 4.0
+        // // D. 2.0
+
+
+        // Qual das seguintes é uma superclasse de cada classe em Java?
+
+        // A. ArrayList
+        // B. Abstract class
+        // C. Object class
+        // D. String
+
+        // Resposta C. Object Class - A classe de objeto é a superclasse de todas as classes em Java.
+
+
+        // // Qual será a saída do seguinte código Java?
+        // double x = 3.14;
+        // int y = (int) Math.ceil(x);
+
+        // System.out.println(y); // c) 4
+
+
+        // // a) 3
+        // // b) 0
+        // // c) 4
+        // // d) 3.0
+
+
+        // // Qual será a saída do seguinte código Java?
+        // URL obj = new URL("https://www.sanfoundry.com/javamcq");
+        // URLConnection obj1 = obj.openConnection();
+        // int len = obj1.getContentLength();
+
+        // System.out.println(len); // a) 127
+
+        // // a) 127
+        // // b) 126
+        // // c) Runtime Error
+        // // d) Compilation Error
+
+
+        // Qual das opções abaixo não é um Java Profiler?
+        
+        // a) JProfiler
+        // b) Eclipse Profiler
+        // c) JVM
+        // d) JConsole
+
+        // Resposta c) JVM
+
+
+        // // Qual será a saída do seguinte trecho de código Java?
+        // ArrayList obj = new ArrayList();
+
+        // obj.add("A");
+        // obj.add("B");
+        // obj.add("C");
+        // obj.add(1, "D");
+
+        // System.out.println(obj); // d) [A, D, B, C] - 
+
+
+        // // a) [A, D, C]
+        // // b) [A, B, C]
+        // // c) [A, B, C, D]
+        // // d) [A, D, B, C]
+
+
+        // Qual desses pacotes contém a exceção Stack Overflow em Java?
+
+        // a) java.io
+        // b) java.system
+        // c) java.lang
+        // d) java.util
+
+        // Resposta c) java.lang
+
+
+        // // Qual será a saída do seguinte trecho de código Java?
+        // LinkedList lista = new LinkedList();
+
+        // lista.add(new Integer(2));
+        // lista.add(new Integer(8));
+        // lista.add(new Integer(5));
+        // lista.add(new Integer(1));
+
+        // Iterator i = lista.iterator();
+
+        // Collections.reverse(lista);
+        // Collections.sort(lista);
+
+        // while (i.hasNext()) {
+             
+        //     System.out.print(i.next() + " "); a) 1 2 5 8 - Collections.sort(lista) ordena a lista dada, a lista era 2->8->5->1 depois de ordenar tornou-se 1->2->5->8.
+        // }
+        
+        // // a) 1 2 5 8
+        // // b) 2 1 8 5
+        // // c) 1 5 8 2
+        // // d) 2 8 5 1
+
+
+        // Qual destas afirmações está incorreta sobre o Thread?
+
+        // a) o método start() é usado para iniciar a execução da thread
+        // b) o método run() é usado para iniciar a execução de uma thread antes do método start() em casos especiais
+        // c) Uma thread pode ser formada implementando apenas a interface Runnable
+        // d) Uma thread pode ser formada por uma classe que estende a classe Thread
+
+        // Resposta B - o método run() é utilizado para definir o código que constitui a nova thread, contém o código a ser executado. 
+        // O método start() é usado para iniciar a execução da thread que é a execução de run(). run() em si nunca é usado para iniciar a execução do thread.
+
+
+        // Quais dessas palavras-chave são usadas para o bloco a ser examinado em busca de exceções?
+
+        // a) check
+        // b) throw
+        // c) catch
+        // d) try
+
+        // Resposta d) try
+
+
+        // Qual é o intervalo numérico de um tipo de dados char em Java?
+
+        // a) 0 até 256
+        // b) -128 até 127
+        // c) 0 até 65535
+        // d) 0 até 32767
+
+        // Resposta c) 0  até 65535 - Char ocupa 16 bits na memória, portanto suporta 2 16 i:e de 0 a 65535.
+
+
+        // Qual classe fornece implementação do lado do servidor independente do sistema?
+
+        // a) Server
+        // b) ServerReader
+        // c) Socket
+        // d) ServerSocket
+
+        // Resposta d) ServerSocket - é uma classe java.net que fornece implementação independente do sistema de conexão de soquete do lado do servidor.
+
+
+        //  ​​Qual das seguintes afirmações é verdadeira sobre servlets?
+
+        // a) Servlets podem usar toda a funcionalidade das bibliotecas de classes Java
+        // b) Servlets executam dentro do espaço de endereçamento do servidor web, independente de plataforma e usa a funcionalidade das bibliotecas de classes Java
+        // c) Servlets executam dentro do espaço de endereçamento do servidor web
+        // d) Servlets são independente de plataforma porque eles são escritos em java
+
+        // Resposta b) Os servlets são executados no espaço de endereço de um servidor web. Uma vez que é escrito em java, é independente de plataforma. A funcionalidade completa está disponível através de bibliotecas.
+
+
+        // // Qual será a saída do seguinte trecho de código Java?
+
+        // ArrayList arrayList = new ArrayList();
+
+        // arrayList.add(1);
+        // arrayList.add('1');
+        // arrayList.add("1");
+
+        // System.out.println(arrayList); // 1 1 1 
+
+
+        
+        // // Qual será a saída do seguinte trecho de código Java?
+        // for(int i = 0; 0; i++) {
+
+        //     System.out.println("Ola Mundo");
+        // }
+
+        // // Resposta: Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+
+
+        // Qual afirmação sobre um arquivo .java válido é verdadeira?
+
+        // A. Ele só pode conter uma declaração de classe.
+        // B. Pode conter uma declaração de classe pública e uma definição de interface pública.
+        // C. Deve definir pelo menos uma classe pública.
+        // D. Pode definir no máximo uma classe pública.
+
+        // Resposta D. Pode definir no máximo uma classe pública.
+
+        
+        // // Número de tipos de dados primitivos em Java são?
+
+        // A. 6
+        // B. 7
+        // C. 8
+        // D. 9
+
+        // Resposta C. 8 - int, char, boolean, byte, long, float, short, double
+
+        // // Qual é o tamanho de float e double em java?
+
+        // A. 32 e 64
+        // B. 32 e 32
+        // C. 64 e 64
+        // D. 64 e 32
+
+        // // Resposta A. O tamanho de float e double em java é 32 e 64.
+
+
+        // // A conversão automática de tipo é possível em qual dos casos possíveis?
+
+        // A. Byte para int 
+        // B. int para long
+        // C. Long para int 
+        // D. Short para int 
+
+        // // Resposta A. Byte para int - A conversão automática de tipo é possível em Int para long.
+
+
+        // // Encontre a saída do código a seguir.
+        // int Integer = 24;
+        // char String = 'I';
+
+        // System.out.print(Integer);
+        // System.out.print(String);
+
+        // // A. Compiler Error
+        // // B. throws Exception
+        // // C. I 
+        // // D. 24 I
+
+        // // Resposta: D. 24 I
+
+        
+        // // Encontre a saída do programa a seguir.
+
+        // short x = 10;
+        // x =  x * 5;
+        
+        // System.out.print(x);
+
+        // A. 50
+        // B. 10
+        // C. Erro de compilação
+        // D. Exceção
+
+        // Resposta: Erro de compilação -  cannot convert from int to short
+
+        
+        // // Encontre a saída do programa a seguir.
+
+        // byte x = 127;
+        // x++;
+        // x++;
+
+        // System.out.print(x);
+
+        // A. -127
+        // B. 127
+        // C. 129
+        // D. 2
+
+
+        // Resposta: A. -127 - O intervalo de dados de byte em java é de -128 a 127. Mas o tipo de dados de byte em java é de natureza cíclica.
+
+
+        // // Selecione a declaração válida.
+
+        // A. char[] ch = new char(5)
+        // B. char[] ch = new char[5]
+        // C. char[] ch = new char()
+        // D. char[] ch = new char[]
+
+        // Resposta B. char[] ch = new char[5]
+
+
+        // // Encontre a saída do programa a seguir.
+
+        // int[] x = {120, 200, 016 };
+
+        // for(int i = 0; i < x.length; i++) {
+
+        //     System.out.println(x[i] + " "); // B. 120 200 14 - 016 é um número octal, seu número decimal equivalente é 14.
+        // }
+
+        // // A. 120 200 016 
+        // // B. 120 200 14 
+        // // C. 120 200 16 
+        // // D. Nenhum
+
+
+        // // Selecione a instrução válida para declarar e inicializar uma matriz.
+
+        // A. int[] A = {}
+        // B. int[] A = {1, 2, 3}
+        // C. int[] A = (1, 2 ,3)
+        // D. int[][] A = {1, 2, 3}
+
+        // Resposta B. int[] A = {1, 2, 3} é a forma válida de declarar arrays.
+
+
+        // // Encontre o valor de A[1] após a execução do programa a seguir.
+
+        // int [] a = {0, 2, 4, 1, 3};
+
+        // for(int i = 0; i < a.length; i++) {
+
+        //     a[i] = a[(a[i] + 3) % a.length];
+        // }
+
+        // System.out.println(a[1]);
+        // // A. 0
+        // // B. 1
+        // // C. 2
+        // // D. 3
+
+        // // Resposta B. 1 - a.length = 5
+        // //                 a[0] = a[(0 = 3) % 5] = a[3] = 1
+        // //         então   a[0] = a[3]1
+        // //                 a[1] = a[(2 + 3) % 5] = a[0] = 1
+        // //        Portanto a[1] = 1
+
+
+
+        // // Arrays em java são:
+
+        // A. Referencia de Objetos 
+        // B. Objetos 
+        // C. Tipo de dado primitivo 
+        // D. Nenhum 
+
+        // Resposta B. Objetos 
+
+
+
+        // // Quando o objeto é criado com a palavra-chave new?
+
+        // A. Em tempo de execução
+        // B. Em tempo de compilação 
+        // C. Depende do código 
+        // D. Nenhum 
+
+        // Resposta O objeto criado com palavra-chave new, durante o tempo de execução.
+
+
+
+        // // Identifique a definição certa de um pacote.
+
+        // A. Um pacote é uma coleção de ferramentas de edição.
+        // B. Um pacote é uma coleção de classes.
+        // C. Um pacote é uma coleção de classes e interfaces.
+        // D. Um pacote é coleção de interfaces.
+
+        // Resposta C. Um pacote é uma coleção de classes e interfaces.
+
+
+
+
+
+
+
+
     }
+
     // protected int x, y;
 }
