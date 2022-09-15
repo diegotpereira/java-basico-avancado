@@ -1,3 +1,8 @@
+import java.util.Comparator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
 // import java.net.*;
 // import java.util.*;
 
@@ -1818,9 +1823,21 @@ public class App {
         // e a segunda expressão é avaliada como ("MeuQuiz" + 10) + 20 .
 
 
+        // // Qual será o resultado do programa?
+
+        // Set s = new LinkedHashSet<>();
+
+        // s.add("1");
+        // s.add(1);
+        // s.add(3);
+        // s.add(2);
+
+        // System.out.println(s); // [1, 1, 3, 2]
+
+
         // Qual será o resultado do programa?
 
-
+    
 
 
 
