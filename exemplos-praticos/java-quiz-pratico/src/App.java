@@ -1,5 +1,5 @@
-import java.net.*;
-import java.util.*;
+// import java.net.*;
+// import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -1770,6 +1770,55 @@ public class App {
 
         // Resposta D. JDB está incluído no SDK. O depurador é iniciado com o comando jdb; ele é anexado à JVM usando JPDA.
 
+
+        // // Preveja a saída do seguinte programa Java
+
+        // int x = -4;
+
+        // System.out.println(x>>1); // -2 
+
+        // int y = 4;
+
+        // System.out.println(y>>1); // 2
+
+        // A. Erro do compilador: Operador >> não pode ser aplicado a números negativos
+        // B. - 2 2 
+        // C. 2 2 
+        // D. 0 2
+
+
+        // // Preveja a saída do seguinte programa Java. Suponha que int é armazenado usando 32 bits.
+
+        // int x = -1;
+
+        // System.out.println(x>>>29); // 7
+        // System.out.println(x>>>30); // 3
+        // System.out.println(x>>>31); // 1
+
+        // // A. 7 3 1
+        // // B. 15 7 3 
+        // // C. 0 0 0 
+        // // D. 1 1 1
+
+
+        // // Qual é a saída?
+
+        // System.out.println(10 + 20 + "MeuQuiz"); // 30MeuQuiz
+        // System.out.println("MeuQuiz" + 10 + 20); // MeuQuiz1020
+
+        // // A. 30MeuQuiz MeuQuiz30
+        // // B. 1020MeuQuiz MeuQuiz1020
+        // // C. 30MeuQuiz MeuQuiz1020 
+        // // D. 1020MeuQuiz MeuQuiz30
+
+        // Reposta C. 30MeuQuiz MeuQuiz1020 - Nas expressões fornecidas 10 + 20 + "MeuQuiz" e "MeuQuiz" + 10 + 20, 
+        // existem dois operadores +, então a associatividade entra em cena. 
+        // O operador + é da esquerda para a direita. 
+        // Portanto, a primeira expressão é avaliada como (10 + 20) + "MeuQuiz" 
+        // e a segunda expressão é avaliada como ("MeuQuiz" + 10) + 20 .
+
+
+        // Qual será o resultado do programa?
 
 
 
