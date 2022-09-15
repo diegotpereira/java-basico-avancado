@@ -1385,6 +1385,447 @@ public class App {
 
 
 
+        // // Identifique o que pode acessar diretamente e alterar o valor da variável res.
+        // Public class Solucao {
+
+        //     private int res = 100;
+        // }
+
+        // // A. Qualquer classe
+        // // B. Apenas classe Solucao 
+        // // C. Qualquer classe que estenda Solucao 
+        // // D. Nenhum
+        
+        // // Resposta B. Apenas classe Solucao pode acessar diretamente o valor da variável.
+
+
+        // // Em qual das seguintes opções o método toString() está definido?
+
+        // A. java.lang.Object 
+        // B. java.lang.String
+        // C. java.lang.util 
+        // D. Nenhum
+
+        // Resposta: A. java.lang.Object 
+
+
+        // // compareTo() retorna 
+
+        // A. true 
+        // B. false 
+        // C. Um valor int 
+        // D. Nenhum 
+
+        // Resposta C. um valor int 
+
+
+        // // Identifique a saída do programa a seguir.
+
+        // String str = "abcde";
+
+        // System.out.println(str.substring(1, 3)); // B. bc - str.substring(inicial, final) retorna a string de s[inicial] até s[final - 1]
+
+        // // A. abc 
+        // // B. bc 
+        // // C. bcd 
+        // // D. cd 
+
+
+        // //  Identifique a saída do programa a seguir.
+
+        // String str = "Ola";
+
+        // System.out.println(str.indexOf("t")); // D. -1 - indexOf permite localizar a primeira ocorrência de uma sequência de caracteres em uma string.
+        //                                                      // Retorna -1 se o caractere não for encontrado.
+
+        // // A. 0 
+        // // B. 1 
+        // // C. true 
+        // // D. -1 
+
+
+
+        // //  Identifique a saída do programa a seguir.
+
+        // String str1 = "um";
+        // String str2 = "dois";
+
+        // System.out.println(str1.concat(str2)); // C. umdois
+
+        // // A. um
+        // // B. dois
+        // // C. umdois 
+        // // D. doisum
+
+
+        // // O que a string a seguir faz com a string str1.
+        // String str1 = "Entrevistabit".replace('i', 's');
+
+        // System.out.println(str1); // B. Substitui todas as ocorrências de 'i' por 's'.
+
+        // // A. Substitui uma única ocorrência de 'i' por 's'.
+        // // B. Substitui todas as ocorrências de 'i' por 's'.
+        // // C. Substitui uma única ocorrência de 's' por 'i'.
+        // // D. Nenhuma.
+
+
+
+        // // Quantos objetos serão criados a seguir?
+        // String a = new String("Entrevistabit");
+        // String b = new String("Entrevistabit");
+        // String c = "Entrevistabit";
+        // String d = "Entrevistabit";
+
+        // // A. 2 
+        // // B. 3
+        // // C. 4
+        // // D. Nenhum.
+
+        // // Reposta B. 3 - Usar a palavra-chave new cria um objeto toda vez. 
+        // // Portanto, 2 objetos são criados para as duas primeiras instruções. 
+        // // Em seguida, é declarada uma string que cria outro objeto. 
+        // // Para a quarta instrução, como já existe uma string "Entrevistabit", ela não cria um objeto adicional novamente. 
+        // // Portanto, a resposta é 3.
+
+
+        //  A classe de string do construtor total tem?
+        
+        // A. 3
+        // B. 7 
+        // C. 13 
+        // D. 20
+        
+        // Resposta C. A classe String tem 13 construtore.
+
+
+        // //  Encontre a saída do código a seguir.
+        // int ++a = 100;
+
+        // System.out.println(++a);
+
+        // A. 101 
+        // B. Erro de Compilação porque ++a n~´ao é identificador válido.
+        // C. 100 
+        // D. Nenhum.
+
+
+        // // Encontre a saída do código a seguir.
+
+        // if (1 + 1 + 1 + 1 + 1 == 5) {
+            
+        //     System.out.println("verdadeiro");
+
+        // } else {
+        //     System.out.println("falso");
+        // }
+
+        // // A. Verdadeiro
+        // // B. Falso 
+        // // C. Erro de compilação
+        // // D. Nenhum
+
+
+
+        // // Encontre a saída do código a seguir.
+        // int x = 5;
+
+        // x *= (3 + 7);
+
+        // System.out.println(x); // A. 50 - x* = 3 + 7 é equivalente a x * (3 + 7) = 5 * 10. Portanto, x = 50.
+
+        // // A. 50 
+        // // B. 22 
+        // // C. 10 
+        // // D. Nenhum
+
+
+
+        // // Identifique o tipo de retorno de um método que não retorna nenhum valor.
+
+        // A. int 
+        // B. void
+        // C. double 
+        // D. Nenhum
+
+
+        // // Qual é a saída de Math.floor(3.6)?
+
+        // System.out.println(Math.floor(3.6));
+
+        // // A. 3
+        // // B. 3.0
+        // // C. 4
+        // // D. 4.0
+
+        // // Resposta B. 3.0 - Math.floor() retorna o valor duplo que é menor ou igual ao argumento e é igual ao inteiro matemático mais próximo.
+
+
+        // // Onde o sistema armazena parâmetros e variáveis ​​locais sempre que um método é invocado?
+
+        // A. Heap - O heap é uma área de alocação dinâmica de variáveis. 
+        // B. Stack - A pilha de funções também é uma área disponibilizada dentro do espaço de endereçamento do processo.
+        // C. Array 
+        // D. Tree 
+
+        // Resposta B. Stack - O sistema armazena parâmetros e variáveis ​​locais em uma pilha.
+
+
+
+        // // Identifique o modificador que não pode ser usado para construtor.
+
+        // A. public 
+        // B. protected 
+        // C. private
+        // D. static 
+
+        // Resposta D. static - Estático não pode ser usado para construtor.
+
+
+
+        // // Quais são as variáveis ​​declaradas em uma classe para uso de todos os métodos da classe chamada?
+
+        // A. Objeto.
+        // B. Variáveis de instância.
+        // C. Variáveis de referência.
+        // D. Nenhum.
+
+        // Resposta B. Variáveis de instância.
+
+
+        // // Qual é o tipo de retorno implícito do construtor?
+
+        // A. Sem tipo de retorno.
+        // B. Um objeto de classe no qual é definido.
+        // C. Vazio (void).
+        // D. Nenhum.
+
+        // Resposta B. O tipo de retorno implícito do construtor é o objeto de classe no qual ele está definido.
+
+
+        // // Quando o método finalize() é chamado?
+
+        // A. Antes da coleta do lixo.
+        // B. Antes de um objeto sair do escopo. 
+        // C. Antes de uma variável sair do escopo. 
+        // D. Nenhum.
+
+        // Resposta A. Antes da coleta do lixo.
+
+
+        // // Identifique o protótipo do construtor padrão.
+
+        // public class Solucao {}
+
+        // A. Solucao(void)
+        // B. Solucao()
+        // C. public Solucao(void)
+        // D. public Solucao()
+
+        // Resposta D. public Solucao()
+
+
+
+        // // Identifique a maneira correta de declarar o construtor.
+
+        // public class Solucao{}
+
+        // A. Solucao() {}
+        // B. public Solucao() {}
+        // C. Solucao(void) {}
+        // D. Ambos (A) e (B)
+        
+        // Resposta D. Ambos A e B são a maneira correta de declarar o construtor.
+
+
+
+
+
+        // // Encontre a saída do código a seguir.
+
+        // int i;
+
+        // for(i = 1; i < 6; i++) {
+
+        //     if(i > 3) continue;
+        // }
+
+        // System.out.println(i); // D. 6 - Como o loop é executado até 6, o valor de i é 6.
+
+        // // A. 3
+        // // B. 4
+        // // C. 5
+        // // D. 6
+
+
+
+        // // Quantas vezes "EntrevistaBit" será impresso.
+
+        // int contar = 0;
+
+        // do {
+        //     System.out.println("EntrevistaBit");
+
+        //     contar++;
+        // } while(contar < 10);
+
+        // // A. 8
+        // // B. 9
+        // // C. 10
+        // // D. 11
+
+        // Resposta C. 10 - O EntrevistaBit será impresso 10 vezes, começando em contar = 0.
+
+
+        // // O que é Runnable (Executável)?
+
+        // A. Abstract class
+        // B. Interface 
+        // C. Class 
+        // D. Method 
+
+        // Resposta: B. Interface.
+
+
+
+        // // A exceção criada pelo bloco try é capturada em qual bloco?
+
+        // A. catch 
+        // B. throw
+        // C. final 
+        // D. Nenhuma 
+
+        // Resposta A. catch - A exceção criada pelo bloco try é capturada no bloco catch.
+
+
+
+        // // Qual das seguintes exceções é lançada quando a instrução dividida por zero é executada?
+
+        // A. Null Pointer Exception 
+        // B. NumberFormatException 
+        // C. ArithmeticException 
+        // D. Nenhum 
+
+        // Resposta C. ArithmeticException é lançada quando a instrução dividida por zero é executada.
+
+
+        // // Onde a classe System é definida?
+
+        // A. java.lang.package 
+        // B. java.util.package 
+        // C. package java.io 
+        // D. Nenhum
+
+        // Resposta A. - A classe System é definida em java.lang.package.
+
+
+        // // Identifique a interface que é usada para declarar métodos principais em java?
+
+        // A. Comparator
+        // B. EventListener
+        // C. Set 
+        // D. Collection 
+
+        // Resposta  D. Collection - é usada para declarar métodos principais em java.
+
+
+        // // Quais das seguintes afirmações são verdadeiras sobre o método finalize()?
+
+        // A. Pode ser chamado zero ou uma vez.
+        // B. Pode ser chamado zero ou mais vezes.
+        // C. Pode ser chamado exatamente uma vez.
+        // D. Pode ser chamado uma ou mais vezes.
+
+        // Resposta A. - O método finalize() pode ser chamado Zero ou uma vez.
+
+
+        // // O que o operador >>>> faz?
+
+        // A. Operador de deslocamento à direita.
+        // B. Operador de deslocamento à esquerda.
+        // C. Deslocamento à esquerda de preenchimento zero.
+        // D. Deslocamento à direita de preenchimento zero.
+
+        // Resposta D. >>>> é o deslocamento à direita de preenchimento zero.
+
+
+
+        // // Identifique o recurso Java incorreto.
+
+        // A. Orientado a Objetos 
+        // B. Uso de ponteiros 
+        // C. Dinâmico 
+        // D. neural arquitetônico 
+
+        // Resposta B. Usuo de ponteiros - Não existe nenhuma possibilidade de uso de ponteiros brutos em Java. 
+        //                                 Até mesmo referências tem uso apenas implícito através dos objetos instanciados.
+
+
+
+        // // Qual dos seguintes é usado para encontrar e corrigir bugs no programa?
+
+        // A. JDK
+        // B. JRE 
+        // C. JVM 
+        // D. JDB 
+
+        // Resposta D. JDB está incluído no SDK. O depurador é iniciado com o comando jdb; ele é anexado à JVM usando JPDA.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
