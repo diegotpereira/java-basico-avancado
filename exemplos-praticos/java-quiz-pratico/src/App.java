@@ -1835,33 +1835,174 @@ public class App {
         // System.out.println(s); // [1, 1, 3, 2]
 
 
-        // Qual será o resultado do programa?
+        // // Qual será o resultado do programa?
 
+        // for(int i = 0; i < 5; i++) {
+
+        //     System.out.println(i + ' '); // 32 33 34 35 36
+        // }
+
+
+        // // Qual será o resultado do programa?
+
+        // String nome = "JavaConceitoDoDia".substring(4);
+
+        // System.out.println(nome); // ConceitoDoDia
+
+
+        // // Qual será o resultado do programa?
+        
+        // String s = "1".repeat(5);
+
+        // System.out.println(s); // 11111
     
 
+        // // Qual será o resultado do programa?
+
+        // System.out.println("1".concat("2").repeat(5).charAt(7)); // 2
+
+
+
+        // Para qual das seguintes classes, você pode criar objetos sem usar o operador new?
+
+        // 1. String
+        // 2. StringBuffer
+        // 3. StringBuilder
+
+        // Resposta 1. String
+
+
+
+        // // Qual será a saída do programa abaixo?
+
+        // String string = "string".replace('i', '0');
+
+        // System.out.println(string.substring(2, 5)); // r0n
+
+
+        // // // Qual será a saída do programa abaixo?
+
+        // System.out.println("Java" == new String("Java")); // falso (false)
+
+
+        // // Qual será a saída do programa abaixo?
+
+        // String str = " Java\tConceito\tdo\tdia ".strip();
+
+        // System.out.println(str);
+
+
+        // // Qual será a saída do programa abaixo?
+
+        // if ("string".toUpperCase() == "STRING") {
+            
+        //     System.out.println(true);
+
+        // } else {
+
+        //     System.out.println(false);
+        // }
+
+        // Resposta: Falso(false)
+
+        
+        // // // Qual será a saída do programa abaixo?
+
+        // String str1 = "Java";
+        // String str2 = "Java";
+
+        // System.out.println(str1 == str2); // verdadeiro (true)
+        // System.out.println(str1.equals(str2)); // verdadeiro (true)
+        // System.out.println(str1.hashCode() == str2.hashCode()); // verdadeiro (true)
+
+
+        // // Qual será a saída do programa abaixo?
+
+        // String str1 = "Java";
+        // String str2 = new String("Java");
+
+        // System.out.println(str1 == str2); // falso (false)
+        // System.out.println(str1.equals(str2)); // verdadeiro (true)
+        // System.out.println(str1.hashCode() == str2.hashCode()); // verdadeiro (true)
+
+
+        
+        // // Qual será a saída do programa abaixo?
+
+        // String str1 = new String("Java");
+        // String str2 = new String("Java");
+
+        // System.out.println(str1 == str2); // falso (false)
+        // System.out.println(str1.equals(str2)); // verdadeiro (true)
+        // System.out.println(str1.hashCode() == str2.hashCode()); // verdadeiro (true)
+
+
+        // // // Qual será a saída do programa abaixo?
+
+
+        // String str1 = "Java";
+        // String str2 = str1.intern();
+
+        // System.out.println(str1 == str2); // verdadeiro (true)
+        // System.out.println(str1.equals(str2)); // verdadeiro (true)
+        // System.out.println(str1.hashCode() == str2.hashCode()); // verdadeiro (true)
+
+
+
+        // // Qual será a saída do programa abaixo?
+
+        // String str1 = "Java";
+        // String str2 = str1.intern();
+        
+        // String str3 = new String("Java");
+
+        // System.out.println(str1 == str2); // verdadeiro (true)
+        // System.out.println(str2 == str3); // falso (false)
+        // System.out.println(str3 == str1); // falso (false)
 
 
 
 
+        // // Qual será a saída do programa abaixo?
+    
+        // String str1 = "1";
+        // String str2 = "22";
+        // String str3 = "333";
+
+        // System.out.println(str1.concat(str2).concat(str3.repeat(3))); // 122333333333
+
+
+        // // Qual será a saída do programa abaixo?
+
+        // String s1 = "UM";
+        // s1.concat("DOIS");
+        // s1.concat("TRES");
+
+        // System.out.println(s1); // saída: UM
+
+
+        // // Qual será a saída do programa abaixo?
+
+        // String s1 = "1";
+
+        // System.out.println(s1.concat("2").concat("3")); // saída: 123
 
 
 
+        //  // Qual será a saída do programa abaixo?
+
+        //  System.out.println("Java" + 1000 + 2000 + 3000); // saída: Java100020003000
+        //  System.out.println(1000 + 2000 + 3000 + "Java"); // saída: 6000Java - antes da String soma
+        //  System.out.println(7.7 + 3.3 + "Java" + 3.3 + 7.7); // saída: 11.0Java3.37.7 - antes da String entre aspas soma
+        //  System.out.println("UM" + 2 + 3 + 4 + "CINCO"); // saída: UM234CINCO
 
 
 
+        // // Qual será a saída do programa abaixo?
 
+        // System.out.println("JAVAJ2EE".substring(2, 5).substring(1).charAt(2));
 
-
-
-
-
-
-
-
-
-
-
-
+        // saida: Exception in thread "main" java.lang.StringIndexOutOfBoundsException: Index 2 out of bounds for length 2.
 
 
 
