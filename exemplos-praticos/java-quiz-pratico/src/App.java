@@ -2110,19 +2110,25 @@ public class App {
 
 
 
-    // Qual é a saída do programa?
+    // // Qual é a saída do programa?
 
-    int arr[] = { 10, 20, 30, 40, 50 };
+    // int arr[] = { 10, 20, 30, 40, 50 };
 
-    for(int i = 0; i < arr.length; i++) {
+    // for(int i = 0; i < arr.length; i++) {
 
-        System.out.print(" " + arr[i]);
-    }
-
-
+    //     System.out.print(" " + arr[i]); // saída: 10, 20, 30, 40, 50
+    // }
 
 
-    System.out.println("Teste");
+    // Qual das seguintes afirmações é verdadeira sobre herança em Java.
+
+    // 1. Em Java todas as classes herdam da classe Object direta ou indiretamente. A classe Object é a raiz de todas as classes.
+    // 2. Herança múltipla não é permitida em Java.
+    // 3. Ao contrário do C++, não há nada como tipo de herança em Java onde podemos especificar se a herança é protegida, pública ou privada.
+
+    // Resposta: 1, 2 e 3
+
+    
 
 
 
