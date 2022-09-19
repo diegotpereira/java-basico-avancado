@@ -1,10 +1,5 @@
-import java.util.Comparator;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
-
-// import java.net.*;
 // import java.util.*;
+// import java.net.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -2005,22 +2000,129 @@ public class App {
         // saida: Exception in thread "main" java.lang.StringIndexOutOfBoundsException: Index 2 out of bounds for length 2.
 
 
+        // // Qual é a saída do programa abaixo?
+
+        // Map<String, String> hashMap = new HashMap<String, String>();
+
+        // hashMap.put(new String("a"), "audi");
+        // hashMap.put(new String("a"), "ferrari");
+
+        // System.out.println(hashMap); // saída: {a=ferrari} - HashMap não permite chaves duplicadas.
+        //                              // HashMap ao comparar chaves (e valores) executa a igualdade de objeto e não a igualdade de referência.
+        //                              // Em um HashMap, duas chaves k1 e k2 são iguais se e somente se (k1==null ? k2==null : k1.equals(k2)).
+
+
+
+
+        // Qual é a saída do programa abaixo?
+        
+        // Map<String, String> identityHashMap = new IdentityHashMap<String, String>();
+        // identityHashMap.put(new String("a"), "audi");
+        // identityHashMap.put(new String("a"), "ferrari");
+
+        // System.out.println(identityHashMap); // saída: {a=audi, a=ferrari} - IdentityHashMap implementa a interface Map.
+                                                // IdentityHashMap ao comparar chaves (e valores) executa a igualdade de referência no lugar da igualdade de objeto.
+                                                // Em um IdentityHashMap, duas chaves k1 e k2 são iguais se e somente se (k1==k2). 
+                                                // (Em implementações normais de Map (como HashMap) duas chaves k1 e k2 são consideradas iguais se e somente se (k1==null ? k2==null : k1.equals(k2)).) 
+
+
+    // // Qual é a saída do programa abaixo: 
+
+    // Map<Integer, String> treeMap = new TreeMap<Integer, String>();
+
+    // treeMap.put(11, "audio");
+    // treeMap.put(null, null);
+    // treeMap.put(11, "bmw");
+    // treeMap.put(null, "ferrari");
+
+    // System.out.println(treeMap.size());
+    // System.out.println(treeMap);
+
+    // Resposta: saída Null Pointer Exception - TreeMap não tem nenhuma chave nula ou valor nulo.
+
+
+    // // Qual é a saída do programa?
+
+    // float a = 35/0;
+
+    // System.out.println(a); // C. Infinito - Em Java, sempre que dividimos qualquer número (double, float e long exceto integer) por zero, resulta em infinito.
+
+    // // A. 0
+    // // B. Não é um número
+    // // C. Infinito
+    // // D. Exceção de tempo de execução
+
+
+    // // Qual é a saída do programa?
+    
+    // int x = 3;
+    // int y = 5;
+    // int z = 10;
+
+    // int resultado = ++z + y - y + z + x++;
+
+    // System.out.println(resultado); // saída: 25 - ++z significa que o valor será incrementado primeiro em 1, ou seja, 12.
+    //                                           // y = vale 5 
+    //                                           // x++ = 4
+    //                                           // 11 + 5 - 5 + 11 + 3 =
+
+    // // A. 24
+    // // B. 23
+    // // C. 20
+    // // D. 25
+
+
+
+
+    // // Qual será a saída do programa a seguir?
+
+    // int contar = 1;
+
+    // while(contar <= 15) {
+
+    //     System.out.println(contar % 2 == 1 ? "***" : "+++++"); // Resposta C. 8 vezes *** e 7 vezes +++++ - 
+    //                                                            // O valor de contar será aumentado até 14 devido à instrução while (contar<=15).
+    //                                                            // Se o resto for igual a 1 ao dividir a contagem por 2, ele imprimirá (***) senão imprimirá (+++++).
+    //                                                            // Portanto, para todos os números ímpares até 15 (1, 3, 5, 7, 9, 11, 13, 15), será impresso (***),
+    //                                                            // e para todos os números pares até 14 (2, 4, 6, 8 , 10, 12, 14) será impresso (+++++).
+    //     ++contar;
+    // }
+
+    // // A. 15 vezes ***
+    // // B. 15 vezes +++++
+    // // C. 8 vezes *** e 7 vezes +++++
+    // // D. Ambos imprimirão apenas uma vez
 
 
 
 
 
 
+    // Qual dos seguintes cria uma Lista de 3 itens visíveis e seleções múltiplas habilitadas?
+
+    // A. new Lista(false, 3)
+    // B. new Lista(3, true)
+    // C. new Lista(true, 3)
+    // D. new Lista(3, false)
+
+    // C. new Lista(true, 3) - List (int rows, boolean multipleMode): Cria uma nova lista inicializada para exibir o número descrito de linhas junto com o modo de seleção múltipla.
 
 
 
 
+    // Qual é a saída do programa?
+
+    int arr[] = { 10, 20, 30, 40, 50 };
+
+    for(int i = 0; i < arr.length; i++) {
+
+        System.out.print(" " + arr[i]);
+    }
 
 
 
 
-
-
+    System.out.println("Teste");
 
 
 
