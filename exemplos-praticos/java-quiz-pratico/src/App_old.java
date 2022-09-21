@@ -1,7 +1,7 @@
 // import java.util.*;
 // import java.net.*;
 
-public class App {
+public class App_old {
     public static void main(String[] args) throws Exception {
         
         // Qual das opções abaixo é uma maneira válida de instanciar uma matriz em java?
@@ -2127,6 +2127,18 @@ public class App {
     // 3. Ao contrário do C++, não há nada como tipo de herança em Java onde podemos especificar se a herança é protegida, pública ou privada.
 
     // Resposta: 1, 2 e 3
+
+
+    // Qual é a saída do programa?
+    int arr[] = { 1, 2, 3, 4, 5 };
+    int num= 0 ;
+
+    for(int i = 0; i < 5; i++) {
+
+        num += arr[i];
+
+        System.out.println(num);
+    }
 
     
 

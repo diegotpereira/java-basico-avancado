@@ -2363,14 +2363,122 @@ public class AppQuiz {
 
         // Copiando de outra maneira Usando System.arraycopy()
 
-        Object[] objArray = { 1, 2, 3, 4, 5};
+        // Object[] objArray = { 1, 2, 3, 4, 5};
 
-        Integer[] integerArray = new 
+        // Integer[] integerArray = new 
+
+        // // Qual é a saída do programa?
+        // int arr[] = { 1, 2, 3, 4, 5 };
+        // int num = 0 ;
+
+        // for(int i = 0; i < 5; i++) {
+            //     0 + 1 = 1
+            //     1 + 2 = 3
+            //     3 + 3 = 6
+            //     6 + 4 = 10
+            //    10 + 5 = 15
+        //     num += arr[i];
+
+        //     System.out.println(i);
+        //     // System.out.println(num); // 1 3 6 10 15
+        // }
 
 
+        // // Qual é a saída do programa?
+
+        // // int arr[5]; // error: illegal start of expression
+        // int arr [] = new int[5];
+        // int num = 0;
+
+        // arr = new int[5];
+
+        // for(int i = 0; i < 5; i++) {
+        //     num += arr[i];
+        // }
+
+        // System.out.println(num); // 0
+
+        
+        // // Qual é a saída do programa?
+
+        // int arr[] = { 5, 3, 1, 6, 2 }; 
+
+        // int num = 0;
+
+        // for(int i = 1; i <= 4; i++) {
+        //     num += arr[i];
+        // }
+        // System.out.println(num); // saída: 12
 
 
+        // // Qual é a saída do programa?
 
+        // int arr[] = { 5, 3, 1, 6, 2 }; 
+
+        // int num = 0;
+
+        // for(int i = 1; i <= 4; i++) {
+
+        //     // Quando I=0;
+        //     //     Num = num *5;
+        //     //     Num =0;
+        //     // Quando I=1;
+        //     //     Num = num *3;
+        //     //     Num =0;
+        //     // Quando I=2;
+        //     //     Num = num *1;
+        //     //     Num =0;
+        //     // Quando I=3;
+        //     //     Num = num *6;
+        //     //     Num =0;
+        //     // Quando I=4;
+        //     //     Num = num *2;
+        //     //     Num =0;
+        //     // num *= arr[i];
+        // }
+        // System.out.println(num); // saída: 12
+
+
+        // // Qual é a saída do programa?
+
+        // int arr[] = { 5, 3, 1, 6, 2};
+        // int val = 0;
+
+        // val = arr[0];
+        // System.out.println(val);
+
+        // for(int i = 1; i < arr.length; i++) {
+        //     if (val < arr[i]) {
+                
+        //         val = arr[i];
+        //     }
+        // }
+        // System.out.println(val); //  saída: 6
+
+
+        // // Qual é a saída do programa?
+        // int arr[] = {5, 3};
+        // int val = 0;
+
+        // arr = new int[5];
+
+        // val = arr[0];
+
+        // for(int i = 1; i < arr.length; i++) {
+
+        //     if (val < arr[i]) 
+                
+        //         val = arr[i];
+        // }
+        // System.out.println(val); // saída: 0
+
+
+        // Qual é a saída do programa?
+
+        int arr[][] = new int[][] {
+
+            
+        };
 
 
 
