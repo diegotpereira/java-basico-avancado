@@ -1,4 +1,6 @@
 // public class Teste19 {
+
+    // Qual é a saída do programa?
     
 //     int t = 20;
 // }

@@ -2473,28 +2473,155 @@ public class AppQuiz {
         // System.out.println(val); // saída: 0
 
 
-        // Qual é a saída do programa?
+        // // Qual é a saída do programa?
 
-        int arr[][] = new int[][] {
+        // final int i;
+        // i = 20;
+        // i = 30;
 
-            
-        };
+        // System.out.println(i);
 
+        // A. 30;
+        // B. Erro de Compilação
+        // C. Garbage Value 
+        // D. 0
 
-
-
-
-
-
-
-
-
+        // Resposta: B. Erro de compilação
 
 
+        // // Qual é a saída do programa?
+
+        // int arr[] = new int[2];
+
+        // System.out.println(arr[0]); // saída: 0
+        // System.out.println(arr[1]); // saída: 0
+
+
+        // // Qual das seguintes é/são verdadeiras sobre construtores em Java?
+
+        // 1) O nome do construtor deve ser igual ao nome da classe. // verdadeiro
+        // 2) Se você não definir um construtor para uma classe,
+        //     um construtor sem parâmetros padrão é automaticamente
+        //     criado pelo compilador. // verdadeiro
+        // 3) O construtor padrão chama super() e inicializa todos
+        //     variáveis ​​de instância para o valor padrão como 0, null. // verdadeiro
+        // 4) Se quisermos criar um construtor de classe pai, ele deve ser chamado em
+        //     primeira linha do construtor. // verdadeiro
+
+        // A. 1
+        // B. 1, 2
+        // C. 1, 2 e 3
+        // D. 1, 2, 3 e 4
+
+        // Resposta: D. 1, 2, 3 e 4
+
+        
+        // // Qual das seguintes é/são verdadeiras sobre pacotes em Java?
+
+        // 1) Cada classe faz parte de algum pacote.
+        // 2) Todas as classes em um arquivo fazem parte do mesmo pacote.
+        // 3) Se nenhum pacote for especificado, as classes no arquivo
+        //    entre em um pacote especial sem nome
+        // 4) Se nenhum pacote for especificado, um novo pacote será criado com
+        //    nome da pasta da classe e a classe é colocada neste pacote.
+
+        // A. Apenas 1, 2 e 3
+        // B. Apenas 1, 2 e 4
+        // C. Apenas 4
+        // D. Apenas 1 e 3
+
+        // Resposta: A. Apenas 1, 2 e 3
+
+
+        // // Qual dos seguintes é/são vantagens dos pacotes?
+
+        // A. Os pacotes evitam conflitos de nomes
+        // B. As classes, mesmo que sejam visíveis fora de seu pacote, podem ter campos visíveis apenas para pacotes
+        // C. Podemos ter classes ocultas que são usadas pelos pacotes, mas não visíveis do lado de fora.
+        // D. Todos estão corretas 
+
+        // Resposta: D. Todos estão corretas 
+
+
+        // // Qual é a saída do programa?
+
+        // int arr1[] = {1, 2, 3};
+        // int arr2[] = {1, 2, 3};
+
+        // if(arr1 == arr2)
+        //    System.out.println("Mesmo");
+        // else 
+        //    System.out.println("Não é o mesmo");
+        // }
+        // // A. Mesmo 
+        // // B. Não é o mesmo
+
+        // // Resposta: B. Não é o mesmo.
+
+
+        // // Qual é a saída do programa?
+        // int arr1[] = {1, 2, 3};
+        // int arr2[] = {1, 2, 3};
+
+        // if(arr1.equals(arr2))
+        //    System.out.println("Mesmo");
+        // else 
+        //    System.out.println("Não é o mesmo"); 
+
+        // // A. Mesmo 
+        // // B. Não é o mesmo
+
+        // // Resposta: B. Não é o mesmo.
+
+
+
+        // // Qual é a saída do programa?
+
+        // try {
+        //     throw 10;
+        // } catch (Exception e) {
+        //     System.out.println("Obteve a exceção " + e);
+        // }
+
+
+        // // A. Obteve a exceção 10
+        // // B. Obteve a exceção 0
+        // // C. Erro do compilador
+
+        // // Resposta: C. Erro do compilador - Em Java, somente objetos throwable 
+                                                // (objetos Throwable são instâncias de qualquer subclasse da classe Throwable) 
+                                                // podem ser lançados como exceção. Portanto, o tipo de dados básico não pode ser lançado.
 
 
 
 
+        // // Qual é a saída do programa?
+
+        // Double objeto = new Double("2.4");
+        // int a = objeto.intValue();
+        
+        // byte b = objeto.byteValue();
+        
+        // float d = objeto.floatValue();
+        
+        // double c = objeto.doubleValue();
+        
+
+        
+        // System.out.println(a + b + c + d); // saída: C. 2 + 2 + 2.4 + 2.4 = 8.800000095367432
+
+        // // A. 8 
+        // // B. 8.8 
+        // // C. 8.800000095367432
+
+        // Resposta: C. 8.800000095367432 - As conversões aritméticas são executadas implicitamente para converter os valores em um tipo comum. O compilador primeiro executa a promoção de inteiros. Se os operandos ainda tiverem tipos diferentes, eles serão convertidos para o tipo que aparece mais alto na hierarquia
+
+
+        // Qual destas é uma superclasse de todos os erros e exceções na linguagem Java?
+
+        // Qual é a saída do programa abaixo?
+
+        
 
 
 

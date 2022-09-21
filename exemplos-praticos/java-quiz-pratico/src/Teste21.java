@@ -1,4 +1,6 @@
 public class Teste21 {
+
+    // Qual é a saída do programa?
     
     public static void swap(Integer i, Integer j) {
 
