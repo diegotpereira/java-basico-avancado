@@ -2475,6 +2475,58 @@ public class AppQuiz {
 
         // // Qual é a saída do programa?
 
+        // int arr[][] = new int[][] {
+
+        //     new int[] { 21, 22, 23, 24 },
+        //     new int[] { 25, 26 },
+        //     new int[] { 27, 28, 29 },
+        //     new int[] { 30, 31, 32, 33, 34 }
+        // };
+
+        // for(int i = 0; i < arr.length; i++) {
+
+        //     for(int j = 0; j < arr[i].length; j++) {
+
+        //         System.out.print(arr[i][j] + " ");
+        //         System.out.println();
+        //     }
+        // }
+
+        // // Resposta: 21 22 23 24 
+        //           // 25 26 
+        //           // 27 28 29 
+        //           // 30 31 32 33 34 
+
+
+
+        // Qual é a saída do programa?
+
+        int num = 0; 
+        int i = 0;
+        int j = 0;
+
+        int arr[] = { 7, 8, 9, 11, 17 };
+
+        for(i = 0; i < arr.length; i++) {
+
+            System.out.println(i);
+
+            for(j = 2; j < (arr[i] / 2); j++) {
+
+                System.out.println(j);
+
+                if (arr[i] % j == 0) {
+                    
+                    num = 1;
+                    break;
+                }
+            }
+            if(num == 0)
+               System.out.print(arr[i]);
+        }
+
+
+        // Qual é a saída do programa?
         // final int i;
         // i = 20;
         // i = 30;
