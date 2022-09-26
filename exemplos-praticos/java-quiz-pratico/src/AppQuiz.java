@@ -2669,38 +2669,1099 @@ public class AppQuiz {
         // Resposta: C. 8.800000095367432 - As conversões aritméticas são executadas implicitamente para converter os valores em um tipo comum. O compilador primeiro executa a promoção de inteiros. Se os operandos ainda tiverem tipos diferentes, eles serão convertidos para o tipo que aparece mais alto na hierarquia
 
 
-        // Qual destas é uma superclasse de todos os erros e exceções na linguagem Java?
+        // // Qual é a saída do programa abaixo?
 
-        // Qual é a saída do programa abaixo?
+        // int p = 1;
+        // int q = 2;
+        // int r = 3;
 
+        // p |= 4;
+        // q >>= 1;
+        // r <<= 1;
+        // p ^= r;
+
+        // System.out.println(q + " " + q + " " + r); // saída: 1 1 6
+        
+        // // a. 3 3 6
+        // // b. 2 3 4
+        // // c. 2 2 3
+        // // d. 1 1 6
         
 
+        // // Java é sucessor de qual linguagem de programação?
+
+        // A) B
+        // B) C
+        // C) C++
+        // D) D
+
+        // Resposta: c++ - C++ introduziu conceitos de OOPs (Programação Orientada a Objetos) que são adotados por Java.
+
+
+        // // Qual é o comando usado para executar um programa Java na Linha de Comando ou Prompt de Comando ou CMD?
+
+        // A) >java hello.java
+        // B) >javac hello.java
+        // C) >javacomp hello.java
+        // D) >javacmd hello.java
+
+        // // Resposta B. >javac hello.java
+
+
+        // Qual é a necessidade de mencionar "static" antes do método main?;
+
+        // A) Para chamar o método main sem criar um objeto de classe
+        // B) Tornar o método main como método de classe comum a todas as instâncias
+        // C) A e B
+        // D) Nenhuma das anteriores
+
+        // Resposta C
+
+
+        // // Para que serve o modificador de acesso "púbico" na linguagem Java?
+
+        // A) Para ocultar o método principal do uso indevido
+        // B) Para chamar o método main fora da classe ou pacote pela JVM
+        // C) Para proteger o método principal
+        // D) Nenhuma das anteriores
+
+        // Resposta: B. Para chamar o método main fora da classe ou pacote pela JVM
+
+
+        // String args[] no método main são usados ​​para? 
+        // public static void main(String args[]) 
+        // { 
+        // // 
+        // }
+
+
+        // A) Passando argumentos em tempo de compilação
+        // B) Passando argumentos em tempo de execução
+        // C) Contando o número de palavras
+        // D) Nada
+
+        // Resposta B. Passando argumentos em tempo de execução
+        // C:/>java Hello AFRICA GOLDMINE
+        // Hello - Class name
+        // AFICA - First argument
+        // GOLDMINE - Second argument
+
+        // Qual é o tipo de retorno padrão de um método na linguagem Java?
+
+        // A) void
+        // B) int
+        // C) short
+        // D) None of the above
+
+        // Resposta D. você precisa mencionar explicitamente um tipo de retorno.
+
+
+        // Nome de uma classe, variável, método ou interface na linguagem Java é chamado?
+
+        // A) Argumento
+        // B) Valor
+        // C) Identificador
+        // D) Nenhuma das anteriores
+
+        // Resposta C.
+
+
+        // // Um identificador válido na linguagem Java pode conter quais caracteres?
+
+        // A) 0-9
+        // B) AZ, z
+        // C) $, _ (Sublinhado)
+        // D) Todas as anteriores
+
+        // Resposta: D. Todas as anteriores
+
+
+        // // Um Identificador ou nome válido na linguagem Java pode começar com qual caractere?
+
+        // A) az, AZ
+        // B) $, _
+        // C) 0-9
+        // D) A e B
+
+        // Resposta D. Até o JDK 8, apenas um único símbolo de sublinhado pode ser usado como 
+        // identificador de uma classe, método ou variável. JDK 9 não permite.
+
+
+        // // O que é Literal em Java?
+
+        // A) Literal é o valor que é dado ou atribuído a uma variável.
+        // B) Literal é um tipo de dado
+        // C) Literal é semelhante a String
+        // D) Nenhuma das anteriores
+
+        // Reposta: A. Literal é o valor que é dado ou atribuído a uma variável. - exemplos 123, 45.67f, 'C', "abc", false
+
+
+        // Quais são os tipos de literais inteiros em Java?
+
+        // A) Literais decimais
+        // B) Literais octais e hexadecimais
+        // C) Literais Binários
+        // D) Todas as anteriores
+
+        // Resposta D - O JDK 7 introduziu literais binários para definir facilmente bits individuais de um número.
+
+
+        // Escolha exemplos corretos de literais decimais em Java.
+
+        // A) int a = 12345;
+        // B) int a = 12_3__5;
+        // C) a longo = 987____654_3__21L;
+        // D) Todas as anteriores
+
+        // D. Para representar números grandes, basta acrescentar a letra 'l' ou 'L' 
+        // ao número para torná-lo um inteiro longo. Isso evita erros do compilador dizendo " fora do intervalo "
+
+
+        // Um número octal é Java é representado com um ____ inicial?
+
+        // A) O (Alfabeto)
+        // B) 0 (ZERO)
+        // C) 0x
+        // D) 0X
+
+        // Resposta B. Por exemplo. int a=0765;
+
+
+        // Escolha intervalos corretos para números Decimal, Octal e Hexadecimal em Java?
+
+        // A) Decimal: 0 a 9
+        // B) Octal: 0 a 7
+        // C) Hexadecimal: 0 a 9 e A a F / a a f
+        // D) Todas as anteriores
+
+        // Resposta D
+
+
+        // // Escolha o exemplo correto de Octal Literal em Java?
+
+        // A) short = 0564;
+        // B) int = 076__45_2;
+        // C) int = 0______11;
+        // D) Todas as anteriores
+
+        // Resposta: D. exemplo int = 0______11; // 8^1 * 1 + 8^0 * 1 = 9
+
+
+        // // Qual é o prefixo usado para representar números hexadecimais em Java?
+
+        // A) 0x
+        // B) 0X
+        // C) A e B
+        // D) Nenhuma das anteriores
+
+        // Resposta D. Nenhuma das anteriores - exemplo int a=0xFEB5; int b=0X9876__45;
+
+
+        // // Escolha exemplos corretos de literais hexadecimais em Java?
+
+        // A) long a = 0X987654321L;
+        // B) int a = 0x76FE____23;
+        // C) byte b = 0X0__________F;
+        // D) Todas as anteriores
+
+        // Resposta D. Todas as anteriores
+
+
+
+
+        // Qual é o prefixo usado para representar literais binários em Java?
+
+
+        // A) b or B
+        // B) 0b or 0B
+        // C) xB or xb
+        // D) ob or oB
+
+        // Resposta B. exemplo ZERO B ou ZERO b ; byte a = 0b00001111; //15 em decima
+        
+        
+        // Qual é a representação correta do uso de literais binários em Java?
+
+        // A) int a = 0b1010;
+        // B) int a = 0B1011_1010;
+        // C) int a = 0B0______________1;
+        // D) Todas as anteriores
+
+        // Resposta D. Todas as anteriores - int a = 0B0______________1; //decimal=1 - int b = 0b1010; //decimal=10
+
+
+        // // Qual é o erro do compilador por usar indevidamente Underscores ( _ ) em literais em Java?
+
+        // A) Os sublinhados estão fora do intervalo
+        // B) IllegalUnderscoresException
+        // C) Os sublinhados devem estar localizados dentro de dígitos
+        // D) Muitos sublinhados
+
+        // Resposta C. Os símbolos de sublinhado não podem ser usados ​​no início e no final dos dígitos de um número.
+
+        
+        // Qual é o sufixo usado para representar um número de ponto flutuante em Java
+
+        // A) r ou R
+        // B) f ou F
+        // C) fl ou FL
+        // D) Nenhuma das anteriores
+
+        // Resposta B. float a = 1,345f; float b = 567,345678F;
+
+
+
+        // // Qual é a saída do seguinte código Java?
+
+        // int a = 9;
+        // float b = a/2;
+
+        // System.out.println(b);
+
+        // // A) 4,0
+        // // B) 4,5
+        // // C) 5,0
+        // // D) Nenhuma das anteriores
+
+        // // Resposta A. 4.0 - Você precisa digitar cast pelo menos um número nessa expressão 
+        // // para float ou double para fazer a divisão de números reais. float b = 9*1f/2 = 4.5
+
+
+
+
+        // // Qual é a saída do trecho de código Java abaixo?
+
+        // char ch = 'A'; // ASCII 65 
+        // int a = ch + 1;
+        // ch = (char)a;
+
+        // System.out.println(ch); // saída: C. B - ch é promovido a int e 1 é adicionado.
+        //                         // O valor int 66 é novamente o tipo convertido para o tipo char.
+        //                         // Então fora será o próximo personagem de A, ou seja, B.
+
+        // // A) 66
+        // // B) A
+        // // C) B
+        // // D) 65
 
 
 
 
 
 
+        // // Qual é a saída do trecho de código Java abaixo? 
+
+        // float a = 8.2/2;
+
+        // System.out.println(a);
+
+        // A) 4.1
+        // B) 8.1
+        // C) 4
+        // D) Compiler error
+
+        // Resposta: D. Tem que adicionar um sufixo f ou F 
+
+
+        // // Qual é a saída do trecho de código Java? 
+
+        // byte b = 25;
+        // b++;
+        // b = b + 1;
+
+        // System.out.println(b);
+
+        // A) 25
+        // B) 26
+        // C) 27
+        // D) Erro do compilador
+
+        // Resposta D. Erro de compilação - A conversão de tipo explícito é necessária.
+
+
+        // // Qual é a saída do trecho de código Java?
+
+        // int a  = 260;
+        // byte b = (byte) a;
+
+        // System.out.println(b);
+
+        // // A) 0
+        // // B) 4
+        // // C) 255
+        // // D) 260
+
+        // // Resposta B. 4 - Se um número for muito grande para um tipo de dado, 
+        // // aplica-se a Divisão Modulo pelo maior número possível desse tipo de dado. 
+        // // O intervalo de bytes é de -128 a +127. 260 > 127.
+        // // 260% 256 = 4
+
+
+        // // Qual é a saída do trecho de código Java?
+
+        // short a  = (short) 65540;
+
+        // System.out.println(a);
+
+        // A) 0
+        // B) 4
+        // C) 65536
+        // D) 65540
+
+        // Resposta: B. 4 - 65540 é maior que o curto alcance -32768 a +32767. tão, 65540% 2^32 = 65540%65536 = 4
+
+
+
+        // // Um literal booleano em Java pode ser convertido em tipo de dado para qual tipo de dado?
+
+        // A) byte
+        // B) short
+        // C) int
+        // D) Nenhuma das anteriores
+
+        // Resposta Um literal ou variável booleana aceita apenas true ou false. Portanto, ele não aceita números para conversão de tipo.
+
+
+        // // Qual é a saída do trecho de código Java abaixo?
+
+        // int a = 2 - - 7;
+
+        // System.out.println(a); // saída: 9 - Menos de Menos é Mais. Então 2 - - 7 se torna 2+7 = 9;
+
+
+        // // A) -5
+        // // B) 10
+        // // C) 9
+        // // D) Compiler Error
+
+
+
+        // // Qual é a saída do trecho de código Java abaixo? 
+
+        // short p = 1;
+        // short k = p + 2;
+
+        // System.out.println(k);
+
+        // A) 1
+        // B) 2
+        // C) 3
+        // D) Compiler error
+
+        // Resposta D. Erro de compilação - Os números são tratados como tipo int por padrão. 
+        // Portanto, um valor int não pode ser atribuído a uma variável short. 
+        // Você tem que digitar cast toda a expressão.
+        // short k = (short)(p+2)
+
+        
+        // // Qual é a saída do trecho de código Java?
+
+        // short k = 1;
+        // k += 2;
+
+        // System.out.println(k); // saída: 3 - Os operadores de atribuição compostos 
+        //                       // convertem automaticamente o valor da expressão para o tipo de dados do lado esquerdo.
+        //                       // k = k + 1; // Erro
+        //                       // k += 1 // Funciona
+        //                       // k++; // Funciona
+
+        // A) 1
+        // B) 2
+        // C) 3
+        // D) Compiler error about Type Casting
+
+
+        // // Qual é a saída do trecho de código Java? 
+
+        // int a = 5, b = 10, c = 15;
+        
+        // a -= 3;
+        // b *=  2;
+        // c/= 5;
+
+        // System.out.println(a + " " + b + " " + c); // saída: A. 2 20 3
+        //                                            // a = a - 3; a = 5 -3 = 2;
+        //                                            // b = b * 2; b = 2 * 10 = 20;
+        //                                            // c = c/5; c = 15/5; c = 3;
+
+        // A) 2 20 3
+        // B) 2 20 5
+        // C) 2 10 5
+        // D) -2 20 3
+
+
+
+        // // Como você reescreve o trecho de código Java abaixo?
+
+        // int p = 10;
+        // p = p % 3;
+
+
+        // A) p=%3;
+        // B) p%=3;
+        // C) p=3%;
+        // D) Nenhuma das anteriores
+
+        // // Resposta B. p%= 3;
+
+
+        // Os operadores aritméticos +, -, /, * e % possuem qual associatividade?
+
+        // A) Da direita para a esquerda
+        // B) Da esquerda para a direita
+        // C) Direito a Direito
+        // D) Da esquerda para a esquerda
+
+        // Resposta B. Da esquerda para a direita
+
+
+        // // Entre os operadores Postfix Decrement e Prefix Increment em Java, qual operador tem menos prioridade?
+
+        // A) O decremento pós-fixo tem menos prioridade do que o incremento de prefixo
+        // B) Incremento de prefixo tem menos prioridade do que decremento de pós-fixo
+        // C) Ambos os operadores têm a mesma prioridade
+        // D) Nenhuma das anteriores
+
+        // Resposta B. a++ > ++b
+
+
+        // // Operadores aritméticos de incremento e decremento em Java tem qual Associatividade?
+
+        // A) Da esquerda para a direita
+        // B) Da direita para a esquerda
+        // C) Da esquerda para a esquerda
+        // D) Direito a Direito
+
+        // Resposta B. Da direita para a esquerda
+
+
+        // // Escolha a afirmação correta sobre os Operadores Java +, -, *, / e %.
+
+        // A) + e - têm a mesma prioridade
+        // B) * e / têm a mesma prioridade
+        // C) / e % têm a mesma prioridade
+        // D) Todas as anteriores
+
+        // Resposta D. Todos estão tendo a mesma prioridade.
+
+
+        // // Entre os grupos de operadores (++, --) e (+, -, *, /, %) em Java, qual grupo tem maior prioridade?
+
+        // A) O grupo (++, --) tem prioridade mais alta que o grupo (+, -, *, /, %)
+        // B) O grupo (++, --) tem prioridade inferior ao grupo (+, -, *, /, %)
+        // C) grupo (++, --) e grupo (+, -, *, /, %) têm prioridade igual
+        // D) Nenhuma das anteriores
+
+        // Resposta A. Novamente entre os operadores Prefix e Post, os operadores Postfix têm maior prioridade.
+
+
+
+        // // Qual é a saída do trecho de código Java? 
+
+        // int a = 10, b = 6;
+        // int c = a + b * 5;
+
+        // System.out.println(c); // saída: 40 - * tem prioridade maior que +. Portanto, a operação de multiplicação é executada primeiro.
+        //                        // a + (b*5)
+        //                        // 10 + (6*5)
+        //                        // 10 + 30 
+        //                        // 40
+
+        // // A) 40
+        // // B) 50
+        // // C) 80
+        // // D) Compiler error
+
+
+        // // Qual é a saída do trecho de código Java? 
+
+        // int a = 10, b = 5, c = 3;
+        // int d = a + c/2*b;
+
+        // System.out.println(d); // saída: C. 15 - / e * têm a mesma prioridade.
+        //                       // Então associatividade da esquerda para a direita é usada.
+        //                       // Lembre-se que 3/2 é 1 e não 1,5 pois ambos os operandos são inteiros.
+        //                       // a + c/2*b
+        //                       // a+(c/2*b)
+        //                       // a+((c/2)*b)
+        //                       // a+(3/2 * b)
+        //                       // a+(1*5)
+        //                       // 10+5
+        //                       // 15
+
+        // // A) 17.5
+        // // B) 32.5
+        // // C) 15
+        // // D) 30
+
+
+        // // Qual é a saída do trecho de código Java?
+
+        // int a = 5, b = 6;
+
+        // if(a++ == --b) {
+
+        //     System.out.println("5=5");
+             
+        // } else {
+        //     System.out.println("NENHUM");
+        // }
+
+        // // A) NENHUM
+        // // B) 5=5
+        // // C) Erro de compilação 
+        // // D) Nenhuma das anteriores 
+
+        // // Resposta: B. 5=5 - No momento da avaliação de a++ == --b, a(5) é comparado com --b(6-1). 
+        //                    // Então, a condição "se" passa.
+        //                    // Se você verificar um valor após o bloco ELSE, será a+1, ou seja, 6.
+
+
+        // // Qual é a saída do trecho de código Java?
+
+        // int a = 6, b = 5;
+
+        // if (++b == a--) {
+        //     System.out.println("COELHO");
+
+        // } else {
+        //     System.out.println("COELHA");
+        // }
+
+        // // A) COELHO
+        // // B) COELHA
+        // // C) Erro do compilador
+        // // D) Nenhuma das anteriores
+
+        // // Resposta: A. COELHO - Após o bloco ELSE, b será b+1, ou seja, 6
+        //                       // ++b = a--
+        //                       // ++b == (a-1)
+        //                       // b = (a-1)
+        //                       // 5 == 5
+
+
+        // // Qual é a saída do trecho de código Java?
+
+        // int a = 10, b = 20;
+        // int c = a++*2;
+        // int d = --b*2;
+
+        // System.out.println(c + "," + d); // saída: C. 20,38 - O prefixo é incrementado ou decrementado imediatamente. 
+        //                                                    // Postfix incrementado ou decrementado na próxima linha/instrução.
+        //                                                    // 1) a+*2
+        //                                                    // a*2
+        //                                                    // 10*2 = 20
+        //                                                    // 2) --b*2
+        //                                                    // (b-1)*2
+        //                                                    // (20-1)*2
+        //                                                    // 19*2 = 38
+
+        // // A) 20,40
+        // // B) 22,40
+        // // C) 20,38
+        // // D) 22,38
+
+
+        // // Quais são os tipos de dados que podem ser usados ​​junto com os operadores relacionais em Java?
+
+        // A) char, boolean, Object
+        // B) byte, short, int, long
+        // C) float, double
+        // D) Todas as anteriores
+
+        // Resposta: D. Todas as anteriores
+
+
+        // Qual grupo de operadores tem maior prioridade entre (>, >=, <, <=) e (==, !=)?
+
+        // A) (>, >=, <, <=) tem prioridade mais baixa (==, !=)
+        // B) (>, >=, <, <=) tem prioridade mais alta (==, !=)
+        // C) (>, >=, <, <=) tem prioridade igual a (==, !=)
+        // D) Nenhuma das anteriores
+
+        // Resposta B. (>, >=, <, <=) tem prioridade mais alta (==, !=)
+
+
+        // // Qual é a saída do trecho de código Java?
+
+        // int k = 20;
+
+        // if (k) {
+            
+        //     System.out.println("SIM");
+        // } else {
+        //     System.out.println("NÃO");
+        // }
+
+        // // A) NÃO
+        // // B) SIM
+        // // C) Erro do compilador
+        // // D) Nenhuma das anteriores
+
+        // Resposta: C. Erro de compilação - Erro: if(k) --> k não é booleano. 
+        //              Tipo incompatível: não é possível converter de int para boolean.
+
+
+
+        // // Qual é a saída do trecho de código Java?
+        
+        // int[] array = { 5, 6, 7, 8};
+
+        // if (array.length > 2) {
+            
+        //     System.out.println(array[2]); // saída: B. 7 - Todos os arrays Java têm um campo "length" que contém o tamanho desse array.
+        // }
+
+        // // A) 6
+        // // B) 7
+        // // C) 8
+        // // D) Compiler error
+
+
+
+        // // Qual é a saída do trecho de código Java?
+
+        // char ch = 'A';
+
+        // if (ch > 70) {
+        //     System.out.println("PIZZA");
+        // } else {
+        //     System.out.println("BURGUER");
+        // }
+
+        // // A) PIZZA
+        // // B) BURGER
+        // // C) Compiler error
+        // // D) Nenhuma das acima
+
+        // // Resposta: B. BURGUER -  valor ASCII ou UNICODE do caractere 'A' é 65.
+        //                         // Um valor char é convertido em int antes de compará-lo.
 
 
 
 
+        // // Qual é a saída do trecho de código Java?
+
+        // int a = 20, b = 10;
+        // boolean c = a>= 10 & b<20;
+
+        // System.out.println(c); // saída: verdadeiro(true) 
+
+        // // A) falso
+        // // B) verdade
+        // // C) Erro do compilador
+        // // D) Nenhuma das anteriores
+
+        
+        // // Quais são os dois tipos possíveis de Operadores Lógicos?
+
+        // A) Lógico bit a bit
+        // B) Lógica booleana
+        // C) Aritmética Lógica
+        // D) A e B
+        
+        // Resposta D. A e B
+
+        // Na linguagem Java, um índice de array começa com: 
+
+        // A) -1
+        // B) 0
+        // C) 1
+        // D) Qualquer número inteiro
+
+        // Resposta B
+
+
+        // Quais são os símbolos especiais usados ​​para declarar um array em Java?
+
+        // A) Chaves { }
+        // B) Parênteses ()
+        // C) Colchetes [ ]
+        // D) Suportes angulares < >
+
+        // Resposta C. Colchetes [ ]
+
+        
+        // Quais são os símbolos especiais usados ​​para inicializar um array no momento da própria declaração?
+
+        // A) Parênteses ( )
+        // B) Colchetes [ ]
+        // C) Chaves { }
+        // D) Suportes angulares < >
+
+        // Resposta C. Chaves {} - int[] nums = {1,3,6};
+
+
+        // É possível pular a inicialização de alguns elementos do array durante a inicialização?
+
+        // A) FALSO
+        // B) VERDADEIRO
+
+        // Resposta: A. falso - Todos os elementos precisam ser inicializados de uma só vez ou ao mesmo tempo.
+
+
+        // // Qual é a saída do trecho de código Java abaixo?
+
+        // int [] marcas = {35, 65, 95 };
+
+        // System.out.println(marcas.length + "," + marcas[1]); // saída: C. 3,65
+
+        // // A) 2,65
+        // // B) 3,95
+        // // C) 3,65
+        // // D) Erro do compilador
+
+
+        // // Qual é a saída do trecho de código Java abaixo?
+
+        // int[] bolas = {};
+
+        // System.out.println(bolas.length); // saída: A. 0
+
+        // // A) 0
+        // // B) -1
+        // // C) 1
+        // // D) Erro do compilador
+
+
+        // Qual é a maneira correta de saber o tamanho do array em Java?
+
+        // A) //int[] array; 
+        //    array.length()
+
+        // B) //int[] array;
+        // array.length
+
+        // C) //int[] array;
+        // array->length()
+
+        // D) //int[] array;
+        // array->length
+
+        // Resposta: B.
+
+
+        // // Qual é a saída do programa Java abaixo com arrays?
+
+        // String[] cores = {"VERMELHO", "AMARELO", "BRANCO"};
+
+        // System.out.println(cores);
+
+        // // A) VERMELHO
+        // // B) AMARELO 
+        // // C) BRANCO 
+        // // D) Erro de compilação
+        
+        // // Resposta D. Erro de compilação - Os elementos do array devem ser separados por vírgulas(,)s.
+
+
+        // // Qual é a saída do programa Java abaixo com arrays?
+
+        // String[] computador = { "RAM", "HDD", "MOUSE" };
+        // String[] partes = { computador[0], computador[2]};
+
+        // System.out.println(partes[1]); // saída: C. MOUSE
+
+        // // A) RAM
+        // // B) HD
+        // // C) MOUSE
+        // // D) Erro do compilador
+
+
+        // // Qual é a saída do programa Java abaixo?
+        // int idades[3] = { 25, 27, 30};
+
+        // System.out.println(idades[1]);
+
+        // // A) 25
+        // // B) 27
+        // // C) 30
+        // // D) Erro de compilação
+
+        // // D. Erro de compilação - Não devemos mencionar o tamanho do array no momento da inicialização.
 
 
 
 
+        // Se um índice de um elemento é N, qual é sua posição real na matriz?
+
+        // A) N-1
+        // B) N
+        // C) N+1
+        // D) N+2
+
+        // Resposta: C. N+1 - O índice de matriz começa com 0. 
+                           // Portanto, um índice de 6 significa 7ª posição. 
+                           // Um índice de N significa, N+1 posição.
+
+        
+    // Um array em Java pode ser declarado apenas de alguns tipos predefinidos:
+
+    // A) Falso 
+    // B) Verdadeiro
+
+    // Resposta A. Falso - Um array pode ser de qualquer tipo de dado, primitivo ou tipo de objeto.
+
+
+    // Qual é o valor padrão de um elemento do tipo Object array
+
+    // A) 0
+    // B) nulo
+    // C) -1
+    // D) Garbage value
+
+    // Resposta B. Os objetos podem ser String, ArrayList, HashMap, HashSet etc.
+
+
+    // Qual é o valor padrão dos elementos de tipo de dados byte, short, int ou long de um array em Java?
+
+    // A) -1
+    // B) 1
+    // C) 0
+    // D) Garbage value
+
+    // Resposta C. 0
+
+
+    // Qual é o valor padrão dos elementos do tipo de dados float ou double de um array em Java?
+
+    // A) 0
+    // B) 0,0
+    // C) 1
+    // D) 1,0
+
+    // Resposta B. 0,0
+
+
+    // Qual é o valor padrão dos elementos do tipo de dados char de um array em Java?
+
+    // A) 'A'
+    // B) '\0'
+    // C) null
+    // D) '\0' or null
+
+    // Resposta D. '\0' or null
+
+
+    // Qual é o valor padrão dos elementos do tipo de dados booleanos de um array em Java?
+
+    // A) True 
+    // B) False 
+
+    // Resposta B. falso(false)
+
+
+    // // Qual é a saída do programa Java abaixo?
+
+    // int bolas[], rodadas = 3;
+
+    // bolas = new int[rodadas];
+
+    // for(int i = 0; i < bolas.length; i++) 
+    //     bolas[i] = (i+1)*2;
+
+    // for(int j = 0; j < bolas.length; j++)
+    //    System.out.println(bolas[j] + ",");
+
+    // // A) 0,2,4,
+    // // B) 1,2,3,
+    // // C) 2,4,6,
+    // // D) Compiler error
+
+    // // Resposta C. 2, 4, 6
+
+
+
+    // // Qual é a saída do programa Java abaixo com arrays?
+
+    // String[] array = {"KITE", "AR"};
+    // String str = "AVIÃO";
+
+    // array[1] = str;
+    // str = "VOAR";
+
+    // System.out.println(array[1]); // saída: B. AVIÂO
+
+    // // A) AR
+    // // B) AVIÃO
+    // // C) VOAR
+    // // D) Compiler error
+
+    // Um array de arrays em Java é chamado array?
+
+    // A) Bidirecional
+    // B) Combinação
+    // C) Multidimensional
+    // D) Multi-valor
+
+    // Resposta: C. Multidimensional
+
+
+    // Um array multidimensional contém elementos do mesmo tipo de dados em todas as linhas e colunas. 
+    // Indique VERDADEIRO ou FALSO.
+
+    // A) Falso 
+    // B) Verdadeiro 
+
+    // Resposta: 
+
+    
+    // Escolha a forma correta de inicializar um array multidimensional abaixo.
+
+    // A) int[][] codigo = {{1,2},{3,4,5}};
+    // B) int[2][] codigo = {{1,2},{3,4,5}};
+    // C) int[][] codigo = {1,2,3,4,5};
+    // D) Todos
+
+    // Resposta: A. int[][] codigo = {{1,2},{3,4,5}};
+
+
+    // // Qual é a saída do programa Java com o array multidimensional?
+
+    // int[][] cabras;
+    // cabras = new int[3][];
+    // cabras[0] = {1, 2};
+
+    // System.out.println(cabras[0][1]);
+
+    // // A) 0
+    // // B) 1
+    // // C) 2
+    // // D) Compiler error
+
+    // // Resposta: D. Erro de compilação - use a palavra-chave new
 
 
 
 
+     // Qual das seguintes é uma afirmação válida?
+
+    // A. char[] c = new char();
+    // B. char[] c = new char[5];
+    // C. char[] c = new char(4);
+    // D. char[] c = new char[];
+ 
+    // Resposta B. char[] c = new char[5];
+
+
+    // // Qual é a saída do programa Java?
+
+    // int[] a = new int[0];
+
+    // System.out.println(a.length); // saída: A. 0
+
+    // // A) 0
+    // // B) Erro de compilação 
+    // // C) Nenhuma acima 
+
+
+    // // Qual é a saída do programa Java?
+
+    // int[] x = new int[3];
+
+    // System.out.println("x[0] é " + x[0]); // saída: C. x[0] é 0
+
+    // // A) O programa tem um erro de compilação porque o tamanho do array não foi especificado ao declarar o array.
+    // // B) O programa tem um erro de tempo de execução porque os elementos da matriz não foram inicializados.
+    // // C) O programa funciona bem e exibe x[0] é 0.
+    // // D) O programa tem um erro de tempo de execução porque o elemento da matriz x[0] não está definido.
 
 
 
+    // // Qual é a saída do programa Java?
+
+    // double[] minhaLista = {1, 5, 5, 5, 5, 1};
+    // double max = minhaLista[0];
+    // int indiceDeMax = 0;
+
+    // for(int i = 0; i < minhaLista.length; i++) {
+
+    //     if (minhaLista[i] > max) {
+            
+    //         max = minhaLista[i];
+    //         indiceDeMax = i;
+    //     }
+    // }
+    // System.out.println(indiceDeMax); // saída: B. 1
+
+    // // A) 0
+    // // B) 1
+    // // C) 2
+    // // D) 3
+    // // E) 4
 
 
 
+    // // Qual é a saída do programa Java?
+
+    // int[]x = { 120, 200, 016 };
+
+    // for(int i = 0; i < x.length; i++) {
+
+    //     System.out.println(x[i] + " "); // saída: B. B. 120 200 14
 
 
+    // // A. 120 200 16
+    // // B. 120 200 14
+    // // C. 120 200 016
+    // // D. 016 is a compile error. It should be written as 16.
+
+
+    // // Qual é a saída do programa Java?
+
+    // int[]x = { 1, 2, 3, 4 };
+    // int[]y = x;
+
+    // x = new int[2];
+
+    // for(int i= 0; i < x.length; i++)
+    //    System.out.println(y[i] + " "); // saída: C. 1 2
+
+
+    // //    A. 1 2 3 4
+    // //    B. 0 0 0 0
+    // //    C. 1 2
+    // //    D. 0 0
+    // //    E. Nenhum desses
+        
+        
+
+    // // Analise o código a seguir e escolha a resposta correta:
+
+    // int[] arr = new int[5];
+    // arr = new int[6];
+
+    // A) O código tem erros de compilação porque a variável arr não pode ser alterada depois de atribuída.
+    // B) O código tem erros de tempo de execução porque a variável arr não pode ser alterada depois de atribuída.
+    // C) O código pode compilar e rodar bem. A segunda linha atribui um novo array para arr .
+    // D) O código tem erros de compilação porque não podemos atribuir uma matriz de tamanho diferente para arr .
+
+    // Resposta C. 
+
+
+    // // Qual é a saída do programa Java?
+
+    // int[]a = new int[4];
+    // a[1] = 1;
+    // a = new int[2];
+
+    // System.out.println("a[1] é " + a[1]); // saída: C. a[1] é 0
+
+    // // A)  O programa tem um erro de compilação porque new int[2]
+    // // B) O programa tem um erro de tempo de execução porque um [1]
+    // // C) a [1] é 0
+    // // D) a [1] é 1
+
+
+    // Quando voc~e passa um array para um método, o método recebe:
+
+    // A) Uma cópia da matriz
+    // B) Uma cópia do primeiro elemento 
+    // C) A referência da matriz 
+    // D) O comprimento da matriz
+
+    // Resposta: C. A referência da matriz
 
 
 
