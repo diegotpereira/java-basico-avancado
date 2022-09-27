@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.LinkedHashSet;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -2751,7 +2752,7 @@ public class AppQuiz {
         // A) void
         // B) int
         // C) short
-        // D) None of the above
+        // D) Nenhum of the above
 
         // Resposta D. você precisa mencionar explicitamente um tipo de retorno.
 
@@ -3762,6 +3763,1085 @@ public class AppQuiz {
     // D) O comprimento da matriz
 
     // Resposta: C. A referência da matriz
+
+
+    // // Qual é a saída do trecho de código com o operador ternário?
+
+    // int p = 5;
+
+    // System.out.println("Olá");
+
+    // (p < 6) ? 5 : 6;
+
+    // // A) Olá 5
+    // // B) Olá 6
+    // // C) Olá
+    // // D) Compiler error
+
+    // // Resposta D. Erro de compilação - o lado esquerdo de uma atribuição deve ser uma variável.
+
+
+    // // Qual é a saída do trecho de código com o operador ternário?
+
+    // int num = false ? 10:20;
+
+    // System.out.println(num); // saída: B. 20
+
+    // // A) 10
+    // // B) 20
+    // // C) 0
+    // // D) Compiler error
+
+
+    // // Qual é a saída do trecho de código com o operador ternário?
+
+    // String nome = "java";
+    // int marcas = nome == "java" ? 10:20;
+
+    // System.out.println("Marcas = " + marcas); // saída marcas = 10
+
+
+    // // Qual é a saída do trecho de código com o operador ternário?
+
+    // String nome = "gato";
+    // int marcas = nome == "Gato" ? 10:20;
+
+    // System.out.println("Marcas = " + marcas); // saída: C. marcas = 20
+
+    // // // A) marcas=0
+    // // // B) marcas=10
+    // // // C) marcas=20
+    // // // D) Compiler error
+
+
+    // // Qual é a saída do trecho de código com o operador ternário?
+
+    // String nome1 = "pen";
+    // String nome2 = "pen";
+    // int marcas = nome2.equals(nome1) ? 50:80;
+
+    // System.out.println("Marcas = " + marcas); // saída: B. Marcas = 50
+
+    // // A) Marcas=0
+    // // B) Marcas=50
+    // // C) Marcas=80
+    // // D) Compiler error
+
+    
+    // // Qual é a saída do trecho de código com o operador ternário?
+    
+    // void exibir() {
+    //     int num = true ? buscarNumero() : 20;
+
+    //     System.out.println("Tomate = " + num);
+    // }
+
+    // void buscarNumero() {
+
+    //     System.out.println(30);
+    // }
+
+    // // A) TOMATE=0
+    // // B) TOMATE=20
+    // // C) TOMATE=30
+    // // D) Erro do compilador
+
+    // // Resposta: D. Erro de compilação - O tipo "void" não é permitido como Operando de um operador Ternário ou Condicional.
+
+
+    // // Qual é a saída do trecho de código com o operador ternário?
+
+    // String floresta = null;
+    // String saida = floresta != null ? "Pantanal" : "Amazonia";
+
+    // System.out.println(saida); // saída C. Amazonia
+
+    // // A) null
+    // // B) Pantanal
+    // // C) Amazonia
+    // // D) Compiler error
+
+    
+    // // Qual é a saída do trecho de código Java abaixo?
+
+    // int a = 20, b = 30;
+    // int total = a > 10 && b < 10 ? 65:75;
+
+    // System.out.println(total); // saída B. 65
+
+    // // A) 0
+    // // B) 65
+    // // C) 75
+    // // D) Erro: O lado esquerdo de uma atribuição deve ser uma variável.
+
+
+    // // Qual é a saída do trecho de código Java abaixo?
+
+    // int a = 20, b = 30;
+    // boolean resultado = a & b ? true : false;
+
+    // System.out.println(resultado);
+
+    // // A) false
+    // // B) true
+    // // C) 0
+    // // D) Compiler error
+
+    // // Resposta: D. Erro de compilação.
+
+    
+    // // Qual é a saída do trecho de código Java abaixo?
+
+    // int a = 4, b = 7;
+    // int resultado = (true ? a & b : a | b) > 3 ? 120 : 150;
+
+    // System.out.println(resultado); // saída: B. 120
+
+    // // A) 4
+    // // B) 120
+    // // C) 150
+    // // D) Compiler error
+
+    
+    // // Qual é a saída do trecho de código Java abaixo?
+
+    // final int a = 25, b = 33;
+    // String nome = !true ? "Dino" : "Tom";
+
+    // System.out.println(nome); // saída: C. Tom
+
+    // // A) Empty
+    // // B) Dino
+    // // C) Tom
+    // // D) Compiler error
+
+    
+    // // Qual é a saída do trecho de código Java abaixo?
+
+    // int a = 25, b = 33;
+    // String nome = true ? "GATO" : ;
+
+    // System.out.println(nome);
+
+    // // A) Empty
+    // // B) GATO
+    // // C) null
+    // // D) Compiler error
+
+    // // Resposta D. Erro de compilação - Você não pode pular nenhuma das duas expressões de um operador Ternário ou Condicional (?:).
+
+
+    // // Qual é a saída do programa Java com a instrução IF? 
+    // if (1) {
+    //     System.out.println("OK");
+    // }
+
+    // // A) OK
+    // // B) Sem saída
+    // // C) Erro do compilador
+    // // D) Nenhum
+
+    // // Resposta C. Erro de compilação - A condição dentro de uma instrução IF deve ser avaliada como verdadeira/falsa. O erro abaixo é acionado.
+    //                                  // Tipo incompatível: não é possível converter de int para boolean
+
+
+
+    // // Qual é a saída do programa Java com instruções IF-ELSE?
+
+    // if (TRUE)
+    //    System.out.println("IR");
+    // else 
+    //    System.out.println("PARAR"); 
+
+    // // A) IR
+    // // B) PARAR
+    // // C) Compiler error
+    // // D) Nenhum
+
+    // // Resposta: C. Erro de compilação - TRUE cannot be resolved to a variable
+
+
+    // // Qual é a saída do programa Java?
+
+    // int a = 10;
+
+    // if(a == 9)
+    //    System.out.println("OK");
+    //    System.out.println("MESTRE");
+    // else 
+    //    System.out.println("ADEUS");
+
+    // // A) OK MESTRE
+    // // B) ADEUS
+    // // C) Compiler error
+    // // D) Nenhum
+
+    // // Resposta C. Erro de compilação - Mais de 1 instrução deve ser mantida entre chaves { } se ELSE ou ELSE IF estiver próximo à instrução IF.
+
+
+
+    // // Qual é a saída do programa Java?
+
+    // String nome1 = "FOX", nome2 = "CACHORRO";
+
+    // if(nome1 == "FOX")
+    //    System.out.println("FOX");
+    //    System.out.println("BOM");
+
+    // if(nome2 == "GATO")
+    //    System.out.println("DINO"); 
+
+
+    // // A) FOX
+    // // DINO
+    // // B) FOX BOM
+    // // C) Compiler error
+    // // D) Nenhum
+
+    // // Resposta: B. FOX BOM
+
+
+    // // Qual é a saída do programa Java?
+
+    // String nome = "dino";
+
+    // if(nome == "dino")
+    //    System.out.println("DINO");
+
+    // System.out.println("BOM");
+
+    // // A) DINO BOM
+    // // B) DINO
+    // // C) BOM
+    // // D) Compiler error
+
+    // // Resposta: A. DINO BOM
+
+
+    // // Qual é a saída do programa Java?
+
+    // int marcas = 55;
+
+    // if(marcas >= 80)
+    //    System.out.println("DISTINÇÃO");
+    // else if(marcas >= 35)
+    //    System.out.println("PASSAR");
+    // else 
+    //    System.out.println("FALHA");
+
+
+    // // A) DISTINÇÃO
+    // // B) PASSAR
+    // // C) PASSAR
+    // // D) Compiler error
+
+    // // Resposta: C. PASSAR
+
+
+    // // Qual é a saída do programa Java?
+
+    // int marcas = 85;
+
+    // if(marcas >= 80)
+    //    System.out.println("DISTINÇÃO");
+    // else if(marcas >= 35)
+    //    System.out.println("PASSAR");
+
+    // // A) DISTINÇÃO
+    // // B) PASSAR
+    // // C) Compiler error
+    // // D) Nenhum
+
+    // // Resposta: A. DISTINÇÃO
+
+
+    // // Qual é a saída do programa Java abaixo?
+
+    // float temp = 98.4f;
+
+    // if(temp > 98.4) {
+    //     System.out.println("VERÃO");
+
+    // }  else {
+    //     System.out.println("NÃO SEI");
+    // }
+
+    // A) VERÃO
+    // B) NÃO SEI
+    // C) Compiler error
+    // D) 
+    
+    // // Resposta A. VERÃO
+
+
+    // // Qual é a saída do programa Java abaixo?
+
+    // long num = 123L;
+
+    // if(num > 123) {
+
+    //     System.out.println("TIGRE");
+
+    // } else {
+
+    //     System.out.println("PASSARO");
+    // }
+
+    // // A) TIGRE
+    // // B) PASSARO
+    // // C) Compiler error
+    // // D) Nenhum
+
+    // // Resposta B. PASSARO
+
+
+    // // Qual é a saída do programa Java abaixo?
+
+    // int cavalos = 10;
+    // int camelos = 5;
+
+    // if(cavalos > 5) {
+
+    //     if (camelos > 3) {
+            
+    //         System.out.println("FLORESTA");
+    //     }
+
+    // } else {
+
+    //     System.out.println("CIDADE");
+    // }
+
+    // // A) FLORESTA
+    // // B) CIDADE
+    // // C) Compiler error
+    // // D) Nenhum
+
+    // // Resposta: A. FLORESTA
+
+
+    // // Qual é a saída do programa Java abaixo?
+
+    // int cavalos = 10;
+    // int camelos = 5;
+
+    // if (cavalos < 5) {
+        
+    //     System.out.println("CIDADE");
+
+    // } else if(cavalos >= 5)
+    //    System.out.println("FLORESTA");
+    //    System.out.println("AMAZONIA");
+
+    // else 
+    //    System.out.println("NÃO SEI");
+
+    // // A) CIDADE
+    // // B) FLORESTA AMAZONIA
+    // // C) NÃO SEI
+    // // D) Compiler error
+
+    // // Resposta D. Erro de compilação - A instrução ELSE-IF não deve conter mais de uma instrução sem chaves {}.
+
+
+    // // Qual é a saída do programa Java?
+
+    // int marcas = 29;
+
+    // if(marcas > 29)
+    //    System.out.println("PASSA");
+
+    // System.out.println("CLASSIFICAÇÃO");
+
+    // // A) CLASSIFICAÇÃO
+    // // B) PASSA
+    // // C) PASSA DE CLASSIFICAÇÃO
+    // // D) Erro do compilador
+
+    // // Resposta: A. CLASSIFICAÇÃO
+
+
+    // // Qual é a saída do programa Java abaixo?
+
+    // if (3 > 1) {
+        
+    //     4;
+    // }
+
+    // // A) 0
+    // // B) 4
+    // // C) Erro do compilador
+    // // D) Nenhum
+
+    // // Resposta C. Erro de compilação
+
+
+    // // Qual é a saída do programa Java com a instrução IF?
+
+    // if(true) {
+
+    //     break;
+
+    //     System.out.println("ELEFANTE");
+    // }
+
+    // // A) Sem saída
+    // // B) ELEFANTE
+    // // C) Erro do compilador
+    // // D) Nenhum
+
+    // // Resposta: C. Erro de compilação - break não pode ser usado fora de um loop ou switch.
+
+
+    // Um operador "this" usado dentro de um método Java refere-se à variável?
+
+    // A) Variável global
+    // B) Variável local do método
+    // C) Variável de instância
+    // D) Nenhum
+
+    // Resposta C. Variável de instância
+
+
+
+    // Uma variável local declarada dentro de um método não pode ser usada em expressões sem inicializá-la primeiro.
+    // (VERDADEIRO FALSO).
+
+    // A) Verdadeiro 
+    // B) Falso
+
+    // Resposta: A) Verdadeiro
+
+
+    // // Qual é a saída do programa Java abaixo?
+
+    // int localVariavel;
+
+    // System.out.println(localVariavel);
+
+    // // A) 0
+    // // B) valor do lixo
+    // // C) NullPointerException
+    // // D) Erro do compilador
+
+    // // Resposta D. Erro de compilação
+
+
+    // Em Java, as variáveis ​​locais são armazenadas na memória __ e as variáveis ​​de instância são armazenadas na memória ___.
+
+    // A) Pilha, Pilha
+    // B) Monte, Monte
+    // C) Pilha, Monte
+    // D) Pilha, Pilha
+
+    // Resposta C. Pilha, Monte
+
+
+    // Um método estático ou uma variável estática é compartilhada entre todas 
+    // as instâncias de uma classe. (VERDADEIRO FALSO)
+
+    // A) Verdadeiro
+    // B) Falso
+
+    // Resposta: A. Verdadeiro - uma única cópia de uma variável ou método estático é comum a todos os objetos de instância.
+
+
+
+    // // Java não permite aninhamento de métodos. (VERDADEIRO FALSO)
+
+    // A) Verdadeiro
+    // B) Falso 
+
+    // // Resposta: A. Verdadeiro
+
+    
+    // // Qual é a saída do programa abaixo:
+
+    // double[] x = new double[]{1, 2, 3};
+
+    // System.out.println("Valor é " + x[1]); // saída: D. O programa compila e roda bem e a saída - Valor é 2.0
+
+    // // A) O programa tem um erro de compilação porque a sintaxe new double[]{1, 2, 3} está errada e deve ser substituída por {1, 2, 3}.
+    // // B) O programa tem um erro de compilação porque a sintaxe new double[]{1, 2, 3} está errada e deve ser substituída por new double[3]{1, 2, 3};
+    // // C) O programa tem um erro de compilação porque a sintaxe new double[]{1, 2, 3} está errada e deve ser substituída por new double[]{1.0, 2.0, 3.0};
+    // // D) O programa compila e roda bem e a saída
+
+
+    // Qual declaração, construção e inicialização correta de um array?
+
+    // A) int [] minhaLista = {};
+    // B) int [] minhaLista = (5, 8, 2);
+    // C) int minhaLista [] [] = {4,9,7,0};
+    // D) int minhaLista [] = {4, 3, 7};
+
+    // Resposta: D. int minhaLista [] = {4, 3, 7};
+
+
+    // // Qual é a saída do programa abaixo:
+
+    // String s1 = args[1];
+    // String s2 = args[2];
+    // String s3 = args[3];
+    // String s4 = args[4];
+
+    // System.out.println(" args[2] = " + s2 );
+    
+
+    // // A. args[2] = 2
+    // // B. args[2] = 3
+    // // C. args[2] = null
+    // // D. An exception is thrown at runtime.
+
+    // // Resposta D. Index 1 out of bounds for length 0
+
+
+    // // Qual é o valor de a[1] depois que o código a seguir for executado?
+
+    // int[] a = { 0, 2, 4, 1, 3};
+
+    // for(int i = 0; i < a.length; i++)
+    //    a[i] = a[(a[i] + 3) % a.length];
+
+    // //    A. 0
+    // //    B. 1
+    // //    C. 2
+    // //    D. 3
+    // //    E. 4
+
+    // // Resposta: B. 1
+        
+
+    // // Qual será a saída do seguinte código Java?
+
+    // double num[] = { 5.5, 10.1, 11, 12.8, 56.9, 2.5 };
+    // double resultado;
+    
+    // resultado = 0;
+
+    // for(int i = 0; i < 6; i++) {
+
+    //     resultado = resultado + num[i];
+
+    //     System.out.println(resultado / 6); // saída: C. 16.46666666666667
+    // }
+
+    // // a) 16.34
+    // // b) 16.566666644
+    // // c) 16.46666666666667
+    // // d) 16.46666666666666
+        
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 10;
+
+    // System.out.println(++a * a++); // saída: A. 121
+
+    // // (A) 121
+    // // (B) 132
+    // // (C) 144
+    // // (D) 100
+
+    
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 10;
+
+    // System.out.println(a++ * a++); // saída: A. 110
+
+    // // (A) 100
+    // // (B) 110
+    // // (C) 121
+    // // (D) 144
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 10;
+
+    // System.out.println(a * a++); // saída: A. 100
+
+    // // (A) 100
+    // // (B) 110
+    // // (C) 121
+    // // (D) Compilation Error
+
+
+    // // Qual será a saída do seguinte código Java?
+    
+    // int a = 10;
+
+    // System.out.println(a++); // saída: A. 10 - Seu operador pós-incremento aqui, é por isso que println(a++); é avaliado como 10.
+
+    // a++;
+
+    // // (A) 10
+    // // (B) 11
+    // // (C) 12
+    // // (D) 13
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 10;
+
+    // System.out.println(a++++);
+
+    // // (A) 11
+    // // (B) 12
+    // // (C) 13
+    // // (D) Compilation Error
+
+    // // Resposta: D. Erro de compilação - é avaliado como 10++; variável é necessária para executar o operador ++. Executar ++ em 10 é um erro de compilação.
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 10;
+
+    // System.out.println(++a++);
+
+    // // (A) 10
+    // // (B) 11
+    // // (C) 12
+    // // (D) Compilation Error
+
+    // // Resposta: D. Erro de compilação - Os operadores de pré-incremento e pós-incremento não são permitidos na mesma variável ao mesmo tempo.
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // String nome;
+
+    // Scanner teclado = new Scanner(System.in);
+
+    // System.out.println("Digite seu nome: ");
+    // nome = teclado.nextLine();
+
+    // switch(nome.length()) {
+        
+    //     case 5:
+    //     case 6:
+    //     case 7:
+    //     case 8:
+    //     case 9:
+    //     case 10: System.out.print("Comprimento é 5-10");
+    //        break;
+    //     default:
+    //        System.out.print("Comprimento não em 5-10");
+
+
+    //     // (A) Compilation Error
+    //     // (B) Comprimento é 5-10
+    //     // (C) Comprimento não in 5-10
+    //     // (D) nada é impresso
+
+    //     // Resposta: C. Comprimento é 5-10
+    // }
+
+
+    // // Qual será a saída do seguinte código Java?
+
+
+    // int a = 5;
+    // a += 5;
+
+    // switch(a) {
+
+    //     case 5:
+    //         System.out.print("5");
+    //         break;
+
+    //     case 10:
+    //        System.out.print("10");
+    //        System.out.print(((a%2 == 0) ? "-até-" : "-impar-"));
+
+    //     default:
+    //        System.out.println("0");
+    // }
+
+    // // (A) Compilation Error
+    // // (B) 10-até-
+    // // (C) 10-impar-
+    // // (D) 10-até-0
+
+    // // Resposta D. 10-até-0
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 5;
+    // a += 5;
+
+    // // a = 10
+
+    // switch(a) {
+
+    //     case 5:
+    //        System.out.print("5");
+    //        break;
+
+    //     case 10: 
+    //        System.out.print("10");
+    //        System.out.print(((a %2 == 0) ? "-ate-" : "-impar-"));
+    //        break;
+
+    //     default:
+    //        System.out.println("0");
+    // }
+    
+    // // (A) Compilation Error
+    // // (B) 10-ate-
+    // // (C) 10-ate-0
+    // // (D) 10-impar
+
+    // // Resposta: B. 10 -ate-
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 5;
+    // a += 5;
+
+    // switch(a) {
+
+    //     case 5:
+    //        System.out.print("5");
+    //        break;
+
+    //     case 10: 
+    //        System.out.print("10");
+
+    //     default: 
+    //        System.out.print("0");
+    // }
+
+    // // (A) 10
+    // // (B) 510
+    // // (C) 5100
+    // // (D) 100
+
+    // // Resposta: D. 100
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = -5;
+    // a += 5;
+
+    // switch(a) {
+
+    //     case 5: 
+    //        System.out.print("5");
+    //        break;
+
+    //     case 10: 
+    //        System.out.print("10");
+           
+    //     default:
+    //        System.out.print("0");
+    // }
+
+    // // (A) 5
+    // // (B) 10
+    // // (C) 100
+    // // (D) 0
+
+    // // Resposta D. 0
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 0;
+    // a += 5;
+
+    // switch(a) {
+        
+    //     case 5:
+    //         System.out.println("5");
+    //         break;
+
+    //     case 10: 
+    //        System.out.println("10");
+
+    //     default: 
+    //        System.out.println("0");
+    // }
+
+    // // (A) 5
+    // // (B) 510
+    // // (C) 5100
+    // // (D) 100
+
+    // // Resposta A. 5
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 0;
+
+    // a += 5;
+
+    // switch(a) {
+
+    //     case 5:
+    //        System.out.print("5");
+
+    //     case 10: 
+    //        System.out.print("10");
+
+    //     default: 
+    //        System.out.print("0");
+    // }
+
+    // // (A) 5
+    // // (B) 510
+    // // (C) 5100
+    // // (D) Erro de compilação
+
+    // // Resposta: C. 5100 - não tem break.
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a = 0;
+    // a += 5;
+
+    // switch(a) {
+
+    //     case 5:
+    //        System.out.print("5");
+
+    //     case 10: 
+    //        System.out.print("10");
+    //        break;
+
+    //     default: 
+    //        System.out.print("0");
+    // }
+
+    // // (A) 5
+    // // (B) 10
+    // // (C) 510
+    // // (D) Erro de compilação
+
+    // // Resposta C. 510
+
+
+    // // Qual será a saída do seguinte código Java?
+
+    // int a =5;
+    // a += 5;
+
+    // switch(a) {
+
+    //     case 5:
+    //        System.out.println("5");
+    //        break;
+
+    //     case 10: 
+    //        System.out.println("10");
+    //        break;
+
+    //     default:
+    //        System.out.println("0");
+    // }
+
+    // // (A) 5
+    // // (B) 10
+    // // (C) 0
+    // // (D) Erro de compilação
+
+    // // Resposta: B. 10
+
+
+    // // Quantas vezes 'Olá' é impresso?
+
+    // for(int i = 0; i < 5; i = 5) {
+
+    //     System.out.println("Olá");
+    // }
+
+    // // (A) 5
+    // // (B) 4
+    // // (C) 2
+    // // (D) 1
+
+    // // Resposta: D. será impresso 1 vez, Na primeira vez, será executado para i=0; O valor da segunda vez de i torna-se 5 por isso 5 < 5; é condição falsa para parar o loop.
+
+
+    // // Quantas vezes 'Olá' é impresso?
+
+    // for(int i = 0; i > 5; ) {
+
+    //     System.out.println("Olá");
+    // }
+
+    // // (A) 5
+    // // (B) 4
+    // // (C) 3
+    // // (D) 0
+
+    // // Resposta D. Nada é impresso porque o loop não será executado; 0>5 é condição falsa
+
+
+    // // Quantas vezes 'Olá' é impresso?
+
+    // for(int i = 0; i < 5; ) {
+
+    //     System.out.println("Olá");
+    // }
+
+    // // (A) 0
+    // // (B) 1
+    // // (C) 2
+    // // (D) Tempos infinitos
+
+    // // Resposta D. Infinito
+
+
+    // // O que será impresso?
+
+    // for(int i = 0; i < 5; i +=2) {
+
+    //     System.out.println("Olá");
+
+    //     i += 2;
+
+    // }
+
+    // // (A) 0
+    // // (B) 1
+    // // (C) 2
+    // // (D) 3
+
+    // // Resposta: C. 2 - o loop for será executado duas vezes apenas para i=0; i=4
+
+
+    // // O que será impresso?
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     System.out.println("Olá");
+
+    //     i += 2;
+    // }
+
+    // // (A) 1
+    // // (B) 2
+    // // (C) 3
+    // // (D) 4
+
+    // // Resposta: B. 2 - O loop é executado 2 vezes apenas porque i é incrementado em 3 a cada vez. i = 0; i=3; i=6;
+
+
+    // // O que será impresso?
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     System.out.println("Olá");
+
+    //     i++;
+    //     i--;
+    // }
+
+    // // (A) 5
+    // // (B) 4
+    // // (C) 3
+    // // (D) 2
+
+    // // Resposta: A. 5 - i++; incrementará o valor de i em 1
+    //                  // mas na próxima instrução i--; diminuirá o valor de i em 1.
+    //                  // Portanto, essas duas operações não fazem sentido
+
+
+
+    // // O que será impresso?
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     System.out.println("Olá");
+
+    //     i++;
+    // }
+
+    // // (A) 5
+    // // (B) 4
+    // // (C) 3
+    // // (D) 2
+
+    // // Resposta C. 3 - é impresso 3 vezes porque i é incrementado 2 vezes para uma iteração
+
+
+    // // Quantas vezes 'Olá' é impresso?
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     System.out.println("Olá");
+    //     break;
+    // }
+
+    // // (A) 5
+    // // (B) 4
+    // // (C) 1
+    // // (D) 0
+
+    // // Resposta: C. 1 - Ele é impresso apenas uma vez porque break; terminará o loop atual
+
+
+    // // O método main() de um aplicativo deve ser público. Caso contrário, não poderia ser chamado por um interpretador Java. Isso é verdade?
+
+    // A) Verdadeiro 
+    // B) Falso 
+
+    // // Resposta: A. Verdadeiro
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int arr[] = {'a', 'b', 'c', 'd', 'e'};
+
+    // System.out.print(arr); // saída: D. Some Garbage Value
+
+    // // (A) abcde
+    // // (B) 6566676869
+    // // (C) Compilation Error
+    // // (D) Some Garbage Value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
