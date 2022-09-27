@@ -4809,9 +4809,91 @@ public class AppQuiz {
     // // (D) Some Garbage Value
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // int arr[] = { 'a', 'b', 'c', 'd', 'e'};
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     System.out.print(" " + (char) arr[i]); // saída: A. a b c d e
+    // }
+
+    // // (A) a b c d e
+    // // (B) 96 97 98 99 101
+    // // (C) 65 66 67 68 69
+    // // (D) Nenhuma das acima
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int arr[] = { 'a', 'b', 'c', 'd', 'e'};
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     System.out.print(" " + arr[i]); // saída: C. 97 98 99 100 101
+    // }
+
+    // // (A) a b c d e
+    // // (B) abcde
+    // // (C) 97 98 99 100 101
+    // // (D) 65 66 67 68 69
 
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // int arr[] = {1, 2, 3, 4, 5};
+    // int contar = 0;
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     if(arr[i] % 2 == 0)
+    //        arr[i] *= 2;
+
+    //     System.out.print(arr[i]); // saída: D. 14385
+    // }
+
+    // // (A) 12345
+    // // (B) 135
+    // // (C) 22222
+    // // (D) 14385
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int arr[] = {1, 2, 3, 4, 5};
+    // int contar = 0;
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     if(arr[i] % 2 == 0)
+    //        contar++;
+    // }
+
+    // System.out.println(contar); // saída: B. 2
+
+    // // (A) 3
+    // // (B) 2
+    // // (C) 1
+    // // (D) 0
+
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int arr[] = {1, 2, 3, 4, 5};
+
+    // for(int i = 0; i < 5;) {
+
+    //     System.out.print(arr[i]);
+    // }
+
+    // // (A) 12345
+    // // (B) Nada é imprimido
+    // // (C) 1
+    // // (D) Tempos infinitos
+
+    // // Resposta D. Tempos infinitos
 
 
 
