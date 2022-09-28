@@ -71,3 +71,33 @@
 
 //     // Resposta: C. -10
 // }
+
+
+// // Qual é a saída do programa abaixo?
+
+// public class Principal {
+
+//     public static int soma(int a, int b) {
+
+//         if(a + b > 1)
+
+//            return 0;
+
+//         System.out.println(a + b);
+
+//         return a + b;
+//     }
+
+//     public static void main(String[] args) {
+        
+//         System.out.println(soma(1, soma(0, 1 ))); // saída D. 10
+//     }
+
+//     // (A) 12
+//     // (B) 01
+//     // (C) 11
+//     // (D) 10
+// }
+
+// Qual é a saída do programa abaixo?
+

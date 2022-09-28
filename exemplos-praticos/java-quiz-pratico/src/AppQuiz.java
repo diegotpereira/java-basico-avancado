@@ -4896,10 +4896,116 @@ public class AppQuiz {
     // // Resposta D. Tempos infinitos
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // int arr[] = { 1, 2, 3, 4, 5};
+
+    // for(int i = 0; i < 5; i++) {
+
+    //     System.out.print(arr[i++]); // saída: D. 135
+    // }
+
+    // // (A) 12345
+    // // (B) 123
+    // // (C) 124
+    // // (D) 135
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // String s = "amigos";
+    // int x = 0;
+
+    // do {
+    //     System.out.print(s.charAt(x)); // saída: C. am
+    //     x++;
+    // } while(x < 2);
+
+    // // A) amigos 
+    // // B) amigo 
+    // // C) am 
+    // // D) Erro de compilação
+
+    
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 9;
+    // String b = "10 + 10";
+
+    // System.out.println(a + b); // saída: D. 910 + 10
+
+    // // (A) 30
+    // // (B) 1020
+    // // (C) 10+10+10
+    // // (D) 910+10
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 10;
+    // String b = "-10";
+
+    // System.out.println(a + b); // saída: C. 10-10
+
+    // // (A) 0
+    // // (B) 10"-10"
+    // // (C) 10-10
+    // // (D) Compilation Error
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 10;
+    // String b = "10";
+
+    // System.out.println(b + a); // saída: B. 1010
+
+    // // (A) 10+10
+    // // (B) 1010
+    // // (C) Compilation Error
+    // // (D) Undefined
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 10;
+    // String b = "10";
+
+    // System.out.println(a - b);
+
+    // // (A) 10-10
+    // // (B) 0
+    // // (C) 1010
+    // // (D) Compilation Error
+
+    // // Resposta D. Erro de compilação
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 10;
+    // String b = "10";
+
+    // System.out.println(a + b); // saída: D. 1010
+
+    // // (A) 10"10"
+    // // (B) Compilation Error
+    // // (C) 20
+    // // (D) 1010
+    
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // String str = "1234";
+    // int a = Integer.parseInt(str);
+
+    // System.out.print(a); // saída: B. 1234
+
+    // // (A) 123
+    // // (B) 1234
+    // // (C) 12340
+    // // (D) Compilation Error
 
 
 
