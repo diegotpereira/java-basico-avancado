@@ -5008,8 +5008,333 @@ public class AppQuiz {
     // // (D) Compilation Error
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // do{
+    //     System.out.println("cppbuzz"); // saída: E. cppbuzz
+    // } while(false);
+
+    // // (A) 0
+    // // (B) 1
+    // // (C) Infinite Times
+    // // (D) Compilation Error
+    // // (E) cppbuzz
+
+    
+    // // Qual é a saída do programa abaixo?
+
+    // while(true) {
+
+    //     System.out.println("cppbuzz"); // saída: D. cppbuzz
+
+    //     break;
+    // }
+
+    // // (A) Infinite times
+    // // (B) 0
+    // // (C) 1
+    // // (D) cppbuzz
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // final int a;
+    // a = 5;
+    // a = 10;
+
+    // System.out.println(a);
+
+    // // (A) 5
+    // // (B) 10
+    // // (C) 0
+    // // (D) Erro: variável a pode já ter sido atribuída
+
+    // // Resposta: D. variável a pode já ter sido atribuída
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // final int a;
+    // a = 10;
+
+    // System.out.println(a); // saída: 10
+
+    // // (A) 0
+    // // (B) 10
+    // // (C) Undefind
+    // // (D) Error: Não é possível modificar a variável final a
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // final int a = 5;
+    // a = 10;
+
+    // System.out.println(a);
+
+    // // (A) 5
+    // // (B) 10
+    // // (C) Erro: Não é possível atribuir um valor à variável final a
+    // // (D) None of the above
+
+    // // Resposta C. Não é possível atribuir um valor à variável final a
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 0;
+
+    // if(a == 1);
+    //    System.out.print("Sol");
+    //    System.out.println("Lua");
+
+    // // (A) Compilation Error
+    // // (B) exception: unreachable code
+    // // (C) Sol
+    // // (D) SolLua
+
+    // // Resposta C. SolLua
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 0;
+
+    // if (a == 1); {
+        
+    //     System.out.println("Sol");
+    // }
+
+    // // (A) Compilation Error
+    // // (B) Sol
+    // // (C) Nada é impresso
+    // // (D) error: declaração inacessível
+
+    // // Resposta B. Sol
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 0;
+
+    // if (a == 1) {
+        
+    //     System.out.println("Sol");
+    // }
+
+    // // (A) Sol
+    // // (B) Nada é impresso
+    // // (C) Compilation Error
+    // // (D) Exception
+
+    // // Resposta B. Nada é impresso
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 0;
+
+    // if (a == 0) {
+        
+    //     System.out.println("Sol");
+
+    // } else {
+
+    //     System.out.println("Lua");
+    // }
+
+    // // (A) Sol
+    // // (B) Lua
+    // // (C) SolLua
+    // // (D) Compilation Error
+
+    // // Resposta A. Sol
+       
+    
+
+    // // Qual é a saída do programa abaixo?
+
+    // if (0 == 0) {
+        
+    //     System.out.println("Sol");
+
+    // } else {
+
+    //     System.out.println("Lua");
+    // }
+
+    // // (A) Sol
+    // // (B) Lua
+    // // (C) SolLua
+    // // (D) Compilation Error
+
+    // // Resposta: A. Sol
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // String temp = "10.87";
+    // Float a  = Float.parseFloat(temp);
+
+    // System.out.println(a); // saída: A. 10.87
+
+    // // (A) 10.87
+    // // (B) 10.870000
+    // // (C) 10.8700
+    // // (D) 10.00
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // String temp = "10.87";
+    // int a = Float.parseFloat(temp);
+
+    // System.out.println(a);
+
+    // // (A) 10.87
+    // // (B) 10.00
+    // // (C) 10
+    // // (D) erro: possível perda de precisão
+
+    // // Resposta D. erro: possível perda de precisão
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // String temp = "10.87";
+    // int a = Integer.parseInt(temp);
+
+    // System.out.println(a);
+
+    // // (A) 10
+    // // (B) 10.00
+    // // (C) 10.87
+    // // (D) NumberFormatException
+
+    // // Resposta D. NumberFormatException
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // String temp = "10";
+    // int a = Integer.parseInt(temp);
+
+    // System.out.println(a); // saída: B. 10
+
+    // // (A) 0
+    // // (B) 10
+    // // (C) 100
+    // // (D) Exception
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // float a = 10.0000f;
+    // String temp = Double.toString(a);
+
+    // System.out.println(temp); // saída: D. 10.0
+
+    // // (A) 10.0000f
+    // // (B) 10.0000
+    // // (C) 10.00
+    // // (D) 10.0
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // float a = 10.0000f;
+    // String temp = Float.toString(a);
+
+    // System.out.println(temp); // saída: B. 10.0
+
+    // // (A) 10.0f
+    // // (B) 10.0
+    // // (C) 10.00
+    // // (D) 10.0000
+
+    
+    // // Qual é a saída do programa abaixo?
+
+    // float a = 10.0f;
+    // String temp = Float.toString(a);
+
+    // System.out.println(temp); // saída: B. 10.0
+
+    // // (A) 10.0f
+    // // (B) 10.0
+    // // (C) 10.00
+    // // (D) 10.0000
+
+    
+    // // Qual é a saída do programa abaixo?
+
+    // float a = 10.0f;
+    // String temp = Integer.toString(a);
+
+    // System.out.println(temp);
+
+    // // (A) 10.0f
+    // // (B) 10.0
+    // // (C) 10
+    // // (D) error: nenhum método adequado encontrado para toString(float)
+
+    // // Resposta D. error: nenhum método adequado encontrado para toString(float)
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 10.0;
+    // String temp = Integer.toString(a);
+
+    // System.out.println(temp);
+
+    // // (A) 10.0
+    // // (B) 10
+    // // (C) error: loss precision
+    // // (D) Exception
+
+    // // Resposta C. erro precisão perdida - cannot convert from double to int
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int a = 10;
+    // String temp = Integer.toString(a);
+
+    // System.out.println(temp); // saída: C. 10
+
+    // // (A) Compilation Error
+    // // (B) Exception
+    // // (C) 10
+    // // (D) 1
+
+    
+    // // Qual é a saída do programa abaixo?
+
+    // String str = "1234.34";
+    // Float a = Float.parseFloat(str);
+
+    // System.out.println(a); // saída: B. 1234.34
+
+    // // (A) 1234.00
+    // // (B) 1234.34
+    // // (C) 1234
+    // // (D) Exception
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // String str = "1234.34";
+    // int a  = Integer.parseInt(str);
+
+    // System.out.println(a);
+
+    // // (A) 1234.34
+    // // (B) 1234
+    // // (C) .1234.00
+    // // (D) NumberFormatException
+
+    // // Resposta D. NumberFormatException
 
 
 
