@@ -1,3 +1,5 @@
+// Qual é a saída do programa abaixo?
+
 // public class Main {
 
 //     public static int soma(int a, int b) {
@@ -23,6 +25,8 @@
 // }
 
 
+// Qual é a saída do programa abaixo?
+
 // public class Main {
 
 //     public static int soma(int a, int b) {
@@ -42,6 +46,9 @@
 //     // (C) 12336
 //     // (D) 63321
 // }
+
+// Qual é a saída do programa abaixo?
+
 
 // public class Main {
 
@@ -63,6 +70,10 @@
 //     // (D) 12336
 // }
 
+
+// Qual é a saída do programa abaixo?
+
+
 // public class Main {
 
 //     public static int soma(int a, int b) {
@@ -80,6 +91,8 @@
 //     // (C) 5
 //     // (D) 6
 // }
+
+// Qual é a saída do programa abaixo?
 
 // public class Main {
 
@@ -101,6 +114,10 @@
 //     // Resposta D. error: non-static method can't be called
 // }
 
+
+// Qual é a saída do programa abaixo?
+
+
 // public class Main {
 
 //     public static void soma(int a, int b) {
@@ -119,6 +136,10 @@
 //     // (C) 0-2
 //     // (D) -2
 // }
+
+
+// Qual é a saída do programa abaixo?
+
 
 // public class Main {
 
@@ -143,6 +164,9 @@
 //     // (D) Compilation Error
 // }
 
+
+// Qual é a saída do programa abaixo?
+
 // public class Main {
 
 //     private int a;
@@ -159,6 +183,9 @@
 //     // (C) null
 //     // (D) 0
 // }
+
+
+// Qual é a saída do programa abaixo?
 
 // public class Main {
 
@@ -182,6 +209,9 @@
 //         System.out.println("Ola");
 //     }
 // }
+
+
+// Qual é a saída do programa abaixo?
 
 // public class Main {
 
@@ -207,3 +237,27 @@
 
 //     // Resposta B. SolLua
 // }
+
+
+// // Qual é a saída do programa abaixo?
+
+// public class Main {
+
+//     public static void teste(String s) {
+
+//         System.out.println("String");
+//     }
+
+//     public static void teste2(Object o) {
+
+//         System.out.println("Objeto");
+//     }
+
+//     public static void main(String[] args) {
+        
+//         teste(null); // saída: String
+//     }
+// }
+
+
+// Qual é a saída do programa abaixo?

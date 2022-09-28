@@ -5337,14 +5337,339 @@ public class AppQuiz {
     // // Resposta D. NumberFormatException
 
 
+    // // Qual é a saída do programa abaixo?
+
+    // int i = 0;
+
+    // for(i = 0; i < 5; i++) {
+
+    // }
+
+    // System.out.println(i); // saída: A. 5
+
+    // // A. 5
+    // // B. 0
+    // // C. 4
+    // // D. Compilation Error
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // int i = 0;
+
+    // for(i = 0; i < 10; i++) {
+        
+    //     break;
+    // }
+
+    // System.out.println(i); // saída: B. 0
+
+    // // A. 1
+    // // B. 0
+    // // C. 10
+    // // D. 9
+
+    
+    // // Qual é a saída do programa abaixo?
+
+    // int i = 0;
+
+    // for(i = 0; i < 10; i++) {
+
+    //     continue;
+    // }
+
+    // System.out.println(i); // saída: A. 10 - A palavra-chave continue Java faz com que o loop for ignore a iteração atual e continue com a próxima iteração.
+                                             // Haverá um total de 10 iterações após as quais o valor da variável i se torna 10 e isso tornaria a condição do loop for falsa.
+                                             // Então, finalmente, o valor da variável i é 10 após o loop.
+
+    // // A. 10
+    // // B. 0
+    // // C. Compilation error
+    // // D. 9
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // for(int i = 0; i < 10; i++) {
+
+    //     if(i % 2 == 0) {
+
+    //         continue;
+    //     }
+
+    //     System.out.println(i); // saída: 3 5 7 9 - B. O programa imprimirá todos os números ímpares entre 0 e 10
+                                                      // O loop for começa com 0 e vai até 9 depois que a condição se torna falsa. 
+                                                      // Dentro do loop, a condição if verifica se o valor atual da variável i é divisível por 2, verificando o restante. 
+                                                      // Se for 0, a iteração atual é ignorada usando a instrução continue.
+                                                      // Caso contrário, o número é ímpar (não divisível por 2) e o valor é impresso.
+    // }
+
+    // // A.  O programa imprimirá todos os números pares entre 0 e 10
+    // // B.  O programa imprimirá todos os números ímpares entre 0 e 10
+    // // C.  O programa dá um erro de compilação
+    // // D.  Nenhuma das opções acima
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // boolean var1 = true;
+    // boolean var2 = false;
+
+    // if (var1)
+    //    System.out.println(var1);
+    // else 
+    //    System.out.println(var2);
+
+    // // A) 0
+    // // B) 1
+    // // C) true 
+    // // D) false
+
+    // // Resposta C. verdadeiro(true)
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // char var1 = 'A';
+    // char var2 = 'a';
+
+    // System.out.println((int) var1 + " " + (int)var2); // saída: B. 65 97
+
+    // // A) 162 
+    // // B) 65 97 
+    // // C) 67 95
+    // // D) 66 98
+
+
+    // // Qual é a saída do programa abaixo?
+
+    // double var1 = 1 + 5; // 6.0
+    // double var2 = var1 / 4; // 1.5
+    // int var3 = 1 + 5; // 5.0 
+    // int var4 = var3 / 4; // 1,25
+
+    // System.out.print(var2 + " " + var4); // saída 1.5 1
+
+    // // A) 1 1
+    // // B) 0 1
+    // // C) 1.5 1
+    // // D) 1.5 1.0
+
+
+    // // // Qual é a saída do programa abaixo?
+
+    // double a = 25.64;
+    // int b = 25;
+
+    // a = a % 10; // 5.640000000000001
+    // b = b % 10; // 5
+    
+
+    // System.out.println(a + " " + b); // saída: A. 5.640000000000001 5
+
+    // // A) 5.640000000000001 5
+    // // B) 5.640000000000001 5.0
+    // // C) 5 5
+    // // D) 5 5.640000000000001
+
+
+    // // Qual será a saída do seguinte programa Java?
+
+    // int a = 1;
+    // int b = 2;
+    // int c;
+    // int d;
+
+    // c = ++b; // 3
+    // d = a++; // 1
+    
+    // c++; // 4
+    // b++; // 4
+    // ++a; // 3
+    
+
+    // System.out.print(a + " " + b + " " + c); // saída: 3 4 4
+
+    // // A) 3 2 4
+    // // B) 3 2 3 
+    // // C) 2 3 4
+    // // D) 3 4 4
+
+
+    // // Qual será a saída do seguinte programa Java?
+
+    // float f = (1/4) * 10;
+    // int i = Math.round(f);
+
+    // System.out.println(i); // saída: B. 0
+
+    // // A) 2
+    // // B) 0
+    // // C) 3
+    // // D) 2.5
+
+    
+    // // Qual será a saída do seguinte programa Java?
+
+    // int a = 42;
+    // double b = 42.25;
+    
+
+    // System.out.println((a % 10) + " " + (b % 10)); // saída: B 2 2.5
+
+    // // A) 42 42.5
+    // // B) 2 2.5
+    // // C) 4.2 4.225
+    // // D) Erro de compilação
+
+
+    // Quantos construtores na classe String?
+
+    // A) 1
+    // B) 2
+    // C) 13
+    // D) 11
+
+    // Resposta: C. 13
+
+    // String()
+    // String(String original)
+    // String(byte[] bytes)
+    // String(byte bytes[], String charsetName)
+    // String(byte bytes[], Charset charset)
+    // String(byte bytes[], int offset, int length)
+    // String(byte bytes[], int offset, int length, Charset charset)
+    // String(byte bytes[], int offset, int length, String charsetName)
+    // String(char value[])
+    // String(char value[], int offset, int count)
+    // String(int[] codePoints, int offset, int count)
+    // String(StringBuffer buffer)
+    // String(StringBuilder buffer)
+
+
+    // // Qual será a saída do seguinte programa Java?
+
+    // String str = new String("Ola");
+
+    // System.out.println(str.length()); // saída: C. 3
+
+    // // A) 1
+    // // B) 2
+    // // C) 3
+    // // D) 4
+
+
+    // // Qual será a saída do seguinte programa Java?
+
+    // String str = "Bob";
+
+    // System.out.println(str.indexOf('s')); // saída: E. -1 - O método indexOf() retorna o valor do índice se estiver presente.
+                                                            // Caso contrário, retorna -1;
+
+
+    // // A) true
+    // // B) false
+    // // C) 0
+    // // D) 1
+    // // E) -1
+
+
+    // // Qual será a saída do seguinte programa Java?
+
+    // StringBuffer s = new StringBuffer("Bob");
+    // s.deleteCharAt(0);
+
+    // System.out.println(s); // saída: B. ob - deleteCharAt() exclui o caractere no índice fornecido.
+    
+    // // A) Bo
+    // // B) ob 
+    // // C) Bob 
+    // // D) B
+
+
+    // Qual das seguintes afirmações está correta?
+
+    // A) método reverse() inverte todos os caracteres.
+    // B) reverseall() inverte todos os caracteres.
+    // C) replace() substitui a primeira ocorrência de um caractere em uma string por outro caractere.
+    // D) replace() substitui a primeira ocorrência de um caractere em uma string por outro caractere.
+
+    // Resposta: A. método reverse() inverte todos os caracteres. - O método reverse() inverte todos os caracteres. 
+                                                                 // Ele retorna o objeto invertido no qual foi chamado. Exemplo:
 
 
 
 
+    // // Qual será a saída do seguinte programa Java?
+    
+    // StringBuilder reverteStr = new StringBuilder("Ola").reverse();
+
+    // System.out.println(reverteStr); // saída: C. alO
+
+    // // A) ola 
+    // // B) alo 
+    // // C) alO 
+    // // D) olA 
+                                
+    
+    // // Qual será a saída do seguinte programa Java?
+
+    // String str = "tatu".replace('t', 's');
+
+    // System.out.println(str); // saída: sasu - Todos os caracteres 't' são substituídos por 's'.
+
+    // // A) A primeira ocorrência de 't' é substituída por 's'.
+    // // B) Todos os caracteres 't' são substituídos por 's'.
+    // // C) Todos os caracteres 's' são substituídos por 't'.
+    // // D) Nenhuma das anteriores
 
 
+    // // Qual é a saída do código a seguir?
+
+    // String str = "x1y2z3";
+    // String[] arr = str.split("\\d");
+
+    // for(String s : arr)
+    //    System.out.print(s); // saída: C. xyz - O método split pertence à classe String, usa expressões regulares para dividir uma string. 
+    //                                          // \d divide uma string com base em números.
+    
+    // // A) x1y2z3
+    // // B) 123 
+    // // C) xyz 
+    // // D) Nenhuma das acima
 
 
+    // // Qual é a saída do código a seguir?
+
+    // String s = null;
+
+    // if (s == null ) {
+        
+    //     System.out.println("A");
+
+    // } else if (s.length() == 0) {
+        
+    //     System.out.println("B");
+
+    // } else {
+
+    //     System.out.println("C");
+    // }
+
+    // // A) A
+    // // B) B 
+    // // C) C 
+    // // D) ABC 
+
+    // // Resposta: A
+
+
+    // Qual é a saída do código a seguir?
+
+    String str = "Bem-vindo ao quiz java";
+
+    System.out.println(str.startsWith("Bem-vindo"));
 
 
 
