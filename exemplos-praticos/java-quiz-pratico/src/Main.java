@@ -260,4 +260,66 @@
 // }
 
 
-// Qual é a saída do programa abaixo?
+// // Qual é a saída do programa abaixo?
+
+// interface A {
+
+//     int var = 2;
+// }
+//  class B implements A {
+
+//     void mostrar() {
+
+//         var = 3;
+
+//         System.out.println("Var = " + var);
+//     }
+
+//     public class Main {
+
+//         public static void main(String[] args) {
+            
+//             B obj = new B();
+//             obj.mostrar();
+//         }
+//     }
+
+//     // A) 2
+//     // B) 3
+//     // C) 5
+//     // D) Compilation error
+
+//     // Resposta D. Erro de compilação. - As variáveis ​​na interface são por padrão estáticas e finais e não podemos alterar seu valor depois de inicializadas.
+//                                       // No código acima, o valor da variável 'var' é alterado no método show() o que não é permitido. Portanto, o erro de compilação é exibido.
+//  }
+
+
+// // Qual é a saída do código a seguir?
+
+// interface A {
+//      void mostrar();
+// }
+
+// class B implements A {
+
+//     public void mostrar() {
+
+//         System.out.println("Bem-vindo ao quiz java!");
+//     }
+// }
+
+// public class Main {
+
+//     public static void main(String[] args) {
+        
+//         A obj = new B();
+//         obj.mostrar();
+//     }
+
+//     // A) Não podemos criar o objeto 'obj' a partir da interface 'A'.
+//     // B) Bem-vindo ao quiz java!
+//     // C) Erro de compilação
+//     // D) Todas as respostas são falsas.
+
+//     // Resposta: B. Bem-vindo ao quiz java!
+// }

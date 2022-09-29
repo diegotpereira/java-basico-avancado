@@ -1,6 +1,10 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
@@ -5976,14 +5980,161 @@ public class AppQuiz {
 
 
 
+// Qual afirmação está correta sobre interfaces em Java?
+
+// A) A interface é usada para executar herança múltipla em java.
+// B) Não podemos instanciar uma interface.
+// C) Uma interface pode herdar de outra interface.
+// D) Todas as respostas são verdadeiras
+
+// Resposta D. Todas as respostas são verdadeiras
+
+
+// // Qual é a saída do código a seguir?
+
+// LinkedList<Integer> lang = new LinkedList<Integer>();
+
+// lang.add(8);
+// lang.add(2);
+// lang.add(1);
+// lang.add(6);
+
+// Iterator it = lang.iterator();
+
+// Collections.reverse(lang);
+// Collections.sort(lang);
+
+// while (it.hasNext()) {
+    
+//     System.out.print(it.next() + " "); // sáida: B. 1 2 6 8
+// }
+
+// // A) 6 1 2 8
+// // B) 1 2 6 8
+// // C) 8 6 2 1
+// // D) 8 2 1 6
+
+
+// // Qual é a saída do código a seguir?
+
+// int tab[] = new int[6];
+
+//     for(int i = 6; i > 0; i--)
+//        tab[6-i] = i;
+
+//     Arrays.fill(tab, 1, 5, 0);
+
+//     for(int i = 0; i < 6; i++) 
+//        System.out.print(tab[i]);
+
+// // A) 611110
+// // B) 543210
+// // C) 654321
+// // D) 600001
+
+// // Resposta: D. 600001 - Na linha "tab[6-i] = i;" o array contém 6,5,4,3,2,1
+                         // mas quando o Arrays.fill(tab, 1, 5, 0); é chamado,
+                         // ele preenche o slot de índice começando de 1 a 5 com o valor 0,
+                         // então a matriz se torna 6,0,0,0,0,1.
 
 
 
 
+// Qual desses métodos pode misturar todos os elementos de uma lista?
+
+// A) rand()
+// B) srand()
+// C) randomize()
+// D) shuffle()
+
+// Resposta: D. shuffle()
 
 
+// // Qual é a saída do código a seguir?
+
+// ArrayList<String> lista = new ArrayList<String>();
+
+// lista.add("A");
+// lista.add("B");
+// lista.add("C");
+
+// System.out.println("Antes de misturar os elementos: " + lista); // saída: Antes de misturar os elementos: [A, B, C]
+
+// Collections.shuffle(lista);
+
+// System.out.println("Depois de misturar os elementos: " + lista); // saída: Depois de misturar os elementos: [C, B, A]
 
 
+// // Qual é a saída do código a seguir?
+
+// int x = 3;
+
+// if(x == 3) {
+
+//     int x = 4;
+//     System.out.println(x);
+// }
+
+// // A) Runtime error
+// // B) Compilation error
+// // C) 3
+// // D) 4
+
+// // Resposta B. Erro de compilação - Duas variáveis ​​com o mesmo nome não podem ser criadas na mesma classe. 
+                                    // Isso produz um erro de compilação.
+
+
+// // Qual é a saída do código a seguir?
+
+// int i = 0;
+
+// i = i++ +i;
+// // System.out.println(i++);
+// // System.out.println(+i);
+
+// System.out.println("I = " + i); // saída: B. 1
+
+// // A) 0
+// // B) 1
+// // C) 2
+// // D) 3
+
+
+// // Qual é a saída do código a seguir?
+
+// int resultado, x;
+
+// x = 1;
+// resultado = 0;
+
+// while(x <= 10) {
+
+//     if(x % 2 == 0)
+
+//        // x: 1   
+//        // x: 2   resultado 0
+//        // x: 3   
+//        // x: 4   resultado 2
+//        // x: 5   
+//        // x: 6   resultado 6
+//        // x: 7   
+//        // x: 8   resultado 12
+//        // x: 9   
+//        // x: 10  resultado 20
+
+//        resultado += x; // 20
+       
+//     ++x; // 20 + 10
+
+// }
+
+// System.out.println(resultado); // saída: B. 30
+
+// // (a) 55 
+// // (b) 30 
+// // (c) 25 
+// // (d) 35 
+// // (e) 45
 
 
 
