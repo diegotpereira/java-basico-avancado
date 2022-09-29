@@ -6137,8 +6137,55 @@ public class AppQuiz {
 // // (e) 45
 
 
+// // Qual é a saída do código a seguir?
+
+// StringBuilder s1 = new StringBuilder("Java");
+// String s2 = "Amor";
+
+// s1.append(s2); // JavaAmor
+// s1.substring(4); // JavaAmor
+
+// int encontradoEm = s1.indexOf(s2);
+
+// System.out.println(encontradoEm); // saída: C. 4 - método append(String str) , concatena o str para s1.
+//                                                 // O método substring(int index) retorna a String do índice fornecido até o final.
+//                                                 // Mas como não há nenhuma variável String para armazenar a string retornada, ela será destruída.
+//                                                 // Agora o método indexOf(String s2) retorna o índice da primeira ocorrência de s2.
+                                        
+
+// // A) -1
+// // B) 3
+// // C) 4
+// // D) A
 
 
+// // Qual é a saída do código a seguir?
+
+// try {
+
+//     System.out.println("Primeira instrução do bloco try");
+//     int num = 45/3;
+
+//     System.out.println(num);
+
+// } catch (Exception e) {
+    
+//     System.out.println("Exceção capturada");
+
+// } finally {
+
+//     System.out.println("finally bloquear");
+// }
+
+// System.out.println("Método Principal");
+
+// // Resposta: Como não há exceção, o bloco catch não é chamado,
+//           // mas o bloco finally é sempre executado após um bloco try,
+//           // independentemente de a exceção ser tratada ou não.
+// // Primeira instrução do bloco try
+// // 15
+// // finally bloquear
+// // Método
 
 
 
