@@ -5689,13 +5689,290 @@ public class AppQuiz {
     // // D) ilhar 
 
 
-    // Qual é a saída do código a seguir?
+    // // Qual é a saída do código a seguir?
 
-    char chars[] = { 'b', 'o', 'b'};
-    String str = new String(chars);
+    // char chars[] = { 'b', 'o', 'b'};
+    // String str = new String(chars);
 
-    System.out.println(str);
+    // System.out.println(str); // saída: C. bob
 
+    // // A) b
+    // // B) o
+    // // C) bob 
+    // // D) Erro 
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String str = "EU AMO JAVA";
+
+    // System.out.println(str.charAt(4)); // saída: B. M
+
+    // // A) A 
+    // // B) M 
+    // // C) O 
+    // // D) J 
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String str = "EU AMO JAVA";
+
+    // System.out.println(str.length()); // saída: B. 11
+
+    // // A) 10
+    // // B) 11
+    // // C) 12 
+    // // D) 13
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String str1 = "Emily";
+    // String str2 = "Alex";
+
+    // System.out.println(str1.charAt(0) > str2.charAt(0)); // saída: A. verdadeiro(true)
+
+    // // A) true 
+    // // B) false 
+    // // C) 0 
+    // // D) 1
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String a = "lorem";
+    // int b = 8;
+
+    // System.out.println(a += b); // saída: B. lorem8
+
+    // // A) 8lorem
+    // // B) lorem8
+    // // C) Compilation error
+    // // D) Will throw an exception
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String str = "Ola";
+
+    // System.out.println(str.substring(1, 3)); // saída: C. la
+
+    // // A) ol 
+    // // B) ola 
+    // // C) la 
+    // // D) Ola 
+
+    
+    // // Qual é a saída do código a seguir?
+
+    // String str = "Ola";
+
+    // System.out.println(str.indexOf('e')); // saída: B. -1
+
+    // // A) 0
+    // // B) -1
+    // // C) false 
+    // // D) Erro de compilação
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String s1 = new String("Ali");
+    // String s2 = new String("Alis");
+
+    // System.out.println(s1 = s2); // saída: D. Alis - s1 recebe s2
+
+    // // A) true 
+    // // B) false 
+    // // C) Ali 
+    // // D) Alis 
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String s1 = new String("Ola");
+    // String s2 = new String(s1);
+
+    // System.out.println(s1 == s2); // saída: C. falso(false)
+
+    // // A) Ola 
+    // // B) true 
+    // // C) false 
+    // // D) Erro 
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String s1 = "Ola";
+    // String s2 = "Ola";
+
+    // System.out.println(s1.equals(s2));
+    // System.out.println(s1 == s2); // saída: D. true true 
+
+    // // A) false false 
+    // // B) true false 
+    // // C) false true 
+    // // D) true true
+
+
+    // // Qual é a saída do código a seguir?
+
+    // int[] arr = new int[0];
+
+    // System.out.println(arr.length); // saída: C. 0
+
+    // // A) erro de compilação, o tamanho das matrizes não pode ser inicializado como zero.
+    // // B) Erro de compilação, é arr.length() não arr.length
+    // // C) 0 
+    // // D) Nenhuma das anteriores
+
+
+    // // Qual é a saída do código a seguir?
+
+    // int[] arr = { 2, 3, 012};
+
+    // for(int i = 0; i < arr.length; i++) {
+
+    //     System.out.print(arr[i] + " "); // saída: C. 2 3 10
+    // }
+
+    // // A) 2 3 12 
+    // // B) 2 3 012
+    // // C) 2 3 10
+    // // D) null 
+
+    
+    // // Qual é a saída do código a seguir?
+
+    // int arr[] = new int[10];
+
+    // for(int i = 0; i < 10; ++i) {
+
+    //     arr[i] = i;
+
+    //     System.out.print(arr[i] + " "); // saída: A. 0 2 4 6 8 - Sempre que um array é declarado usando a palavra-chave "new", 
+    //                                                           // todos os seus itens são inicializados com 0 automaticamente. 
+    //                                                           // O loop "for" é executado 5 vezes, pois sempre que os controles 
+    //                                                           // entram no loop o valor i é incrementado duas vezes,
+    //                                                           // primeiro por i++ dentro do loop
+    //                                                           // e depois por ++i na condição de incremento do loop "for".
+    //     i++;
+    // }
+
+    // // A) 0 2 4 6 8
+    // // B) 1 3 5 7 9
+    // // C) 0 1 2 3 4 5 6 7 8 9
+    // // D) 1 2 3 4 5 6 7 8 9 10
+
+
+    // // Qual é a saída do código a seguir?
+
+    // float[] arr = new float[] {1, 2, 3, 4};
+
+    // System.out.println("O valor é " + arr[1]); // saída: D. O programa compila sem erros. O valor é 2.0 
+
+    // // A) O programa dá um erro de compilação devido à sintaxenew float []{ 1 , 2 , 3 , 4 } está incorreto e deve ser alterado por{ 1 , 2 , 3 , 4 }.
+    // // B) O código dá um erro de compilação devido à sintaxenew float []{ 1 , 2 , 3 , 4 } está incorreto e deve ser alterado pornew float [ 4 ]{ 1 , 2 , 3 , 4 } ; 
+    // // C) O código dá um erro de compilação devido à sintaxenew float []{ 1 , 2 , 3 , 4 } está incorreto e deve ser alterado pornew float []{ 1.0 , 2.0 , 3.0 , 4.0 } ; 
+    // // D) O programa compila sem erros.
+
+
+    // // Qual é a saída do código a seguir?
+
+    // char arr[] = new char[5];
+
+    // for(int i = 0; i < 5; ++i) {
+
+    //     arr[i] = 'i';
+
+    //     System.out.print(arr[i] + ""); // saída: D. i i i i i 
+    // }
+
+    // // A) 1 2 3 4 5 
+    // // B) 1 2 3 4 
+    // // C) i j k l m 
+    // // D) i i i i i
+
+    
+    // Em Java os arrays são? 
+
+    // A) Objetos 
+    // B) Referências de objetos 
+    // C) Tipo de dados primitivo
+    // D) Nunhuma das anteriores 
+
+    // Resposta: A. Objetos - Em java, um array é um objeto container que contém um número fixo de valores de um único tipo.
+    //                        O tamanho de um array é fixo quando o array é criado. Após a criação, seu comprimento é fixo.
+
+
+
+    // Acessamos os dados no Array usando
+
+    // A) Operador 
+    // B) Variável 
+    // C) Índice 
+    // D) Ponteiro 
+
+    // Resposta C. índice - Acessamos dados em Array usando indice.
+
+
+    // Sobre o ponto de inicialização do array, o que é necessário especificar?
+
+    // A) linha
+    // B) coluna 
+    // C) Linha e Coluna
+    // D) Nenhuma das anteriores
+
+    // Resposta A. Linha - linha é essencial para especificar ao inicializar uma matriz
+
+    
+    // Qual é o valor padrão de uma variável declarada booleana?
+
+    // A) true 
+    // B) Falso 
+    // C) null
+    // D) 1
+    
+    // Resposta B. O valor padrão de uma variável booleana declarada é False.
+
+
+    // // Qual é a saída do código a seguir?
+    // int a;
+    // a= 10;
+
+    // if (a == 10) {
+        
+    //     int b = 20;
+
+    //     System.out.println("a e b: " + a + " " + b);
+
+    //     b = a*2;
+    // }
+
+    // b = 100;
+
+    // System.out.println("a e b: " + a + " " + b); // saída: D. Erro - A variável b é acessada fora de sua área. 
+    //                                                               // Como a variável b é declarada dentro do bloco if,
+    //                                                               // sua área é limitada apenas ao bloco if. 
+    //                                                               // Fora se a variável do bloco b não for identificada, 
+    //                                                               // resultará em um erro.
+
+    // // A) 10 20 10 100
+    // // B) 10 20 10 20
+    // // C) 10 20 10 10
+    // // D) Erro
+
+
+    // // Qual conversão automática de tipo é viável?
+
+// A) long para int 
+// B) int para long 
+// C) byte para int 
+// D) short para int 
+
+// // Resposta: B, C, D - Os dois tipos de dados são compatíveis.
+//                     // Quando atribuímos valor de um tipo de dado menor a um tipo de dado maior.
 
 
 
