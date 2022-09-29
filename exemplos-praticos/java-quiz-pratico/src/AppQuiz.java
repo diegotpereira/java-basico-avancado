@@ -5665,12 +5665,36 @@ public class AppQuiz {
     // // Resposta: A
 
 
+    // // Qual é a saída do código a seguir?
+
+    // String str = "Bem-vindo ao quiz java";
+
+    // System.out.println(str.startsWith("Bem")); // saída: A. verdadeiro(true)
+
+    // // A) true
+    // // B) false 
+    // // C) 0 
+    // // D) 1
+
+
+    // // Qual é a saída do código a seguir?
+
+    // String str = "EmpilharComoFazer";
+
+    // System.out.println(str.substring(3, 5)); // saída: B. il
+
+    // // A) pil 
+    // // B) il 
+    // // C) ilh 
+    // // D) ilhar 
+
+
     // Qual é a saída do código a seguir?
 
-    String str = "Bem-vindo ao quiz java";
+    char chars[] = { 'b', 'o', 'b'};
+    String str = new String(chars);
 
-    System.out.println(str.startsWith("Bem-vindo"));
-
+    System.out.println(str);
 
 
 
