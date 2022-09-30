@@ -6188,6 +6188,25 @@ public class AppQuiz {
 // // Método
 
 
+// // Qual é a saída do código a seguir?
+
+// Integer a = 128, b = 128;
+
+// System.out.println(a == b); // saída: falso(false)
+
+// Integer c = 100, d = 100;
+
+// System.out.println(c == d); // saída: verdadeiro(true)
+
+// // No código fonte do objeto Integer encontraremos um método 'valueOf' 
+// // no qual podemos ver que o intervalo do objeto Integer está de IntegerCache.low(-128) a IntegerCache.high(127).
+// // Portanto, os números acima de 127 não fornecerão a saída esperada. 
+
+
+// Qual é a saída do código a seguir?
+
+
+
 
 
 
