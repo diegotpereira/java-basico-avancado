@@ -2,9 +2,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
@@ -6203,7 +6206,146 @@ public class AppQuiz {
 // // Portanto, os números acima de 127 não fornecerão a saída esperada. 
 
 
-// Qual é a saída do código a seguir?
+// // remover todas as ocorrências de um determinado caractere da string de entrada?
+
+// String str1 = "abcdABCDabcdABCD" ;
+
+// str1 = str1.replace("a", ""); // saída: bcdABCDbcdABCD
+
+// System.out.println(str1);
+
+
+// // Como obter caracteres distintos e sua contagem em uma String?
+
+// String str1 = "abcdABCDabcd";
+
+// char[] chars = str1.toCharArray();
+
+// Map<Character, Integer> caracterContar = new HashMap<>();
+
+// for(char c : chars) {
+
+//     if (caracterContar.containsKey(c)) {
+        
+//         caracterContar.put(c, caracterContar.get(c) + 1);
+
+//     } else {
+
+//         caracterContar.put(c, 1);
+//     }
+// }
+
+// System.err.println(caracterContar); // saída: {a=2, A=1, b=2, B=1, c=2, C=1, d=2, D=1}
+
+
+// // Qual é a saída do código a seguir?
+
+// String a = "JavaQuizPratico";
+// String b = new String(a);
+// int valor = 0;
+
+// valor = (a == b) ? 1:2;
+
+// if (valor == 1) {
+//     System.out.println("JAVAQUIZPRATICO");
+
+// } else if (valor == 2) {
+    
+//     System.out.println("Java Quiz Pratico");
+
+// } else {
+
+//     System.out.println("Java");
+// }
+
+// // A) JAVAQUIZPRATICO
+// // B) Java Quiz Pratico
+// // C) Java 
+// // D) Nenhuma das acima
+
+// // Resposta: B. Java Quiz Pratico - == operador verifica se duas variáveis ​​se referem ao mesmo objeto
+                                     //// Aqui a e b referem-se a dois objetos diferentes.
+
+    
+// // Qual é a saída do seguinte programa?
+
+// PriorityQueue<Integer> queue =  new PriorityQueue<>();
+
+// queue.add(11);
+// queue.add(10);
+// queue.add(22);
+// queue.add(5);
+// queue.add(12);
+// queue.add(2);
+
+// while (queue.isEmpty() == false)
+//    System.out.println("%d", queue.remove());
+
+
+// System.out.println("\n"); // saída C. 2 5 10 11 12 22 - PriorityQueue sempre gera o elemento mínimo da fila quando o método remove() é chamado, não importa qual seja a sequência de entrada.
+
+
+// // a) 11 10 22 5 12 2 
+// // b) 2 12 5 22 10 11 
+// // c) 2 5 10 11 12 22 
+// // d) 22 12 11 10 5 2 
+
+
+// // Qual é a saída do seguinte programa?
+
+// TreeSet<String> treeSet = new TreeSet<>();
+
+// treeSet.add("Java");
+// treeSet.add("Quiz");
+// treeSet.add("Pratico");
+// treeSet.add("JavaQuizPratico");
+
+// for(String temp : treeSet)
+//    System.out.println(temp + " ");
+
+// System.out.println("\n");
+
+// // A) JavaQuizPratico 
+// // B) Java Quiz Pratico JavaQuizPratico
+// // C) Java JavaQuizPratico Pratico Quiz 
+// // D) JavaQuizPratico
+
+// // Resposta C. Java JavaQuizPratico Pratico Quiz
+
+
+
+// Qual é a saída do programa abaixo?
+
+List<String> lista1 = new LinkedList<>();
+lista1.add("Java");
+lista1.add("Quiz");
+lista1.add("Pratico");
+lista1.add("JavaQuizPratico");
+lista1.add("Pratico");
+
+List<String> lista2 = new LinkedList<>();
+lista2.add("Java");
+
+lista1.removeAll(lista2);
+
+for(String temp : lista1) 
+   System.out.printf(temp + " ");
+
+System.out.println();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
