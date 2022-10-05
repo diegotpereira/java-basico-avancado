@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -6314,32 +6315,73 @@ public class AppQuiz {
 
 
 
-// Qual é a saída do programa abaixo?
+// // Qual é a saída do programa abaixo?
 
-List<String> lista1 = new LinkedList<>();
-lista1.add("Java");
-lista1.add("Quiz");
-lista1.add("Pratico");
-lista1.add("JavaQuizPratico");
-lista1.add("Pratico");
+// LinkedList<String> lista1 = new LinkedList<>();
+// lista1.add("Java");
+// lista1.add("Quiz");
+// lista1.add("Pratico");
+// lista1.add("JavaQuizPratico");
+// lista1.add("Pratico");
 
-List<String> lista2 = new LinkedList<>();
-lista2.add("Java");
+// LinkedList<String> lista2 = new LinkedList<>();
+// lista2.add("Java");
 
-lista1.removeAll(lista2);
+// lista1.removeAll(lista2);
 
-for(String temp : lista1) 
-   System.out.printf(temp + " ");
+// for(String temp : lista1) 
+//    System.out.printf(temp + " ");
 
-System.out.println();
+// System.out.println();
+
+// // A) Java Quiz Pratico JavaQuizPratico Pratico
+// // B) Java Quiz Pratico JavaQuizPratico
+// // C) Pratico JavaQuizPratico Pratico 
+// // D) Quiz Pratico JavaQuizPratico Pratico 
+
+// // Resposta D. Quiz Pratico JavaQuizPratico Pratico 
 
 
+// // Qual é a saída do programa abaixo?
+
+// HashSet<String> hashSet = new HashSet<>();
+
+// hashSet.add("Java");
+// hashSet.add("Quiz");
+// hashSet.add("Pratico");
+// hashSet.add("Java");
+// hashSet.add("JavaQuizPratico");
+
+// System.out.println(hashSet); // saída: A. [Java, Quiz, Pratico, JavaQuizPratico]
+
+// // A) [Java, Quiz, Pratico, JavaQuizPratico]
+// // B) [JavaQuizPratico, Pratico, Java]
 
 
+// // Qual é a saída do programa abaixo?
 
+// LinkedList<String> lista = new LinkedList<>();
 
+// lista.add("Java");
+// lista.add("Quiz");
+// lista.add("Pratico");
+// lista.add("Java");
+// lista.add("JavaQuizPratico");
 
+// Iterator<Integer> iter = lista.iterator();
 
+// while(iter.hasNext())
+//    System.out.printf(iter.next() + " ");
+
+// System.out.println();
+
+// // a) Java Quiz Pratico Java JavaQuizPratico
+// // b) JavaQuizPratico Java Quiz Pratico
+// // c) Runtime Error 
+// // d) Compilation Error
+
+// // Resposta: d. Um iterador feito para iterar sobre Integer não 
+//              // pode ser usado para iterar sobre o tipo de dados String.
 
 
 
