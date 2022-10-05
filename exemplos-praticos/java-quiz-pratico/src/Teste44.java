@@ -23,15 +23,17 @@ public class Teste44 {
         num.add(5);
         num.add(6);
 
-        System.out.println("Sua lista de elementos no ArrayList: " + num);
+        System.out.print(num);
 
-        Set<Integer> primosDuplicados =  new LinkedHashSet<>(num);
+        System.out.print("Sua lista de elementos no ArrayList: " + num);
+
+        LinkedHashSet<Integer> primosDuplicados =  new LinkedHashSet<>(num);
 
         num.clear();
 
         num.addAll(primosDuplicados);
 
 
-        System.out.println("lista de números originais sem duplicação: " + num);
+        System.out.print("lista de números originais sem duplicação: " + num);
     }
 }
