@@ -6385,6 +6385,20 @@ public class AppQuiz {
 
 
 
+// // Escreva um programa para encontrar a raiz quadrada de um número.
+
+
+// try (Scanner entrada = new Scanner(System.in)){
+    
+//     System.out.println("Insira um número para encontrar a raiz quadrada:");
+
+//     double quadrada = entrada.nextDouble();
+//     double raizQuadrada = Math.sqrt(quadrada);
+
+//     System.out.printf("A raiz quadrada é : %f", raizQuadrada); // entrada: 25, saída: 5
+// } 
+
+
 
 
 
