@@ -6400,10 +6400,63 @@ public class AppQuiz {
 
 
 
+// // Encontre a contagem de palavras em uma string usando o HashMap Collection.
+
+// String str = "Ola mundo, BemVindo ao Java Quiz Pratico";
+
+// String[] split = str.split(" ");
+
+// HashMap<String, Integer> mapa = new HashMap<String, Integer>();
+
+// for(int i = 0; i < split.length; i++) {
+
+//     if(mapa.containsKey(split[i])) {
+
+//         int contar = mapa.get(split[i]);
+
+//         mapa.put(split[i], contar + 1);
+
+//     } else {
+
+//         mapa.put(split[i], 1);
+//     }
+// }
+
+// System.out.println(mapa); // saída: {Java=1, Quiz=1, Ola=1, Pratico=1, BemVindo=1, ao=1, mundo,=1}
 
 
 
+// // Escreva um programa para encontrar o segundo número mais alto em um ArrayList
 
+// int array[] = {1, 2, 3, 4, 11, 12, 13, 14, 21, 22, 23, 24, 31, 32};
+// int alto = 0;
+// int proximoAlto = 0;
+
+// System.out.printf("A matriz fornecida é: ");
+
+// for(int i = 0; i < array.length; i++) {
+
+//     System.out.print(array[i] + " \t "); // saída 1 2 3 4 11 12 13 14 21 22 23 24 31 32
+// }
+
+// for(int i = 0; i < array.length; i++) {
+
+//     if (array[i] > alto) {
+        
+//         proximoAlto = alto;
+//         alto = array[i];
+
+//     } else if (array[i] > proximoAlto) {
+        
+//         proximoAlto = array[i];
+//     }
+// }
+
+// System.out.println("O segundo mais alto é: " + proximoAlto); // saída: O segundo mais alto é: 31
+// System.out.println("O número mais alto é: " + alto); // saída: O número mais alto é: 32
+
+
+// O método main pode ser sobrecarregado?
 
 
 

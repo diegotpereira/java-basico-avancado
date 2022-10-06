@@ -23,9 +23,7 @@ public class Teste44 {
         num.add(5);
         num.add(6);
 
-        System.out.print(num);
-
-        System.out.print("Sua lista de elementos no ArrayList: " + num);
+        System.out.println("Sua lista de elementos no ArrayList: " + num); // saída: Sua lista de elementos no ArrayList: [1, 2, 3, 4, 5, 6, 3, 4, 5, 6]
 
         LinkedHashSet<Integer> primosDuplicados =  new LinkedHashSet<>(num);
 
@@ -34,6 +32,6 @@ public class Teste44 {
         num.addAll(primosDuplicados);
 
 
-        System.out.print("lista de números originais sem duplicação: " + num);
+        System.out.println("lista de números originais sem duplicação: " + num); // saída: lista de números originais sem duplicação: [1, 2, 3, 4, 5, 6]
     }
 }
