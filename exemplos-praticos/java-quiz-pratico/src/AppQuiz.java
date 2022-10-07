@@ -6456,7 +6456,10 @@ public class AppQuiz {
 // System.out.println("O número mais alto é: " + alto); // saída: O número mais alto é: 32
 
 
-// O método main pode ser sobrecarregado?
+
+
+
+
 
 
 
