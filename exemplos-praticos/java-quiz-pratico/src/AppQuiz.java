@@ -6458,6 +6458,12 @@ public class AppQuiz {
 
 
 
+// Qual é a saída do seguinte programa java?
+
+
+
+
+
 
 
 
