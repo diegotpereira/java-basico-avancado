@@ -1,13 +1,13 @@
-public class Teste {
+// public class Teste {
     
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
         
-        // Qual será a saída do programa abaixo?
-        // Super s = new Subclasse();
-        // s.foo();
-    }
-}
+//         // Qual será a saída do programa abaixo?
+//         // Super s = new Subclasse();
+//         // s.foo();
+//     }
+// }
 
 // class Super {
 //     void foo() {
