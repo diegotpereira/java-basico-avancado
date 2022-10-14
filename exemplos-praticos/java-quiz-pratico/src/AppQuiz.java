@@ -12,6 +12,8 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 // import java.net.*;
 // import java.util.*;
@@ -6458,7 +6460,55 @@ public class AppQuiz {
 
 
 
-// Qual é a saída do seguinte programa java?
+// // Qual é a saída do seguinte programa java?
+
+// int [] x = { 120, 200, 016, 2 };
+
+// for(int i = 0; i < x.length; i++) {
+
+//     System.err.print(x[i] + " "); // saída: 120 200 014 - 016 octal é equivalente a 014
+// }
+
+
+// // Qual é a saída do seguinte programa java?
+
+// byte x = 127;
+// x++;
+// x++;
+
+// System.out.println(x); // saída: 127
+
+
+// // Qual é a saída do seguinte programa java?
+
+// short x = 10;
+
+// x = x * 5;
+
+// System.out.print(x); // saída: cannot convert from int to short
+
+
+// // Qual é a saída do seguinte programa java?
+
+// String str1 = "incluir";
+// String str2 = "ajuda";
+
+// System.out.println(str1 + str2); // saída: incluirajuda
+
+
+
+// // Qual é a saída do seguinte programa java?
+
+// System.out.println(Math.copySign(100.6, -200.6)); // saída: -100.6
+
+
+// // Qual é a saída do seguinte programa java?
+
+// StringBuffer sb = new StringBuffer("Incluir");
+// sb.append("ajuda");
+
+// System.out.println(sb); // saída: Incluirajuda - A string aqui é um StringBuffer, portanto, o conteúdo pode ser editado, 
+                                                 // o que faz com que o método append funcione adicionando 'ajuda' ao final da string.
 
 
 
@@ -6466,13 +6516,142 @@ public class AppQuiz {
 
 
 
+// // Qual é a saída do seguinte programa java?
+
+// int i; 
+
+// for(i = 1; i <= 12; i +=2) {
+
+//     if(i == 8) {
+
+//         System.out.println(i);
+//         break;
+//     }
+// }
+
+// // A. 1
+// // B. Sem saída 
+// // C. 8
+// // D. 1357911
+
+// // Resposta: B. Sem saída
 
 
 
+// // Qual é a saída do seguinte programa java?
+
+// String str = "Ola";
+
+// str = "Adeus";
+
+// System.out.println(str); // saída: Adeus
+
+
+// // Qual é a saída do seguinte programa java?
+
+// double numero[] = {12, 17.66, 17, 12.4, 18, 19.77, 10}; // a soma é 106,83
+// double resultado;
+// resultado = 0;
+
+// for(int i = 0; i < 7; i++) 
+//    resultado = resultado + numero[i];
+
+// System.out.println("Resultado é " + resultado / 7); // saída: Resultado 106,83 / 7 é 15.26142857142857
 
 
 
-    }
+// // Qual é a saída do seguinte programa java?
+
+// String str1 = new String("Ola");
+// String str2 = new String("Adeus");
+
+// System.out.print(str1 = str2); // saída: Adeus
+
+
+// // Qual é a saída do seguinte programa java?
+
+// float i = 5;
+
+// if (i) {
+    
+//     System.out.println("SIM");
+
+// } else {
+
+//     System.out.println("NÃO");
+// }
+
+// // A. SIM
+// // B. NÃO
+// // C. error: incompatible types
+// // D. Nenhum
+
+// // Reposta: C. error: incompatible types
+
+
+
+// // Qual é a saída do seguinte programa java?
+
+// char c = 'Z';
+
+// if (c > 100) {
+    
+//     System.out.println("Java");
+
+//  } else {
+
+//     System.out.println("Python");
+//  }
+
+// // 1. Java
+// // 2. Python
+// // 3. Compilation error
+// // 4. Nenhum
+
+// Resposta: 2. Python
+
+
+// // Qual é a saída do seguinte programa java?
+
+// Pattern p = Pattern.compile("gosto", Pattern.CASE_INSENSITIVE);
+// Matcher m = p.matcher("Eu gosto de Java");
+
+// boolean combinacaoEncontrada = m.find();
+
+// if (combinacaoEncontrada) {
+    
+//     System.out.println("Combinação encontrada");
+
+// } else {
+
+//     System.out.println("Combinação não encontrada");
+// }
+
+// // A. Combinação encontrada
+// // B. Combinação não encontrada
+// // C. Erro de compilação 
+// // D. Nenhum
+
+// Resposta: saída: A. Combinação encontrada
+
+
+// // Qual é a saída do seguinte programa java?
+
+int contar = 0;
+
+while(contar <= 4) {
+
+    System.out.println(contar % 2 == 1 ? "111" : "2222"); // saída: A. 111 imprimi 5 vezes & 2222 imprimi 6 vezes
+    ++contar;
+}
+
+// // A. 111 imprimi 5 vezes & 2222 imprimi 6 vezes
+// // B. 111 imprimi 5 vezes
+// // C. 2222 imprimi 6 vezes
+// // D. Nenhum
+
+
+ }
 
     // protected int x, y;
 }
