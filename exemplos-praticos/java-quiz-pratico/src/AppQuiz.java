@@ -2499,32 +2499,70 @@ public class AppQuiz {
 
 
 
+        // // Qual é a saída do programa?
+
+        // int num = 0; 
+        // int i = 0;
+        // int j = 0;
+
+        // int arr[] = { 7, 8, 9, 11, 17 };
+
+        // for(i = 0; i < arr.length; i++) {
+
+        //     System.out.println(i);
+
+        //     for(j = 2; j < (arr[i] / 2); j++) {
+
+        //         System.out.println(j);
+
+        //         if (arr[i] % j == 0) {
+                    
+        //             num = 1;
+        //             break;
+        //         }
+        //     }
+        //     // if(num == 0)
+        //     //    System.out.println(arr[i]);
+        // } 
+
+        
+        // // Qual é a saída do programa?
+
+        // float[] floatArray = { 20.2F, 21.4F, 32.4F } ;
+
+        // for(float F : floatArray) {
+
+        //     System.out.println(F % 3);
+        // }
+
+        // saída:
+        // // 2.2000008
+        // // 0.39999962
+        // // 2.4000015
+        
+
+        // // Qual é a saída do programa?
+
+        // float[] floatArray1 = { 20.2F, 21.4F, 32.4F };
+        // float[] floatArray2 =  floatArray1;
+
+        // System.out.println(floatArray1);
+
+        // for(float F : floatArray2) {
+
+        //     System.out.println(F % 3);
+        // }
+
+        // saída:
+        // 2.2000008
+        // 0.39999962
+        // 2.4000015
+
+
         // Qual é a saída do programa?
 
-        int num = 0; 
-        int i = 0;
-        int j = 0;
 
-        int arr[] = { 7, 8, 9, 11, 17 };
 
-        for(i = 0; i < arr.length; i++) {
-
-            System.out.println(i);
-
-            for(j = 2; j < (arr[i] / 2); j++) {
-
-                System.out.println(j);
-
-                if (arr[i] % j == 0) {
-                    
-                    num = 1;
-                    break;
-                }
-            }
-            // if(num == 0)
-            //    System.out.println(arr[i]);
-        }
-        
 
 
 
