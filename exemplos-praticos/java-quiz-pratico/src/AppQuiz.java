@@ -6635,20 +6635,33 @@ public class AppQuiz {
 // Resposta: saída: A. Combinação encontrada
 
 
+// // // Qual é a saída do seguinte programa java?
+
+// int contar = 0;
+
+// while(contar <= 4) {
+
+//     System.out.println(contar % 2 == 1 ? "111" : "2222"); // saída: A. 111 imprimi 5 vezes & 2222 imprimi 6 vezes
+//     ++contar;
+// }
+
+// // // A. 111 imprimi 5 vezes & 2222 imprimi 6 vezes
+// // // B. 111 imprimi 5 vezes
+// // // C. 2222 imprimi 6 vezes
+// // // D. Nenhum
+
+
+
 // // Qual é a saída do seguinte programa java?
 
-int contar = 0;
+// StringBuffer str = new StringBuffer("Técnico");
+// str.setCharAt(3, 'l');
+// str.setCharAt(2, 'v');
 
-while(contar <= 4) {
+// System.out.println("saída = " + str); // saída: saída = Tévlico
 
-    System.out.println(contar % 2 == 1 ? "111" : "2222"); // saída: A. 111 imprimi 5 vezes & 2222 imprimi 6 vezes
-    ++contar;
-}
 
-// // A. 111 imprimi 5 vezes & 2222 imprimi 6 vezes
-// // B. 111 imprimi 5 vezes
-// // C. 2222 imprimi 6 vezes
-// // D. Nenhum
+
 
 
  }
