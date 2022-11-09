@@ -1,19 +1,6 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.*;
+import java.time.LocalTime; 
+
 
 // import java.net.*;
 // import java.util.*;
@@ -2511,6 +2498,69 @@ public class AppQuiz {
 
 
         // // Qual é a saída do programa?
+
+        // int num = 0; 
+        // int i = 0;
+        // int j = 0;
+
+        // int arr[] = { 7, 8, 9, 11, 17 };
+
+        // for(i = 0; i < arr.length; i++) {
+
+        //     System.out.println(i);
+
+        //     for(j = 2; j < (arr[i] / 2); j++) {
+
+        //         System.out.println(j);
+
+        //         if (arr[i] % j == 0) {
+                    
+        //             num = 1;
+        //             break;
+        //         }
+        //     }
+        //     // if(num == 0)
+        //     //    System.out.println(arr[i]);
+        // } 
+
+        
+        // // Qual é a saída do programa?
+
+        // float[] floatArray = { 20.2F, 21.4F, 32.4F } ;
+
+        // for(float F : floatArray) {
+
+        //     System.out.println(F % 3);
+        // }
+
+        // saída:
+        // // 2.2000008
+        // // 0.39999962
+        // // 2.4000015
+        
+
+        // // Qual é a saída do programa?
+
+        // float[] floatArray1 = { 20.2F, 21.4F, 32.4F };
+        // float[] floatArray2 =  floatArray1;
+
+        // System.out.println(floatArray1);
+
+        // for(float F : floatArray2) {
+
+        //     System.out.println(F % 3);
+        // }
+
+        // saída:
+        // 2.2000008
+        // 0.39999962
+        // 2.4000015
+
+
+        // Qual é a saída do programa?
+
+
+
 
         // int num = 0; 
         // int i = 0;
@@ -6659,6 +6709,86 @@ public class AppQuiz {
 // str.setCharAt(2, 'v');
 
 // System.out.println("saída = " + str); // saída: saída = Tévlico
+
+// str.setCharAt(3, 'l');
+// str.setCharAt(2, 'v');
+
+// System.out.println("Saída = " + str); // saída: saída = Tévlico
+
+
+
+
+// // Qual é a saída do seguinte programa java?
+
+
+// HashSet obj = new HashSet();
+// obj.add("Maçã");
+// obj.add("Morango");
+// obj.remove("Morango");
+// obj.add("Uvas");
+
+// System.out.println(obj + " " + obj.size() + " " + obj.hashCode()); // saída: 4. [Maçã, Uvas] 2 5043267
+
+
+
+// // 1.[Morango, Uvas] 2 5043267
+// // 2. [Morango, Uvas] 2 5043267
+// // 3. [Morango, Uvas] 2 5043267
+// // 4. [Maçã, Uvas] 2 5043267
+
+
+// // Qual é a saída do seguinte programa java?
+
+// ArrayList<Integer> obj = new ArrayList<Integer>();
+
+// obj.add(14);
+// obj.add(12);
+// obj.add(89);
+// obj.add(23);
+
+// obj.forEach(s->System.out.println(s));
+
+// obj.forEach(s-> {
+//     if(s % 4 == 0)
+//         System.out.println(s);
+// });
+
+// // A. 14 12 89 23 12
+// // B. 14 89 12 23 12
+// // C. 89 14 12 23 12
+// // D. 12 23 12 89 14
+
+// Resposta: A. 14 12 89 23 12
+
+
+// // Qual é a saída do seguinte programa java?
+
+// LocalTime t1 = LocalTime.of (11, 34, 10);
+// System.out.println (t1); // saída: 11:34:10
+
+// LocalTime t2 = t1.plusHours (3);
+// LocalTime t3 = t2.plusMinutes (16);
+// System.out.println (t3); // saída: 14:50:10
+
+// // A. 11:34:10 14:50:10
+// // B. 11:34:10 14:51:11
+// // C. 11:34:10 14:55:13
+// // D. 11:34:10 14:56:16
+
+
+// ORM significa___
+
+
+// // A. Object Relational Mapping
+// // B. Operating Rate Mapping
+// // C. Operating Relational Mapping
+// // D. Object Rate Mapping
+
+// Resposta A. Mapeamento Relacional de Objetos.
+
+
+
+
 
 
 
