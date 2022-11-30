@@ -6705,6 +6705,10 @@ public class AppQuiz {
 // // Qual é a saída do seguinte programa java?
 
 // StringBuffer str = new StringBuffer("Técnico");
+// str.setCharAt(3, 'l');
+// str.setCharAt(2, 'v');
+
+// System.out.println("saída = " + str); // saída: saída = Tévlico
 
 // str.setCharAt(3, 'l');
 // str.setCharAt(2, 'v');
