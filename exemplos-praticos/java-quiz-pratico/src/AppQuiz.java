@@ -6784,7 +6784,92 @@ public class AppQuiz {
 
 
 
+// // Formatação de Saída Java com printf
 
+// Scanner sc=new Scanner(System.in);
+// System.out.println("================================");
+// for(int i=0;i<3;i++){
+    
+//     String s1=sc.next();
+//     int x=sc.nextInt();
+//     //Complete this line
+//     // System.out.printf("%-15s%03d%n", s1 + x);
+//     // System.out.println(x + " ");
+//     System.out.printf("%-15s%03d%n",s1,x);
+// }
+// System.out.println("================================");
+
+
+
+
+// // Java Loops II - Introduction hackerrank
+
+// Scanner in = new Scanner(System.in);
+// int t=in.nextInt();
+// for(int i=0;i<t;i++){
+//     int a = in.nextInt(); // 2
+//     int b = in.nextInt(); // 0 2 10
+//     int n = in.nextInt(); // 5 3 5
+    
+//     int soma = a;
+    
+//     for(int j = 0; j < n; j++) {
+           // .pow() é usado para calcular um aumento de número à potência de algum outro número.
+//         int proxEl = (int) Math.pow(2, j) * b;
+//         soma = soma + proxEl;
+        
+//         System.out.printf("%s ", soma);
+//     }
+    
+//     if(i < t-1) {
+//         System.out.print("\n");
+//     }
+    
+// }
+// in.close();
+
+// Mostre os ranges dos dados primitivos
+
+// Scanner sc = new Scanner(System.in);
+// int t=sc.nextInt();
+
+// for(int i=0;i<t;i++)
+// {
+
+//     try
+//     {
+//         long x=sc.nextLong();
+//         System.out.println(x+" can be fitted in:");
+//         if(x>=-128 && x<=127)System.out.println("* byte");
+//         //Complete the code
+//         // long minValue = -9223372036854775808l;
+//         // long maxValue = 9223372036854775807l;
+//         if(x>=Short.MIN_VALUE && x<= Short.MAX_VALUE)System.out.println("* short");
+//         if(x>=-2147483648 && x<=2147483647)System.out.println("* int");
+//         if(x>= Long.MIN_VALUE && x<= Long.MAX_VALUE)System.out.println("* long");
+//     }
+//     catch(Exception e)
+//     {
+//         System.out.println(sc.next()+" can't be fitted anywhere.");
+//     }
+
+// }
+
+
+// // Imprima os dados em n linhas
+
+// Scanner scan = new Scanner(System.in);
+        
+// int contar = 1;
+
+// while(scan.hasNext()) {
+    
+//     String linha = scan.nextLine();
+    
+//     System.out.println(contar + " " + linha);
+//     contar++;
+// }
+// scan.close();
 
 
 
