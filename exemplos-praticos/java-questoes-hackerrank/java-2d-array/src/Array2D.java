@@ -1,5 +1,3 @@
-package br.java.com;
-
 import java.util.Scanner;
 
 public class Array2D {
