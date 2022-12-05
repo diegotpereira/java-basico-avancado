@@ -23,6 +23,7 @@ public class App {
 
             if(deque.size() == m) {
 
+                // número máximo de inteiros únicos entre todos os possíveis subarrays
                 if(set.size() > max)
                     max = set.size();
 
@@ -32,7 +33,7 @@ public class App {
                     set.remove(primeiro);
             }
         }
-        System.out.println(max);
+        System.out.println(max); // saída: 3
 
         teclado.close();
     }
