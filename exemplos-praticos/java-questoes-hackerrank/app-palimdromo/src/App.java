@@ -16,5 +16,7 @@ public class App {
 
             System.out.println("Não");
         }
+
+        teclado.close();
     }
 }
