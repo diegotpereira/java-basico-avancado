@@ -30,14 +30,19 @@ class Resultado {
 
     public static int designerPdfViewer(List<Integer> alturaPalavra, String palavra) {
 
-        int aux = Integer.MIN_VALUE;
-
-        for (int i = 0; i < palavra.length(); i += 1) {
-            
-            aux = (alturaPalavra.get(palavra.charAt(i) - 'a') >= aux) ? alturaPalavra.get(palavra.charAt(i) - 'a') : aux;
-        }
-        return aux * palavra.length();
+        return palavra.length() * palavra.chars().reduce(0, (m, i) -> Math.max(m, alturaPalavra.get(i - 'a')));
     }
+
+    // public static int designerPdfViewer(List<Integer> alturaPalavra, String palavra) {
+
+    //     int aux = Integer.MIN_VALUE;
+
+    //     for (int i = 0; i < palavra.length(); i += 1) {
+            
+    //         aux = (alturaPalavra.get(palavra.charAt(i) - 'a') >= aux) ? alturaPalavra.get(palavra.charAt(i) - 'a') : aux;
+    //     }
+    //     return aux * palavra.length();
+    // }
 
     // public static String designerPdfViewer(List<Integer> alturaPalavra, String palavra) {
 
