@@ -32,32 +32,48 @@ class Resultado {
 
     public static int minimumDistances(List<Integer> a) {
 
-        Map<Integer, Integer> mapa = new HashMap<>();
+        int minDist = -1;
+        int temp = a.size();
 
-        int distanciaMinima = Integer.MAX_VALUE;
+        for(int n : a) {
 
-        for (int indice = 0; indice < a.size(); indice += 1) {
-            
-            int n = a.get(indice);
-
-            if (mapa.containsKey(n)) {
+            if (a.lastIndexOf(n) != a.indexOf(n)) {
                 
-                int distancia = indice - mapa.get(n);
-
-                distanciaMinima = Math.min(distanciaMinima, distancia);
+                int min = Math.abs(a.lastIndexOf(n) - a.indexOf(n));
+                temp = Math.min(temp, min);
+                minDist = temp;
             }
-
-            mapa.put(n, indice);
         }
-
-        if(distanciaMinima == Integer.MAX_VALUE)
-
-            return -1;
-
-        else 
-
-            return distanciaMinima;
+        return minDist;
     }
 
-    
+
+    // public static int minimumDistances(List<Integer> a) {
+
+    //     Map<Integer, Integer> mapa = new HashMap<>();
+
+    //     int distanciaMinima = Integer.MAX_VALUE;
+
+    //     for (int indice = 0; indice < a.size(); indice += 1) {
+            
+    //         int n = a.get(indice);
+
+    //         if (mapa.containsKey(n)) {
+                
+    //             int distancia = indice - mapa.get(n);
+
+    //             distanciaMinima = Math.min(distanciaMinima, distancia);
+    //         }
+
+    //         mapa.put(n, indice);
+    //     }
+
+    //     if(distanciaMinima == Integer.MAX_VALUE)
+
+    //         return -1;
+
+    //     else 
+
+    //         return distanciaMinima;
+    // }
 }
