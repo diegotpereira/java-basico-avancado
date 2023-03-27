@@ -1,0 +1,14 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "libs/*.jar",
+            "lib\\junit-4.12.jar"
+        ],
+        "exclude": [
+            "lib/junit-4.12.jar"
+        ]
+    }
+}
+
