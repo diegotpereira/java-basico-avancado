@@ -32,6 +32,12 @@ public class App {
 
 class Resultado {
 
+    // consiste em iterar por pares de caracteres da string, verificando se a
+    // diferença absoluta entre os dois caracteres atuais é a mesma que a diferença
+    // absoluta entre os dois caracteres correspondentes da string inversa. Se em
+    // algum momento a diferença não for a mesma, a função retorna "Not Funny". Caso
+    // contrário, retorna "Funny".
+
     public static String funnyString(String s) {
 
         int n = s.length();
@@ -57,12 +63,6 @@ class Resultado {
         // Retorna um valor booleano que indica se as diferenças d1 e d2 são iguais.
         return isFunny ? "FUNNY" : "NOT FUNNY";
     }
-
-    // consiste em iterar por pares de caracteres da string, verificando se a
-    // diferença absoluta entre os dois caracteres atuais é a mesma que a diferença
-    // absoluta entre os dois caracteres correspondentes da string inversa. Se em
-    // algum momento a diferença não for a mesma, a função retorna "Not Funny". Caso
-    // contrário, retorna "Funny".
 
     // public static String funnyString(String s) {
 
