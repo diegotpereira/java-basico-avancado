@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 import java.util.stream.Stream;
-import static java.util.stream.Collectors.*;
+import static java.util.stream.Collectors.toList;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,20 +11,18 @@ public class App {
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<Integer> A = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+        List<Integer> w = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
             .map(Integer::parseInt)
             .collect(toList());
 
-        List<Integer> B = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
-
-        int result = Resultado.beautifulPairs(A, B);
+        int result = Resultado.toys(w);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
 
         bufferedReader.close();
         bufferedWriter.close();
+        
+
     }
 }
