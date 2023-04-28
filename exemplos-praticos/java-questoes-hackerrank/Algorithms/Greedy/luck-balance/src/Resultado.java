@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 // A tarefa do problema "Luck Balance" em HackerRank é determinar a quantidade 
 // máxima de sorte que uma pessoa pode ter em uma competição. O problema é descrito da seguinte maneira:
@@ -22,73 +23,104 @@ public class Resultado {
 
     public static int luckBalance(int k, List<List<Integer>> concursos) {
 
-        // variável que armazena o saldo de sorte total
-        int sorteTotal = 0;
+        // Soma todos os pontos de sorte dos concursos
+        int soma = concursos.stream().mapToInt(c -> c.get(0)).sum();
 
-        // variável que conta o número de competições importantes
-        int contar = 0;
+        // Separa os concursos em dois grupos: os importantes e os não importantes
+        Map<Boolean, List<List<Integer>>> particao = concursos.stream().sorted(Comparator.comparingInt(c -> c.get(0)))
+                .collect(Collectors.partitioningBy(c -> c.get(1) != 0));
 
-        // conjunto ordenado que armazena os saldos das competições importantes
-        Set<Integer> importantes = new TreeSet<>();
+        // Calcula quantos concursos importantes o jogador precisa ganhar para manter
+        // seu saldo de sorte positivo
+        int paraVencer = particao.get(Boolean.TRUE).size() - k;
 
-        // iterar sobre todas as competições
-        for (List<Integer> lista : concursos) {
+        // Remove os pontos de sorte dos concursos importantes que o jogador perdeu
+        for (List<Integer> lista : particao.get(Boolean.TRUE)) {
 
-            // obter o saldo de sorte da competição atual
-            int sorte = lista.get(0);
+            if (paraVencer > 0) {
 
-            // obter o nível de importância da competição atual
-            int importancia = lista.get(1);
-
-            // se a competição não for importante
-            if (importancia == 0)
-
-                // adicionar o saldo de sorte ao saldo total
-                sorteTotal += sorte;
-
-            // se a competição for importante
-            else {
-
-                // incrementar o contador de competições importantes
-                contar++;
-
-                // adicionar o saldo de sorte da competição atual ao conjunto ordenado
-                importantes.add(sorte);
-
-                // se ainda não ultrapassou o limite de competições importantes
-                // que podem ser perdidas
-                if (contar <= k)
-
-                    // adicionar o saldo de sorte da competição atual ao saldo total
-                    sorteTotal += sorte;
-
-                // se já ultrapassou o limite de competições importantes que podem ser perdidas
-                else {
-
-                    // adicionar o saldo de sorte da competição atual ao saldo total
-                    sorteTotal += sorte;
-
-                    // iterar sobre os saldos das competições importantes
-                    for (int primeiro : importantes) {
-
-                        // subtrair duas vezes o saldo da competição mais importante que ainda não foi
-                        // perdida do saldo total
-                        sorteTotal = sorteTotal - primeiro - primeiro;
-
-                        // remover o saldo da competição mais importante que ainda não foi perdida do
-                        // conjunto ordenado
-                        importantes.remove(primeiro);
-
-                        // parar a iteração
-                        break;
-                    }
-                }
+                // Se o jogador ainda precisa vencer mais concursos, subtrai o dobro
+                // dos pontos de sorte
+                soma -= (2 * lista.get(0));
+                paraVencer--;
             }
         }
 
-        // retornar o saldo de sorte total
-        return sorteTotal;
+        // Retorna o saldo final de pontos de sorte do jogador após os concursos.
+        return soma;
     }
+
+    // public static int luckBalance(int k, List<List<Integer>> concursos) {
+
+    // // variável que armazena o saldo de sorte total
+    // int sorteTotal = 0;
+
+    // // variável que conta o número de competições importantes
+    // int contar = 0;
+
+    // // conjunto ordenado que armazena os saldos das competições importantes
+    // Set<Integer> importantes = new TreeSet<>();
+
+    // // iterar sobre todas as competições
+    // for (List<Integer> lista : concursos) {
+
+    // // obter o saldo de sorte da competição atual
+    // int sorte = lista.get(0);
+
+    // // obter o nível de importância da competição atual
+    // int importancia = lista.get(1);
+
+    // // se a competição não for importante
+    // if (importancia == 0)
+
+    // // adicionar o saldo de sorte ao saldo total
+    // sorteTotal += sorte;
+
+    // // se a competição for importante
+    // else {
+
+    // // incrementar o contador de competições importantes
+    // contar++;
+
+    // // adicionar o saldo de sorte da competição atual ao conjunto ordenado
+    // importantes.add(sorte);
+
+    // // se ainda não ultrapassou o limite de competições importantes
+    // // que podem ser perdidas
+    // if (contar <= k)
+
+    // // adicionar o saldo de sorte da competição atual ao saldo total
+    // sorteTotal += sorte;
+
+    // // se já ultrapassou o limite de competições importantes que podem ser
+    // perdidas
+    // else {
+
+    // // adicionar o saldo de sorte da competição atual ao saldo total
+    // sorteTotal += sorte;
+
+    // // iterar sobre os saldos das competições importantes
+    // for (int primeiro : importantes) {
+
+    // // subtrair duas vezes o saldo da competição mais importante que ainda não
+    // foi
+    // // perdida do saldo total
+    // sorteTotal = sorteTotal - primeiro - primeiro;
+
+    // // remover o saldo da competição mais importante que ainda não foi perdida do
+    // // conjunto ordenado
+    // importantes.remove(primeiro);
+
+    // // parar a iteração
+    // break;
+    // }
+    // }
+    // }
+    // }
+
+    // // retornar o saldo de sorte total
+    // return sorteTotal;
+    // }
 
     // public static int luckBalance(int numeroCompeticoesImportantesQuePodePerder,
     // List<List<Integer>> concursos) {
