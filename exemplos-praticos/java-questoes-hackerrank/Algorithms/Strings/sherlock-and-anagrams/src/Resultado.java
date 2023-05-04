@@ -1,5 +1,7 @@
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 // O problema "Sherlock and Anagrams" do HackerRank tem como 
 // tarefa determinar o número de anagramas que existem em uma string. 
@@ -14,13 +16,55 @@ public class Resultado {
 
     public static int sherlockAndAnagrams(String s) {
 
-        int contar = 0;
+        // Cria uma variável para contar o número de anagramas
+        AtomicInteger contar = new AtomicInteger();
 
-        for (int i = 1; i < s.length(); i++) {
-            
-        
+        // Percorre todos os possíveis tamanhos de grupo de caracteres
+        IntStream.rangeClosed(1, s.length() - 1).forEach(grupoDe -> {
+
+            // Percorre todos os grupos de caracteres do tamanho atual
+            for (int i = 0; grupoDe + i <= s.length(); i++) {
+
+                // Obtém a string atual do grupo de caracteres
+                String atual = s.substring(i, grupoDe + i);
+
+                // Percorre todas as outras strings que têm o mesmo tamanho
+                for (int j = i + 1; j + grupoDe <= s.length(); j++) {
+
+                    // Obtém a próxima string do grupo de caracteres
+                    String proximo = s.substring(j, grupoDe + j);
+
+                    // Se a string atual e a próxima forem anagramas, incremente a contagem
+                    if (ehAnagrama(atual, proximo))
+                        contar.incrementAndGet();
+                }
+            }
+        });
+
+        // Retorna o número total de anagramas encontrados
+        return contar.get();
+    }
+
+    public static boolean ehAnagrama(String atual, String proximo) {
+        // Remova espaços em branco e converta para letras minúsculas
+        atual = atual.replaceAll("\\s", "").toLowerCase();
+        proximo = proximo.replaceAll("\\s", "").toLowerCase();
+
+        // Verifique se as Strings têm o mesmo comprimento
+        if (atual.length() != proximo.length()) {
+            return false;
         }
-        return 0;
+
+        // Crie arrays de caracteres a partir das Strings
+        char[] arrayAtual = atual.toCharArray();
+        char[] arrayProximo = proximo.toCharArray();
+
+        // Ordene os arrays de caracteres
+        Arrays.sort(arrayAtual);
+        Arrays.sort(arrayProximo);
+
+        // Verifique se os arrays ordenados são iguais
+        return Arrays.equals(arrayAtual, arrayProximo);
     }
 
     // public static int sherlockAndAnagrams(String s) {
