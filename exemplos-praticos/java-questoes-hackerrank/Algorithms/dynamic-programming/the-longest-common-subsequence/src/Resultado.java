@@ -32,250 +32,152 @@ public class Resultado {
 
     public static List<Integer> longestCommonSubsequence(List<Integer> a, List<Integer> b) {
 
-        int n = a.size();
-        int m = b.size();
+        // Obter o tamanho das listas a e b
+        int m = a.size();
+        int n = b.size();
 
-        // int n = a.length, m = b.length;
-        int[][] dp = new int[m + 1][n + 1];
+        // Matriz dp para armazenar os pares (contagem, sequência) para
+        // cada combinação de elementos
+        Par[][] dp = new Par[m + 1][n + 1];
 
+        // Inicializando a matriz dp com pares (0, "") em todas as células
         for (int i = 0; i <= m; i++) {
 
+            dp[i] = new Par[n + 1];
+
             for (int j = 0; j <= n; j++) {
-                if (j == 0 || i == 0) {
-                    dp[i][j] = 0;
-                } else if (a.get(j - 1) == b.get(i - 1)) {
-                    dp[i][j] = dp[i - 1][j - 1] + 1;
+
+                dp[i][j] = new Par(0, "");
+
+            }
+        }
+
+        // Preenchendo a matriz dp
+        for (int i = 1; i <= m; i++) {
+
+            for (int j = 1; j <= n; j++) {
+
+                if (a.get(i - 1).equals(b.get(j - 1))) {
+
+                    // Se os elementos forem iguais, incrementa o contador e concatena a sequência
+                    dp[i][j] = new Par(1 + dp[i - 1][j - 1].contar, dp[i - 1][j - 1].sequencia + " " + a.get(i - 1));
+
                 } else {
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+
+                    // Caso contrário, escolhe o máximo entre os contadores dos elementos anteriores
+                    if (dp[i - 1][j].contar > dp[i][j - 1].contar) {
+
+                        dp[i][j] = dp[i - 1][j];
+
+                    } else {
+
+                        dp[i][j] = dp[i][j - 1];
+
+                    }
                 }
             }
         }
-        int index = dp[m][n];
-        // int[] res = new int[index];
-        List<Integer> res = new ArrayList<>();
 
-        int i = n, j = m;
-        while (i > 0 && j > 0) {
+        // Converter a sequência em um ArrayList de inteiros
+        String[] sequenciaArr = dp[m][n].sequencia.substring(1).split(" ");
 
-            if (a.get(i - 1) == b.get(j - 1)) {
-                res[index - 1] = a.get(i - 1);
-                index--;
-                i--;
-                j--;
-            } else if (dp[j - 1][i] > dp[j][i - 1]) {
-                j--;
-            } else {
-                i--;
-            }
+        List<Integer> resultado = new ArrayList<>();
+
+        for (String num : sequenciaArr) {
+            resultado.add(Integer.parseInt(num));
         }
-        return res;
 
-        // List<Integer> dp[][] = new ArrayList[n + 1][m + 1];
-
-        // for (int i = 0; i <= n; i++) {
-
-        // for (int j = 0; j <= m; j++) {
-
-        // dp[i][j] = new ArrayList<>();
-        // }
-        // }
-
-        // for (int i = 0; i <= n; i++) {
-
-        // for (int j = 0; j <= m; j++) {
-
-        // if (i == 0 || j == 0)
-
-        // dp[i][j].add(0);
-
-        // else {
-
-        // int x = a.get(i - 1), y = b.get(j - 1);
-        // if (x == y) {
-
-        // dp[i][j].addAll(dp[i - 1][j - 1]);
-        // dp[i][j].add(a.get(i - 1));
-
-        // } else {
-
-        // if (dp[i - 1][j].size() >= dp[i][j - 1].size()) {
-
-        // dp[i][j].addAll(dp[i - 1][j]);
-
-        // } else {
-
-        // dp[i][j].addAll(dp[i][j - 1]);
-
-        // }
-        // }
-        // }
-        // }
-
-        // }
-
-        // dp[n][m].remove(0);
-        // return dp[n][m];
-
-        // int m = a.size();
-        // int n = b.size();
-
-        // int t[][] = new int[m + 1][n + 1];
-        // // base code or initialization
-        // for (int i = 0; i < m + 1; i++) {
-        // for (int j = 0; j < n + 1; j++) {
-        // if (i == 0 || j == 0) {
-        // t[i][j] = 0;
-        // }
-        // }
-
-        // }
-        // for (int i = 1; i < m + 1; i++) {
-        // for (int j = 1; j < n + 1; j++) {
-        // if (a.get(i - 1) == b.get(j - 1)) {
-        // t[i][j] = 1 + t[i - 1][j - 1];
-        // } else {
-        // t[i][j] = Math.max(t[i - 1][j], t[i][j - 1]);
-
-        // }
-
-        // }
-        // }
-        // List<Integer> res = new ArrayList<>();
-        // int i = m;
-        // int j = n;
-        // while (i > 0 && j > 0) {
-
-        // if (a.get(i - 1) == b.get(j - 1)) { // matrix is compulsory to understand
-        // this
-
-        // // push stat
-
-        // res.add(a.get(i - 1));
-        // // s+=s+Character.toString(x.charAt(i-1));
-        // i--;
-        // j--;
-        // } else {
-
-        // if (t[i][j - 1] > t[i - 1][j]) { // make matrix to understand this
-
-        // j--;
-        // } else {
-        // i--;
-        // }
-
-        // }
-
-        // }
-        // Collections.reverse(res);
-        // return res;
-
-        // int n = a.size(), m = b.size();
-        // // vector<vector<int>> dp(n+1, vector<int> (m+1, 0));
-        // int[][] dp = new int[n + 1][m + 1];
-        // for (int i = 1; i <= n; i++) {
-        // for (int j = 1; j <= m; j++) {
-        // if (a.get(i - 1) == b.get(j - 1))
-        // dp[i][j] = 1 + dp[i - 1][j - 1];
-        // else {
-        // dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
-        // }
-        // }
-        // }
-        // int i = n, j = m;
-        // // vector<int> ans;
-        // ArrayList<Integer> ans = new ArrayList<>();
-        // while (i > 0 && j > 0) {
-        // if (a.get(i - 1) == b.get(j - 1)) {
-        // ans.add(a.get(i - 1));
-        // i -= 1;
-        // j -= 1;
-        // } else {
-        // if (dp[i - 1][j] > dp[i][j - 1])
-        // i--;
-        // else
-        // j--;
-        // }
-        // }
-
-        // Collections.reverse(ans);
-        // return ans;
-
-        // int[] arr1 = new int[a.size()];
-        // int[] arr2 = new int[b.size()];
-
-        // for (int i = 0; i < a.size(); i++) {
-
-        // arr1[i] = a.get(i);
-        // }
-
-        // for (int i = 0; i < b.size(); i++) {
-
-        // arr2[i] = b.get(i);
-        // }
-
-        // int n = arr1.length;
-        // int m = arr2.length;
-        // int[][] dp = new int[n + 1][m + 1];
-
-        // for (int i = 0; i < m + 1; i++) {
-
-        // for (int j = 0; j < n + 1; j++) {
-
-        // if (i == 0 || j == 0) {
-
-        // dp[i][j] = 0;
-
-        // }
-        // }
-        // }
-
-        // for (int i = 1; i <= n; i++) {
-
-        // for (int j = 1; j <= m; j++) {
-
-        // if (arr1[i - 1] == arr2[j - 1]) {
-
-        // dp[i][j] = 1 + dp[i - 1][j - 1];
-
-        // } else
-
-        // dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
-        // }
-        // }
-        // ArrayList<Integer> resposta = new ArrayList<>();
-        // int i = n;
-        // int j = m;
-
-        // while (i > 0 && j > 0) {
-
-        // if (arr1[i - 1] == arr2[j - 1]) {
-
-        // resposta.add(arr1[i - 1]);
-        // i -= 1;
-        // j -= 1;
-
-        // } else {
-
-        // if (dp[i - 1][j] > dp[i][j - 1])
-        // i--;
-        // else
-        // j--;
-
-        // // if (dp[i][j - 1] > dp[i - 1][j]) {
-
-        // // // resposta.add(arr2[j - 1]);
-        // // j--;
-
-        // // } else
-
-        // // // resposta.add(arr1[i - 1]);
-        // // i--;
-        // }
-        // }
-
-        // Collections.reverse(resposta);
-
-        // return resposta;
+        // Retornar a sequência comum mais longa
+        return resultado;
     }
+
+    // Classe Pair para representar um par (contagem, sequência)
+    static class Par {
+        int contar;
+        String sequencia;
+
+        // Construtor da classe Pair
+        Par(int contar, String sequencia) {
+            this.contar = contar;
+            this.sequencia = sequencia;
+        }
+    }
+
+    // public static List<Integer> longestCommonSubsequence(List<Integer> a,
+    // List<Integer> b) {
+
+    // // Lista para armazenar a subsequência comum mais longa
+    // List<Integer> resposta = new ArrayList<>();
+
+    // // Matriz para armazenar os comprimentos das subsequências comuns
+    // int[][] dp = new int[a.size() + 1][b.size() + 1];
+
+    // // Inicialização da primeira linha da matriz dp
+    // for (int i = 0; i <= a.size(); i++) {
+
+    // dp[i][0] = 0;
+    // }
+
+    // // Inicialização da primeira coluna da matriz dp
+    // for (int i = 0; i <= b.size(); i++) {
+
+    // dp[0][i] = 0;
+    // }
+
+    // // Preenchimento da matriz dp
+    // for (int i = 1; i <= a.size(); i++) {
+
+    // for (int j = 1; j <= b.size(); j++) {
+
+    // // Se os elementos forem iguais,
+    // if (a.get(i - 1) == b.get(j - 1)) {
+
+    // // incrementa o comprimento da subsequência comum
+    // dp[i][j] = 1 + dp[i - 1][j - 1];
+
+    // // Caso contrário,
+    // } else {
+
+    // // escolhe o máximo entre os comprimentos das subsequências anteriores
+    // dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+    // }
+    // }
+    // }
+
+    // int i = a.size();
+    // int j = b.size();
+
+    // // Reconstrução da subsequência comum mais longa
+    // while (i > 0 && j > 0) {
+
+    // if (a.get(i - 1) == b.get(j - 1)) {
+
+    // // Adiciona o elemento à subsequência comum
+    // resposta.add(a.get(i - 1));
+
+    // i--;
+    // j--;
+
+    // } else {
+
+    // if (dp[i - 1][j] > dp[i][j - 1]) {
+
+    // // Move para a célula acima
+    // i--;
+
+    // } else {
+
+    // // Move para a célula à esquerda
+    // j--;
+    // }
+    // }
+    // }
+
+    // // Inverte a ordem da subsequência
+    // Collections.reverse(resposta);
+
+    // // Retorna a subsequência comum mais longa
+    // return resposta;
+    // }
 
 }

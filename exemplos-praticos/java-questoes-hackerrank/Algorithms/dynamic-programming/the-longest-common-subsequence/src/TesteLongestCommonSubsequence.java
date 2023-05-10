@@ -11,7 +11,7 @@ public class TesteLongestCommonSubsequence {
         List<Integer> a = Arrays.asList(1, 2, 3, 4, 1);
         List<Integer> b = Arrays.asList(3, 4, 1, 2, 1, 3);
 
-        List<Integer> esperado = Arrays.asList(1, 2, 3);
+        List<Integer> esperado = Arrays.asList(3, 4, 1);
 
         List<Integer> resultado = Resultado.longestCommonSubsequence(a, b);
 
