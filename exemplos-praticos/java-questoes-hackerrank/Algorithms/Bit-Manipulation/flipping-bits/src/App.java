@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.stream.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
