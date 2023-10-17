@@ -27,9 +27,11 @@ class Resultado {
 
     public static String timeInWords(int hora, int minuto) {
 
+        // Mapeamento de números para palavras
         HashMap mapa = new HashMap<>();
 
-        mapa.put(1, "One");
+        mapa.put(0, "zero");
+        mapa.put(1, "one");
         mapa.put(2, "two");
         mapa.put(3, "three");
         mapa.put(4 , "four");
@@ -62,52 +64,40 @@ class Resultado {
 
         String s = "";
 
-        if (minuto <= 30 && minuto >= 0) {
-            
-            if (minuto == 15) {
-            
-                s = "quarter past " + mapa.get(hora);
-            }
-    
-            if (minuto == 0) {
+        // Verifica diferentes casos de minutos e constrói a string resultante
+        if (minuto == 0) {
                 
                 s = mapa.get(hora) + " o' clock";
-            }
-    
-            if (minuto == 30) {
+            } else if (minuto == 15) {
+            
+                s = "quarter past " + mapa.get(hora);
+
+            } else if (minuto == 30) {
                 
                 s = "half past " + mapa.get(hora);
-            }
-    
-            if (minuto > 15 && minuto < 30) {
+
+            } else if (minuto == 45) {
+                
+                s = "quarter to " + mapa.get(hora + 1);
+
+            } else if (minuto > 1 && minuto < 30) {
                 
                 s = mapa.get(minuto) + " minutes past " + mapa.get(hora);
-            }
-    
-            if (minuto > 0 && minuto < 15) {
-                
-                if (minuto != 1) {
-                    
-                    s = mapa.get(minuto) + " minutes paste " + mapa.get(hora);
-    
-                } else {
-    
-                    s = mapa.get(minuto) + " minute past " + mapa.get(hora);
-                }
-            }
 
-        } else {
+            } else if (minuto > 30 && minuto < 60) {
 
-            if (minuto != 45) {
-                
                 s = mapa.get(60 - minuto) + " minutes to " + mapa.get(hora + 1);
+                
+            } else if (minuto == 1 && minuto < 30) {
+                
+                s = mapa.get(minuto) + " minute past " + mapa.get(hora);
 
-            } else {
-
-                s = " quarter to " + mapa.get(hora + 1);
+            } else if (60 - minuto == 1 && minuto > 30) {
+                
+                s = mapa.get(60 - minuto) + " minute to " + mapa.get(hora +);
             }
-        }
 
+        // Retorna a string final
         return s;
     }
 
